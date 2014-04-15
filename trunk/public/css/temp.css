@@ -1,0 +1,53 @@
+.wrapper{ width:980px; margin:0 auto;}
+.home-title{ padding:50px 0;}
+.home-tiles{ padding-bottom:35px;}
+
+
+.sh-tile{ float:left; margin-right:16px; margin-bottom:16px; color:#fff;}
+.sh-tile a{ display:block;}
+.sh-tile a:link, .sh-tile a:visited{ color:#fff;}
+
+
+.sh-tile-right{ margin-right:0;}
+.sh-tile-normal{ padding:20px;}
+.sh-tile-normal b{ display:block; font-size:24px; line-height:30px;}
+.sh-tile-normal span{ display:block;font-size:14px; padding-top:5px;}
+.sh-tile-headline{ font-size:38px; line-height:150px; text-align:center; font-weight:bold;}
+.sh-tile-mid{ padding:20px;}
+.sh-tile-mid span{ display:block; font-size:16px; font-weight:bold; height:70px;}
+.sh-tile-mid i{ display:block; float:right; width:40px; height:40px;}
+.sh-tile-img b{ font-size:30px; line-height:55px; padding:0 20px;}
+.sh-tile-bigicon{ padding:25px;}
+.sh-tile-bigicon b{ display:block; line-height:100px; font-size:28px;}
+.sh-tile-bigicon i{ display:block; width:100px; height:100px; float:left;}
+.sh-tile-bigicon span{ font-size:22px; line-height:36px; width:100px; display:block; padding-left:5px;}
+.sh-tile-smallicon{ padding:25px; padding-bottom:20px;}
+.sh-tile-smallicon i{ display:block; width:100px; height:75px;}
+.sh-tile-smallicon span{ line-height:25px; display:block; text-align:center; line-height:30px;}
+
+
+.sh-tile-t11{ width:150px; height:150px;}
+.sh-tile-t12{ width:316px; height:150px;}
+.sh-tile-t13{ height: 90px; padding-left: 70px; padding-top: 60px; width: 412px; }
+.sh-tile-t21{ width:150px; height:316px;}
+.sh-tile-t22{ width:316px; height:316px;}
+
+.sh-tile-up1{ margin-top:-166px;}
+.sh-tile-left1{ margin-left:166px; *margin-left:0;}
+
+.sh-tile-blue{ background-color:#40618c;}
+.sh-tile-yellow{ background-color:#e5b612;}
+.sh-tile-red{ background-color:#ae5a6a;}
+.sh-tile-green{ background-color:#82a35e;}
+
+.sh-tile-search{ background-color:#ddd;}
+
+
+.sh-tile-icon-physics{ background:url(../images/home.png) 0px 0px no-repeat;}
+.sh-tile-icon-hat{ background:url(../images/home.png) -200px 0px no-repeat;}
+.sh-tile-icon-world{ background:url(../images/home.png) -100px 0px no-repeat;}
+.sh-tile-icon-pen{ background:url(../images/home.png) -300px 0px no-repeat;}
+.sh-tile-icon-zhen{ background:url(../images/home.png) -50px -100px no-repeat;}
+.sh-tile-icon-bi{ background:url(../images/home.png) -100px -100px no-repeat;}
+.sh-tile-icon-ce{ background:url(../images/home.png) -150px -100px no-repeat;}
+.sh-tile-icon-jie{ background:url(../images/home.png) -200px -100px no-repeat;}

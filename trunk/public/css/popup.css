@@ -1,0 +1,52 @@
+/* 定义所有的浮动层样式 */
+.Popup{ display:none;}
+
+/* ui-dialog的基本定义 ===========================================*/
+.ui-dialog{background-color:#fff; border:1px solid #414141; }
+/* 顶部标题和关闭链接部分 */
+.ui-dialog-titlebar{ padding:15px 20px; background-color:#40618c; color:#fff; cursor:move;}
+.ui-dialog-titlebar .ui-dialog-title{ font-size:20px; display:block; float:left;}
+.ui-dialog-titlebar .ui-dialog-titlebar-close{ display:block; width:20px; height:20px; float:right; background:url(../images/icon.gif) 1px -1669px no-repeat; text-indent:-10000px;}
+
+.ui-dialog-titlebar-other{ padding:15px 20px; cursor:move; padding-bottom:0;}
+.ui-dialog-titlebar-other .ui-dialog-title{ font-size:16px; font-weight:bold; display:block; float:left;}
+.ui-dialog-titlebar-other .ui-dialog-titlebar-close{ display:block; width:20px; height:20px; float:right; background:url(../images/icon.gif) 5px -1115px no-repeat; text-indent:-10000px;}
+
+/* clearfix */
+.ui-helper-clearfix{ zoom:1;}
+.ui-helper-clearfix:before {content:"";	display:table;}
+.ui-helper-clearfix:after  {clear:both;	content:"."; display:block;	font-size:0; height:0; visibility:hidden;}
+/* 覆盖层 */
+.ui-widget-overlay { position:absolute; left:0; top:0;	width:100%;	height:100%; background-color:#000; opacity: 0.7; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);}
+/* 底部的按钮区域 */
+.ui-dialog-buttonpane{ padding:0 20px 15px 20px;}
+.ui-dialog-buttonpane .ui-button-confirm{ background-color:#95bf69; padding:5px 10px; font-size:14px; border:1px solid #abcc87; border-bottom-color:#7ea258; border-right-color:#7ea258; color:#fff !important; cursor:pointer;}
+.ui-dialog-buttonpane .ui-button-confirm:hover{ background-color:#79975b; border:1px solid #94ac7c; border-bottom-color:#6e8652; border-right-color:#6e8652;}
+.ui-dialog-buttonpane .ui-button-confirm:focus, .ui-dialog-buttonpane .ui-button-confirm:active{ background-color:#637c4b; border:1px solid #677657; border-left-color:#778864; border-bottom-color:#79965c; border-right-color:#79965c;}
+.ui-dialog-buttonpane .ui-button-cancel{ background-color:transparent; border:0; color:#999; text-decoration:underline; cursor:pointer; margin-left:10px;}
+
+
+
+/* 收藏 */
+.pop-favorite {padding:15px 20px;}
+.pop-favorite p{ clear:both; color:#888; font-size:12px;}
+.pop-favorite .title{ padding-top:10px; padding-bottom:5px;}
+.pop-favorite input{ width:97%; border:1px solid #c2c2c2; background-color:#f7f7f7; padding:5px;}
+.pop-favorite .link{ padding-bottom:10px;}
+.pop-favorite .link a{ display:block; float:left; margin-right:10px; white-space:nowrap; word-break:keep-all;}
+.pop-favorite button{ padding:3px 10px; font-size:14px;}
+
+/* 分享 */
+.pop-share {width:300px;padding:15px 20px; padding-top:20px;}
+.pop-share #jiathis_style_32x32{ width:300px;}
+
+/* 报告错误 */
+.pop-report{padding:15px 20px;}
+.pop-report select{ margin-bottom:15px;}
+
+.pop-login{ }
+.pop-login .left{ float:left; width:320px; padding:30px; border-right:1px solid #ddd;}
+.pop-login .right{ float:right; width:310px; overflow:hidden; padding:30px;}
+.pop-login .right p{ clear:both; display:block; font-size:16px; font-weight:bold; padding-bottom:5px;}
+.pop-login .right .btn-blue{ display:block; float:left; margin-bottom:40px; color:#fff;}
+.pop-login .login-connect{ padding-top:10px;}

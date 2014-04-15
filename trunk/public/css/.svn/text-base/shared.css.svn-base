@@ -1,0 +1,67 @@
+/* ========================================================================
+	shared.css
+	共用组件的CSS样式定义
+
+	本文件为整体的核心文件，定义了网站全部的公共组件的样式
+	本文件为sh-命名空间内的代码
+	如果未经授权，请勿轻易改动本文件内任何一行代码！
+	如果经过授权改动，请务必极为慎重并经过严格测试！
+=========================================================================== */
+
+@media all {
+	
+	/*翻页的控件样式*/
+	.sh-page a, .sh-page b, .sh-page span{ display:block; float:left; margin-right:.8em; padding:.8em 1em; line-height:1em;}
+	.sh-page a{ border:1px solid #d0d0d0;}
+	.sh-page a:hover{ background-color:#f1f1f1; color:#4d7dbf;}
+	.sh-page span{ border:1px solid #ccc; background-color:#f1f1f1; color:#888;}
+	
+	/*评论列表项*/
+	ul.sh-comment{ padding-bottom:1em;}
+	ul.sh-comment li span{ color:#888; font-size:90%; display:block;}
+	ul.sh-comment li{ padding-bottom:.8em;}
+	ul.sh-comment li p{ line-height:24px;}
+	ul.sh-comment li p.delete{ color:#888; text-decoration:line-through;}
+	ul.sh-comment li p a{ display:none; font-size:12px; background-color:#eee; padding:0 10px; color:#888; border:1px solid #fff; line-height:20px;}
+	ul.sh-comment li:hover p a{ display:inline-block;}
+	ul.sh-comment li p a:hover{ background-color:#effafc; border-color:#94aecf; color:#40608c;}
+	
+	
+	/*标签部分*/
+	ul.tag-content li{ display:block; float:left; border:1px solid #fff; width:auto;}
+	ul.tag-content li:hover, ul.tag-content li.iehover{ border-color:#95adcf;}
+	ul.tag-content li:hover a.delete, ul.tag-content li.iehover a.delete{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);}
+	
+	ul.tag-content li a{ display:block; float:left; height:20px;  padding:0 5px; white-space:nowrap; word-break:keep-all; *overflow:visible;_overflow:hidden;}
+	ul.tag-content li a:hover{ background-color:#f0fafc;}
+	ul.tag-content li a.delete{ width:10px; height:20px; background:url(../images/icon.gif) 5px -1114px no-repeat; border-left:1px solid #95adcf; cursor:pointer; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);}
+	ul.tag-content li a.delete:hover{ background-color:#4d7dbf; background-position:5px -1154px;}
+
+	
+	ul.sh-tag li{ display:block; float:left; margin-right:5px;}
+	ul.sh-tag li span, ul.sh-tag li a{ display:block; line-height:22px; height:22px; float:left;}
+	ul.sh-tag li a.delete{ display:block; float:left; width:15px; height:22px; background:url(../images/icon.gif) 3px -1114px no-repeat; visibility:hidden;}
+	ul.sh-tag li:hover{ background-color:#dcf1f2;}
+	ul.sh-tag li:hover a.delete{ visibility:visible;}
+	ul.sh-tag li a.delete:hover{ background-color:#729cce; background-position:3px -1154px;}
+	
+	/*带有数字尾标的列表项，用于subject首页*/
+	ul.sh-nlist li{ line-height:26px; height:26px;}
+	ul.sh-nlist-float li{ float:left; width:32%; margin-right:2%;}
+	ul.sh-nlist li.nomargin{ margin-right:0;}
+	ul.sh-nlist li a{ padding-right:5px; line-height:22px;}
+	ul.sh-nlist li span{ color:#999; line-height:22px; font-size:12px;}
+
+	ul.sh-tlist li{ line-height:24px; padding-bottom:15px;}
+	ul.sh-tlist li a{ display:block; line-height:22px;}
+	ul.sh-tlist li span{ display:block; color:#999; line-height:22px; font-size:12px;}
+	
+	/*用于在页面高度很小的时候，往下留白用*/
+	p.sh-padding-blank{ padding-bottom:100px; display:block;}
+	
+	.sh-table{ width:100%;}
+	.sh-table thead td{ background-color:#4d7dbf; color:#fff; line-height:40px; padding:0 10px; font-size:18px;}
+	.sh-table tbody td{ background-color:#eee; line-height:40px; padding:0 10px; font-size:14px; border-top:2px solid #fff;}
+	
+	
+}

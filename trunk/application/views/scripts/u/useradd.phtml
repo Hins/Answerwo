@@ -1,0 +1,44 @@
+<?php
+$param = array('title'=>'答案窝-题目添加新用户');
+include_once ADMIN_ROOT_PATH . 'application/layout/adminhtmlheader.inc';  
+?>
+<body>
+<div id="nav"><?php include_once 'nav.inc'; ?></div>
+<div id="main">
+    <h1><a href="#">用户信息管理</a> > 添加新用户</h1>
+    <hr />
+    <div>
+	<form name="form" method="post">
+		<div>
+		<div>
+        	<label>用户昵称<sup>*</sup></label><br>
+            <input type="text" size=100 name="nickname" value=""/>
+        </div>
+        <div>
+        	<label>用户密码<sup>*</sup></label><br>
+            <input type="password" size=100 name="password" value=""/>
+        </div>
+        <div>
+        	<label>用户密码确认<sup>*</sup></label><br>
+            <input type="password" size=100 name="repassword" value=""/>
+        </div>
+        <div>
+        	<label>用户邮箱<sup>*</sup></label><br>
+            <input type="email" size=100 name="email" value=""/>
+        </div>
+        <div>
+        	<label>用户角色<sup>*</sup></label><br>
+            <select name="role" id="role">
+                	<option value="1">普通用户</option>
+                    <option value="2">管理员</option>
+            </select>
+        </div>
+        </div>
+        <div style="margin:5px; padding:5px;">
+        	<input type="button" value="创建" onclick="Submit();" />
+        </div>
+    </form>
+    </div>
+</div>
+</body>
+</html>

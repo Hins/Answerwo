@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<?php
+$include_param = array(
+'title'=>'答案窝-搜索',
+'keyword'=>'答案窝 日语 搜索',
+'description'=>'答案窝 搜索',
+);
+include_once ROOT_PATH . 'application/layout/htmlhead.inc';
+?>
+<body>
+	<div id="exposeMask" style="position: absolute; top: 0px; left: 0px; width: 1903px; height: 1611px; display: none; opacity: 0.8; z-index: 9998; background-color: rgb(0, 0, 0);"></div>
+    <nav id="dark">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li class="current">搜索</li>
+                  <li><a href="http://www.answerwo.com/q/list">题库</a></li>
+                  <li><a href="http://www.answerwo.com/q/practice">自由做题</a></li>
+                </ul>
+               <?php include_once ROOT_PATH . 'application/layout/user.inc'; ?> 
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="http://www.answerwo.com"><img src="http://www.answerwo.com/public/images/logo.gif" width="313" height="35" alt="答案窝" /></a></div>
+                <form class="ym-clearfix" method="get">
+                    <input type="search" placeholder="输入关键字搜索" class="inpmain" name="query"/>
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <!--<div class="ym-wbox">-->
+            <div class="ym-wbox-new">
+                <h1 class="new">搜索结果</h1><!--注意如果fliter要变为两行的话，需要js来修正高度-->        	
+            </div>
+        </div>
+    </div>
+    
+    <form method="get" name="form" id="form">
+    <input type="hidden" name="query" value="<?php echo $this->query;?>" />
+    <input type="hidden" name="questionid" value="<?php echo isset($this->questionid) ? $this->questionid : '';?>" />
+     <div id="main" class="list">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g62 ym-gl">
+                        <div class="ym-gbox"><!--为了不影响CSS框架结构，这里需要在html上直接写一个css style，555-->
+                        	<div class="list-info">符合条件的题目总共有<?php echo isset($this->count) ? $this->count : "0";?>道</div>
+                        	 <?php
+                            	if(isset($this->result)) {
+                            		$arr = Zend_Json::decode($this->result);
+                            		foreach($arr as $val) {
+                            ?>
+                            <div class="list-item ym-clearfix">
+                            	<div class="float"><i></i></div>                                
+                                <div class="float-clear"></div>
+                                <div class="content">
+                                	<p><a href="<?php echo $val["link"];?>" target="_blank">
+                                	<?php 
+                                		if(strlen($val["content"]) > 180) {
+											$i = 180;
+											for(; $i < strlen($val["content"]); $i++) {
+												if(ord($val["content"][$i]) < 100) {
+													break;
+												}
+											}
+											echo substr($val["content"],0,$i)."..."; 
+										}
+										else {
+											echo $val["content"];
+										}
+                                	?>
+                                	</a></p>
+                                    <span><?php echo (isset($val["year"]) && $val["year"] != "0" ) ? $val["year"]."考题" : "练习题";?>，难度<?php echo $val["difficulty"];?>，<?php echo $val["explaincount"]?>解答，<?php echo $val["discusscount"]?>评论，<?php echo $val["favoritecount"];?>人收藏</span>
+                                    <button onclick="SearchAddFavorite(<?php echo $val["id"];?>)">添加收藏</button>
+                                </div>
+                                <!--<div class="more"></div>-->
+                            </div>
+                            <?php 	
+                            		}
+                            	}
+                            ?>
+                            <div class="page ym-clearfix">
+                            <?php echo $this->pagination;?>
+                            <?php 
+                            	if($this->curpage+10 < $this->totalpage && $this->curpage != $this->totalpage) {
+                            ?>
+                                <b>...</b>
+                            <?php
+								} 
+                            ?>
+                            <?php  
+                            	echo $this->lastpagination;
+                            	if(isset($this->result)) { 
+                            ?>
+                            <!--<input type="text" name="page" value="" size=2 /><input type="submit" value="跳转">-->
+                            <?php
+                            	} 
+                            ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ym-g63 ym-gl">
+                  	<div class="ym-gbox">
+                  	<div class="list-info" style="float:left;">最近做过题目</div><br><br>
+                  	<div id="ListItems" class="list-items">
+                          		<?php
+                          			if(isset($this->record)) {
+										$arr = Zend_Json::decode($this->record);
+										if(!empty($arr)) { 
+											foreach($arr as $val) {
+                          		?>
+                                <div class="list-item-new ym-clearfix ListItem">
+                                    <div class="content">
+                                        <p><a href="<?php echo $val["link"];?>" target="_blank">
+                                        <?php 
+                                		if(strlen($val["content"]) > 180) {
+											$i = 180;
+											for(; $i < strlen($val["content"]); $i++) {
+												if(ord($val["content"][$i]) < 100) {
+													break;
+												}
+											}
+											echo substr($val["content"],0,$i)."..."; 
+										}
+										else {
+											echo $val["content"];
+										}
+                                	?>
+                                        </a></p>
+                                    </div>
+                                </div>
+                                <?php
+                                			}
+                                		}
+                                	} 
+                                ?>
+                            </div>
+                  	</div>
+                  	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+    
+	<?php include_once ROOT_PATH . 'application/layout/footer.inc';?>
+	
+	<div id="PopupLogin" name="PopupLogin" class="overlay p-login clearfix" style="position: fixed; z-index: 9999; top: 79.5px; left: 400px; display: none;">
+    	<div class="ym-g39 ym-gl">
+        	<div class="ym-gbox">
+        		<sapn style="color: #5599DD; float: right;"><a href="javascript:cancel()">关闭</a></sapn>
+            	<h2 class="sub-title-new">用户登录<?php if(isset($this->logininformation)) {echo "  <span id=\"logininformation\" style=\"color: #FF0000;\">".$this->logininformation."</span>";}?></h2>
+					<form class="ztm-form" method="post">
+                    	<div class="item">
+                        	<label class="title">用户名/Email邮箱地址：</label>
+                            <input type="text" class="inp" name="username" minlength="2" maxlength="30" />
+                        </div>
+                        <div class="item">
+                        	<label class="title">登录密码：</label>
+                            <input type="password" class="inp" name="password" minlength="6" />
+                        </div>
+                        <div class="item">
+                        	<span><input type="checkbox" name="autologin" style="display:inline;" onclick="SetAutoLogin();" value="0"/><label style="margin-top:-1px; display:inline;"> 下次自动登录</label></span>
+                        </div>                                                             
+                        <button class="btn">马上登录</button>
+                    </form>
+            </div>
+    	</div>
+	</div>
+	
+	<div id="PopupRegister" name="PopupLogin" class="overlay p-register clearfix" style="position: fixed; z-index: 9999; top: 79.5px; left: 400px; display: none;">
+    	<div class="ym-g39 ym-gl">
+        	<div class="ym-gbox">
+        		<sapn style="color: #5599DD; float: right;"><a href="javascript:cancelRegister()">关闭</a></sapn>
+            	<h2 class="sub-title-new">用户登录 <?php if(isset($this->registerinformation)) {echo "  <span id=\"registerinformation\" style=\"color: #FF0000;\">".$this->registerinformation."</span>";}?></h2>
+					<form class="ztm-form" method="post">
+                    	<div class="item-new">
+                        	<label class="title">用户昵称<sup>*</sup></label>
+                            <input class="inp" type="text" name="nickname" />
+                           	<p class="intro" warn="nickname">允许英文字母、中文或阿拉伯数字，不支持任何符号，最多8中文或16英文</p>
+                        </div>
+                        <div class="item-new">
+                            <label class="title">登录密码<sup>*</sup></label>
+                            <input type="password" class="inp" name="password" />
+                            <p class="intro" warn="password">登录密码不得少于6个字符，为了您的账号安全，请尽可能地复杂</p>
+                        </div>
+                        <div class="item-new">
+                            <label class="title">再次确认密码<sup>*</sup></label>
+                            <input type="password" class="inp" name="repassword" />
+                            <p class="intro" warn="repassword">请重新输入一遍密码以确认</p>
+                        </div>
+                        <div class="item-new">
+                            <label class="title">邮箱地址<sup>*</sup></label>
+                            <input type="text" class="inp" name="email" />
+                        </div>
+                        <p class="textline">点击下方的“马上注册”按钮，即代表你接受了<a href="http://www.answerwo.com/s/announcement" target="_blank">《答案窝网站使用协议》</a></p>                                
+                       	<button type="submit" class="btn">马上注册</button>
+                    </form>
+            </div>
+    	</div>
+	</div>
+
+</body>
+<?php 
+	if(isset($this->logininformation)) {
+?>
+<script type="text/javascript">
+showlogin();
+</script>
+<?php
+	} if(isset($this->registerinformation)) {
+?>
+<script type="text/javascript">
+showregister();
+</script>
+<?php
+	} 
+?>
+</html>

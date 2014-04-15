@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/1868/trunk/application/common
+END
+JP_Lucene_Analyzer.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/807/trunk/application/common/JP_Lucene_Analyzer.php
+END
+constant.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/1868/trunk/application/common/constant.php
+END
+userutil.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/807/trunk/application/common/userutil.php
+END
+FrontDoor.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/1868/trunk/application/common/FrontDoor.php
+END
+util.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/1868/trunk/application/common/util.php
+END
+logutil.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/1868/trunk/application/common/logutil.php
+END
+dbutil.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/807/trunk/application/common/dbutil.php
+END
+init.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/1868/trunk/application/common/init.php
+END
