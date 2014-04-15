@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>找题目</title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- mobile viewport optimisation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../css/zhaotimu.css" type="text/css"/>
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="../css/ym-iehacks.min.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../js/google.html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui-1.8.7.min.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.parameter.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.plugins.js"></script>
+    <script type="text/javascript" src="../js/zhaotimu.function.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.popup.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.js"></script>
+</head>
+<body>
+
+    <header id="gary" class="ym-wrapper">
+        <div class="ym-wbox ym-clearfix">
+            <div class="logo"><a href="#"><img src="../images/logo_black.gif" width="317" height="35" alt="找题目" /></a></div>
+            <div class="links ym-clearfix">
+            	<a href="#">lanslot的个人中心</a>
+                <a href="#">账号设置</a>
+                <a href="#" class="last">退出登录</a>
+            </div>                
+        </div>
+    </header>
+    
+    <nav id="blue" class="ym-wrapper">
+        <div class="ym-wbox">
+            <div class="ym-grid">
+                <div class="ym-g20 ym-gl ym-noborder">
+                    <div class="ym-gbox">
+                        <a class="subject-current" href="#">初中数学</a>
+                        <ul class="subject">
+                            <li><a href="#">初中语文</a></li>
+                            <li><a href="#">初中英语</a></li>
+                            <li><a href="#">初中物理</a></li>
+                        </ul>                       
+                    </div>
+                </div>
+                <div class="ym-g80 ym-gr ym-leftborder">
+                    <div class="ym-gbox ym-clearfix">
+                        <ul class="naviga">
+                          <li><a href="#">收藏夹</a></li>
+                          <li><a href="#">题目清单</a></li>
+                          <li><a href="#">我的贡献</a></li>                
+                        </ul>
+                        <div class="action"><a href="#">导出题目</a></div>
+                    </div>
+                </div>
+            </div>              
+        </div>
+    </nav>
+    
+    
+    <div id="main">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox template2">
+                <div class="ym-grid">
+                    <div class="ym-g20 ym-gl ym-noborder">
+                        <div class="ym-gbox uc-left">
+                            <b class="uc-title">常用通道</b>
+                            <ul class="uc-items">
+                            	<li><a href="#">最新的10个题目贡献</a></li>
+                                <li><a href="#">我的有回复的讨论</a></li>
+                                <li><a href="#">被设置为当前版本的解析</a></li>
+                                <li><a href="#">被接受的题目纠错</a></li>
+                                <li><a href="#">被接受的题目修改</a></li>
+                            </ul>
+                            <b class="uc-title">贡献时间</b>
+                            <ul class="uc-items">
+                            	<li><a href="#">最近一周</a></li>
+                                <li><a href="#">最近三个月</a></li>
+                                <li><a href="#">最近一年</a></li>
+                                <li><a href="#">一年以前</a></li>
+                            </ul>
+                            <b class="uc-title">贡献类型</b>
+                            <ul class="uc-items">
+                            	<li><a href="#">发表讨论</a></li>
+                                <li><a href="#">撰写解析</a></li>
+                                <li><a href="#">题目纠错</a></li>
+                                <li><a href="#">题目修改</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ym-g80 ym-gr ym-leftborder">
+                        <div class="ym-gbox">
+                        	<div class="mycon-item mycon-item-first">
+                            	<div class="info ym-clearfix"><span>2011年，河北省，真题</span><i>你创建于2012年6月1日 12:34:45</i></div>
+                                <div class="text"><a href="#">邮件通知分为即时邮件、聚合邮件与订阅邮件，即时邮件将在事件发生的时候马上向你的邮箱账号发送邮件，聚合邮件则每天只发1封，将当天发生的事情合并在一起。订阅邮件则是通过机器判断，向你发送你可能感兴趣的内容。邮件通知分为即时邮件、聚合邮件与订阅邮件，即时邮件将在事件发生的时候马上向你的邮箱账号发送邮件，聚合邮件则每天只发1封，将当天发生的事情合并在一起。订阅邮件则是通过机器判断，向你发送你可能感兴趣的内容。</a></div>
+								<div class="status">你创建的该题目正在审核中...</div>
+                            </div>
+                            <div class="mycon-item">
+                            	<div class="info ym-clearfix"><span>2011年，河北省，真题</span></div>
+                                <div class="text"><a href="#">邮件通知分为即时邮件、聚合邮件与订阅邮件，即时邮件将在事件发生的时候马上向你的邮箱账号发送邮件，聚合邮件则每天只发1封，将当天发生的事情合并在一起。订阅邮件则是通过机器判断，向你发送你可能感兴趣的内容。邮件通知分为即时邮件、聚合邮件与订阅邮件，即时邮件将在事件发生的时候马上向你的邮箱账号发送邮件，聚合邮件则每天只发1封，将当天发生的事情合并在一起。订阅邮件则是通过机器判断，向你发送你可能感兴趣的内容。</a></div>
+								<div class="title ym-clearfix"><b>发表讨论</b><i>你发表于2012年2月23日 13:34:45</i></div>
+                                <div class="text">邮件通知分为即时邮件、聚合邮件与订阅邮件，即时邮件将在事件发生的时候马上向你的邮箱账号发送邮件，聚合邮件则每天只发1封，将当天发生的事情合并在一起。</div>
+                                <div class="status">你发表的讨论正在审核中...</div>
+                                <div class="title ym-clearfix"><b>题目纠错</b><i>你纠错于2012年2月23日 13:34:45</i></div>
+                                <div class="text">邮件通知分为即时邮件、聚合邮件与订阅邮件，即时邮件将在事件发生的时候马上向你的邮箱账号发送邮件，聚合邮件则每天只发1封，将当天发生的事情合并在一起。</div>
+                                <div class="status">你提交的题目纠错被拒绝...</div>
+                                <div class="title ym-clearfix"><b>题目修改</b><i>你修改于2012年2月23日 13:34:45</i></div>
+                                <div class="text">邮件通知分为即时邮件、聚合邮件与订阅邮件，即时邮件将在事件发生的时候马上向你的邮箱账号发送邮件，聚合邮件则每天只发1封，将当天发生的事情合并在一起。</div>
+                                <div class="status">你提交的题目修改被接受...</div>
+                                <div class="title ym-clearfix"><b>撰写解析</b><i>你修改于2012年2月23日 13:34:45</i></div>
+                                <div class="text">邮件通知分为即时邮件、聚合邮件与订阅邮件，即时邮件将在事件发生的时候马上向你的邮箱账号发送邮件，聚合邮件则每天只发1封，将当天发生的事情合并在一起。</div>
+                                <div class="status">你提交的题目修改被接受...</div>
+                            </div>           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <footer>
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <ul class="ym-clearfix">
+                    <li class="nostyle"><a href="#">关于我们</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">使用帮助</a></li>
+                    <li><a href="#">反馈意见</a></li>
+                </ul>
+                <p>找题目网站希望发动所有的老师来共同建设最高质量的中文题库，为我们教育事业的发展做出贡献</p>
+                <p>本站的全部文字在<a href="#">知识共享 署名-相同方式共享3.0协议</a>之条款下提供，附加条款亦可使用（请参阅<a href="#">使用条款</a>）</p>
+                <p>© 2012 找题目网站保留所有权利 <a href="#">京ICP备11008556号</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="po-favotag-add Popup ym-clearfix" id="PopupFavoriteTagAdd">
+    	<div class="po-favotag-add-triangle"></div>
+        <div class="ym-clearfix" id="TagAddFavorite">
+            <input type="text" class="fo-tag-inp" />
+            <a class="fo-tag-btn" href="javascript:void(0)">添加</a>
+        </div>
+    </div>
+    
+</body>
+</html>

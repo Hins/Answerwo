@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/808/tag/M1_basic_logic/application/views/scripts/search
+END
+delete.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/808/tag/M1_basic_logic/application/views/scripts/search/delete.phtml
+END
+create.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/808/tag/M1_basic_logic/application/views/scripts/search/create.phtml
+END
+search.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/808/tag/M1_basic_logic/application/views/scripts/search/search.phtml
+END

@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>答案窝-题目删除</title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- mobile viewport optimisation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://test.answerwo.com/public/css/zhaotimu.css" type="text/css"/>
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="https://test.answerwo.com/public/css/ym-iehacks.min.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://test.answerwo.com/public/js/google.html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://test.answerwo.com/public/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://test.answerwo.com/public/js/zhaotimu.plugins.js"></script>
+	<script type="text/javascript" src="https://test.answerwo.com/public/js/zhaotimu.js"></script>
+</head>
+<body>
+
+     <nav id="dark">
+    	<div class="ym-wrapper">
+             <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li><a href="#">题目创建</a></li>
+                  <li><a href="#">题目编辑</a></li>
+                  <li class="current">题目删除</li>
+                  <li><a href="#">用户管理</a></li>
+                </ul>
+                <div class="userinfo">
+                    <a href="#">登录</a>
+                    <a href="#" class="important">新用户注册</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="#"><img src="https://test.answerwo.com/public/images/logo.gif" width="313" height="35" alt="答案窝" /></a></div>
+                <a href="#" class="add">新增</a>
+                <form class="ym-clearfix">
+                    <input type="search" placeholder="输入关键字搜索" class="inpmain" />
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g85 ym-gl">
+                        <div class="ym-gbox">
+                            <h1>删除题目</h1>
+                            <div class="fliter">让我们一起来打造最全的日语题库，帮助更多的朋友！</div>
+                        </div>
+                    </div>
+                    <div class="ym-g15 ym-gr">
+                        <div class="ym-gbox">
+                            <div class="more"><a href="#">删除题目的帮助说明</a></div> 
+                        </div>
+                    </div>
+                </div>            	
+            </div>
+        </div>
+    </div>
+    
+    <div id="main">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g62 ym-gl">
+                        <div class="ym-gbox">
+                            <form class="ztm-form" id="FormRegister" method=get>
+                            <input type="hidden" name="id" value="<?php echo (isset($this->id) ? $this->id : '');?>" />
+                            	<div class="item">
+                                	<label class="title">题目内容检索<sup>*</sup></label>
+                                    <input type="text" class="inp" size=70 name="search" value=""/>
+                                    <button type="submit" class="btn">检索</button>
+                                </div>
+                                <div class="item">
+                                	<label class="title">题目内容</label>
+                                    <textarea cols=100 rows=3 name="content"><?php echo isset($this->content) ? $this->content : "";?></textarea>
+                                </div>
+                                <div class="item">
+                                	<label class="title">答案1</label>
+                                    <textarea cols=100 rows=3 name="answer1"><?php echo isset($this->answer1) ? $this->answer1 : "";?></textarea>
+                                </div>
+                                <div class="item">
+                                	<label class="title">答案2</label>
+                                    <textarea cols=100 rows=3 name="answer2"><?php echo isset($this->answer2) ? $this->answer2 : "";?></textarea>
+                                </div>
+                                <div class="item">
+                                	<label class="title">答案3</label>
+                                    <textarea cols=100 rows=3 name="answer3"><?php echo isset($this->answer3) ? $this->answer3 : "";?></textarea>
+                                </div>
+                                <div class="item">
+                                	<label class="title">答案4</label>
+                                    <textarea cols=100 rows=3 name="answer4"><?php echo isset($this->answer4) ? $this->answer4 : "";?></textarea>
+                                </div>
+                                <div class="item">
+                                	<label class="title">题目答案</label>
+                                    <input type="text" class="inp" size=100 name="answer"  value="<?php echo isset($this->answer) ? $this->answer : '';?>"/>
+                                </div>
+                                <div class="item">
+                                	<label class="title">题目考点(文法，词汇，听力......)</label>
+                                    <input type="text" class="inp" size=100 name="knowledge" value="<?php echo isset($this->knowledge) ? $this->knowledge : '';?>"/>
+                                </div>
+                                <div class="item">
+                                	<label class="title">题目来源(2001-1,2008-3,......)</label>
+                                    <input type="text" class="inp" size=100 name="source"  value="<?php echo isset($this->source) ? $this->source : '';?>"/>
+                                </div>
+                                <div class="item">
+                                	<label class="title">题目类型<sup>*</sup>(单选，双选，作文......)<a href="#" class="btn">题型对应关系</a></label>
+                                    <select name="type" id="type">
+                                    	<option value="1" <?php echo isset($this->type) ? ($this->type == "1" ? "selected" : "" ) : "";?>>单选题</option>
+                                    	<option value="2" <?php echo isset($this->type) ? ($this->type == "2" ? "selected" : "" ) : "";?>>扩展单词全称</option>
+                                    	<option value="3" <?php echo isset($this->type) ? ($this->type == "3" ? "selected" : "" ) : "";?>>缩短单词简称</option>
+                                    	<option value="4" <?php echo isset($this->type) ? ($this->type == "4" ? "selected" : "" ) : "";?>>缩短意思简称</option>
+                                    	<option value="5" <?php echo isset($this->type) ? ($this->type == "5" ? "selected" : "" ) : "";?>>表述最恰当</option>
+                                    	<option value="6" <?php echo isset($this->type) ? ($this->type == "6" ? "selected" : "" ) : "";?>>意思相似表述</option>
+                                    	<option value="7" <?php echo isset($this->type) ? ($this->type == "7" ? "selected" : "" ) : "";?>>阅读题</option>
+                                    </select>
+                                </div>
+                                <div class="item">
+                                	<label class="title">题目解答</label>
+                                    <textarea cols=100 rows=6 name="explain"><?php echo isset($this->explain) ? $this->explain : '';?></textarea>
+                                </div>
+                                <div class="item">
+                                	<label class="title">题目难度</label>
+                                    <ul class="radio radio-aline ym-clearfix">
+                                    	<li><input type="radio" name="difficulty" value="1" <?php echo isset($this->difficulty) ? ($this->difficulty == "1" ? "checked" : "" ) : "";?>/><label>很难</label></li>
+                                        <li><input type="radio" name="difficulty" value="2" <?php echo isset($this->difficulty) ? ($this->difficulty == "2" ? "checked" : "" ) : "";?>/><label>难</label></li>
+                                        <li><input type="radio" name="difficulty" value="3" <?php echo isset($this->difficulty) ? ($this->difficulty == "3" ? "checked" : "" ) : "";?>/><label>普通</label></li>
+                                        <li><input type="radio" name="difficulty" value="4" <?php echo isset($this->difficulty) ? ($this->difficulty == "4" ? "checked" : "" ) : "";?>/><label>简单</label></li>
+                                        <li><input type="radio" name="difficulty" value="5" <?php echo isset($this->difficulty) ? ($this->difficulty == "5" ? "checked" : "" ) : "";?>/><label>很简单</label></li>
+                                    </ul>
+                                </div>                           
+                                <button type="submit" class="btn">删除</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ym-g38 ym-gr">
+                        <div class="ym-gbox">
+                            <div class="w-add">
+                            	<b>你有大量的题目要提交给我们？</b>
+                                <a href="#" class="btn">点击这里提交</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <?php include_once ROOT_PATH . 'application/layout/footer.inc';?>
+
+</body>
+</html>

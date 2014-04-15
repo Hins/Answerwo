@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>找题目</title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- mobile viewport optimisation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../css/answerwo.css" type="text/css"/>
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="../css/ym-iehacks.min.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../js/google.html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="../js/zhaotimu.plugins.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.js"></script>
+</head>
+<body>
+
+    <nav id="dark">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li class="current">初中数学</li>
+                  <li><a href="#">初中语文</a></li>
+                  <li><a href="#">初中英语</a></li>
+                  <li><a href="#">初中物理</a></li>
+                  <li>
+                    <a class="dropdown" href="#">初中/中考▾</a>
+                    <ul>
+                      <li><a href="#">初中数学</a></li>
+                      <li><a href="#">初中语文</a></li>
+                      <li><a href="#">初中英语</a></li>
+                      <li><a href="#">初中物理</a></li>
+                      <li><a href="#">初中化学</a></li>
+                      <li><a href="#">初中历史</a></li>
+                      <li><a href="#">初中地理</a></li>
+                      <li><a href="#">初中政治</a></li>
+                      <li><a href="#">初中生物</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="userinfo">
+                    <a href="#">登录</a>
+                    <a href="#" class="important">新用户注册</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="#"><img src="../images/logo.gif" width="313" height="35" alt="找题目" /></a></div>
+                <a href="#" class="add">新增</a>
+                <form class="ym-clearfix">
+                    <input type="search" placeholder="输入关键字搜索" class="inpmain" />
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g85 ym-gl">
+                        <div class="ym-gbox">
+                            <h1>表单样式一览</h1>
+                            
+                        </div>
+                    </div>
+                    <div class="ym-g15 ym-gr">
+                        <div class="ym-gbox">
+                            <div class="more"><a href="#">更多筛选条件▾</a></div> 
+                        </div>
+                    </div>
+                </div>            	
+            </div>
+        </div>
+    </div>
+    
+    <div id="main">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g62 ym-gl">
+                        <div class="ym-gbox">
+                            <form class="fo-form">
+                            	<div class="item">
+                                	<label class="title">单行文本输入框<sup>*</sup></label>
+                                    <input class="fo-inp" type="text" name="nickname" pattern="[a-zA-Z0-9\u4E00-\u9FA5]+$" minlength="2" maxlength="16" required="required" />
+                                    <p class="te-gary">注意html代码要按照HTML5的规范进行书写，例如type=mail，还有html5的pattern, minlength, maxlength, required属性，例如type=number的max, min属性</p>
+                                </div>
+                                <div class="item">
+                                	<label class="title">多行文本输入框输入<sup>*</sup></label>
+                                    <textarea class="fo-inp"></textarea>                                    
+                                </div>
+                                <div class="item">
+                                	<label class="title">单行文本输入框（警告状态）<sup>*</sup></label>
+                                    <input class="fo-inp fo-inp-wran" type="text" />
+                                    <p class="te-warn">警告文字的样式</p>
+                                </div>
+                                <div class="item">
+                                	<label class="title">多行文本输入框输入（警告状态）<sup>*</sup></label>
+                                    <textarea class="fo-inp fo-inp-wran"></textarea>
+                                </div>                               
+                                <div class="item">
+                                	<label class="title">单行单选按钮</label>
+                                    <ul class="radio radio-aline ym-clearfix">
+                                    	<li><input type="radio" name="test1" value="0" /><label>教师</label></li>
+                                        <li><input type="radio" name="test1" value="1" /><label>学生</label></li>
+                                        <li><input type="radio" name="test1" value="2" /><label>家长</label></li>
+                                        <li><input type="radio" name="test1" value="3" /><label>其它</label></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                	<label class="title">多行单选按钮</label>
+                                    <ul class="radio">
+                                    	<li><input type="radio" name="test" /><label>默认状态</label></li>
+                                        <li><input type="radio" name="test" /><label>两行是木有问题的啊。注意如果是三行及以上的的话就会出现问题了！！！两行是木有问题的啊。注意如果是三行及以上的的话就会出现问题了！！！</label></li>                                       
+                                        <li><input type="radio" name="test" checked="checked" /><label>选上的状态</label></li>
+                                        <li><input type="radio" disabled="disabled" /><label>不可用状态</label></li>
+                                        <li><input type="radio" checked="checked" disabled="disabled" /><label>选上不可用状态</label></li>
+                                        <li class="te-warn"><input type="radio" name="test" /><label>警告的状态</label></li>                                        
+                                    </ul>
+                                    <p class="intro">注意html代码上无需理会li的class属性，初始状态都请按照html规范写到input标签里面，JS会自动进行对应的处理</p>
+                                </div>
+                                <div class="item">
+                                	<label class="title">单行复选按钮</label>
+                                    <ul class="check check-aline ym-clearfix">
+                                    	<li><input type="checkbox" /><label>教师</label></li>
+                                        <li><input type="checkbox" /><label>学生</label></li>
+                                        <li><input type="checkbox" /><label>家长</label></li>
+                                        <li><input type="checkbox" /><label>其它</label></li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                	<label class="title">多行复选按钮</label>
+                                    <ul class="check">
+                                    	<li><input type="checkbox" /><label>默认状态</label></li>
+                                        <li><input type="checkbox" /><label>两行是木有问题的啊。注意如果是三行及以上的的话就会出现问题了！！！两行是木有问题的啊。注意如果是三行及以上的的话就会出现问题了！！！</label></li>                                       
+                                        <li><input type="checkbox" checked="checked" /><label>选上的状态</label></li>
+                                        <li><input type="checkbox" disabled="disabled" /><label>不可用状态</label></li>
+                                        <li><input type="checkbox" checked="checked" disabled="disabled" /><label>选上不可用状态</label></li>
+                                        <li class="te-warn"><input type="checkbox" /><label>警告的状态</label></li>
+                                    </ul>
+                                    <p class="intro">注意html代码都请按照html规范写到input标签里面，JS会自动进行对应的样式处理</p>
+                                </div>
+                                <div class="item">
+                                	<label class="title">单行单个下拉菜单<sup>*</sup></label>
+                                    <div class="fo-dropdown ym-clearfix">
+                                        <select>
+                                            <option>下拉选项一</option>
+                                            <option selected="selected">下拉选项二</option>
+                                            <option>下拉选项三</option>
+                                            <option>下拉选项四</option>
+                                            <option>下拉选项五</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                	<label class="title">单行多个下拉菜单<sup>*</sup></label>
+                                    <div class="fo-dropdown fo-dropdown-aline ym-clearfix">
+                                        <select>
+                                            <option>下拉选项一</option>
+                                            <option selected="selected">下拉选项二</option>
+                                            <option>下拉选项三</option>
+                                            <option>下拉选项四</option>
+                                            <option>下拉选项五</option>
+                                        </select>
+                                        <label>中间的文字</label>                               
+                                        <select>
+                                            <option>下拉选项一</option>
+                                            <option selected="selected">下拉选项二</option>
+                                            <option>下拉选项三</option>
+                                            <option>下拉选项四</option>
+                                            <option>下拉选项五</option>
+                                        </select>
+                                    </div>
+                                </div>                           
+                                <p class="fo-textline">独立的单行说明文字在这里</p>                                
+                                <button class="fo-btn">绿色默认按钮</button>
+                                <button class="fo-btn-blue">蓝色备用按钮</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ym-g38 ym-gr">
+                        <div class="ym-gbox">
+                            gjgj
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <ul class="ym-clearfix">
+                    <li class="nostyle"><a href="#">关于我们</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">使用帮助</a></li>
+                    <li><a href="#">反馈意见</a></li>
+                </ul>
+                <p>找题目网站希望发动所有的老师来共同建设最高质量的中文题库，为我们教育事业的发展做出贡献</p>
+                <p>本站的全部文字在<a href="#">知识共享 署名-相同方式共享3.0协议</a>之条款下提供，附加条款亦可使用（请参阅<a href="#">使用条款</a>）</p>
+                <p>© 2012 找题目网站保留所有权利 <a href="#">京ICP备11008556号</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<?php
+$param = array('title'=>'答案窝-题目检索');
+include_once ADMIN_ROOT_PATH . 'application/layout/adminhtmlheader.inc';  
+?>
+
+<body>
+<div id="nav"><?php include_once 'nav.inc'; ?></div>
+<div id="main">
+    <h1><a href="#">题目管理</a> > 题目检索</h1>
+    <hr />
+    <div>
+	<form method="get">
+	<?php
+		if(!isset($this->questions)) {
+	?>
+		<div>
+        	<label>关键词：</label><br>
+            <input type="text" class="inp" size=100 name="content" />
+        </div>
+        <div>
+        	<label>创建时间(YYYY-MM-DD HH:MM:SS)：</label><br>
+            <input type="text" class="inp" size=100 name="createTime" />
+        </div>
+        <div>
+        	<label>最后修改时间(YYYY-MM-DD HH:MM:SS)：</label><br>
+            <input type="text" class="inp" size=100 name="lastmodifyTime" />
+        </div>
+        <div>
+        	<label>来源：</label><br>
+            <input type="text" class="inp" size=100 name="source" />
+        </div>
+        <div>
+        	<label>题目类型：</label><br>
+        	<select name="type" id="type">
+               	<option value="1">单选题</option>
+                <option value="2">扩展单词全称</option>
+                <option value="3">缩短单词简称</option>
+               	<option value="4">缩短意思简称</option>
+                <option value="5">表述最恰当</option>
+                <option value="6">意思相似表述</option>
+                <option value="7">阅读题</option>
+                <option value="8">听力题</option>
+            </select>
+        </div>
+        <div>
+        	<label>题目级别：</label><br>
+        	<select name="level" id="level">
+               	<option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+               	<option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+        	<label>题目知识点：</label><br>
+        	<select name="category" id="category">
+               	<option value="1">文法</option>
+                <option value="2">文字</option>
+                <option value="3">读解</option>
+               	<option value="4">原文</option>
+                <option value="5">作文</option>
+                <option value="6">听力</option>
+            </select>
+        </div>
+        <div>
+        	<label>题目难度：</label><br>
+        	<select name="difficulty" id="category">
+               	<option value="1">很难</option>
+                <option value="2">难</option>
+                <option value="3">普通</option>
+               	<option value="4">简单</option>
+                <option value="5">很简单</option>
+            </select>
+        </div>
+        <div style="margin:10px; padding:10px;">
+        <input type="submit" value="查询"/>
+        </div>
+        <?php
+			}
+        	else {
+        ?>
+    <div class="table">
+		<table>
+    		<thead>
+    		<th>创建时间</th>
+    		<th>最后修改时间</th>
+    		<th>题目类型</th>
+    		<th>题目级别</th>
+    		<th>题目内容</th>
+    		<th>题目来源</th>
+    		<th>题目知识点</th>
+    		<th>题目答案</th>
+    		<th>题目难度</th>
+    		</thead>
+    		<?php
+					$arr = Zend_Json::decode($this->questions);
+					if(!empty($arr)) {
+						foreach($arr as $val) { 
+    		?>
+    		<tr>
+    		<td><?php echo $val["createTime"];?></td>
+    		<td><?php echo $val["lastmodifyTime"];?></td>
+    		<td><?php echo $val["type"];?></td>
+    		<td><?php echo $val["level"];?></td>
+    		<td><?php echo $val["content"];?></td>
+    		<td><?php echo $val["source"];?></td>
+    		<td><?php echo $val["category"];?></td>
+    		<td><?php echo $val["answer"];?></td>
+    		<td><?php echo $val["difficulty"];?></td>
+    		</tr>
+    		<?php
+    					}
+					}
+    		?>
+    	</table>
+    </div>
+    <?php
+    	} 
+    ?>
+    </form>
+    </div>
+</div>
+</body>
+</html>

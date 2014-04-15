@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>找题目</title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- mobile viewport optimisation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../css/zhaotimu.css" type="text/css"/>
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="../css/ym-iehacks.min.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../js/google.html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/zhaotimu.plugins.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.js"></script>
+</head>
+<body>
+
+    <nav id="dark">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li class="current">初中数学</li>
+                  <li><a href="#">初中语文</a></li>
+                  <li><a href="#">初中英语</a></li>
+                  <li><a href="#">初中物理</a></li>
+                  <li>
+                    <a class="dropdown" href="#">初中/中考▾</a>
+                    <ul>
+                      <li><a href="#">初中数学</a></li>
+                      <li><a href="#">初中语文</a></li>
+                      <li><a href="#">初中英语</a></li>
+                      <li><a href="#">初中物理</a></li>
+                      <li><a href="#">初中化学</a></li>
+                      <li><a href="#">初中历史</a></li>
+                      <li><a href="#">初中地理</a></li>
+                      <li><a href="#">初中政治</a></li>
+                      <li><a href="#">初中生物</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="userinfo">
+                    <a href="#">登录</a>
+                    <a href="#" class="important">新用户注册</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="#"><img src="../images/logo.gif" width="313" height="35" alt="找题目" /></a></div>
+                <a href="#" class="add">新增</a>
+                <form class="ym-clearfix">
+                    <input type="search" placeholder="输入关键字搜索" class="inpmain" />
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <h1 class="double">相似题目</h1>
+                <div class="fliter">
+                    <p>共找到题目“<a href="#">为了了解石家庄市八年级男生的身高准备准备有关部门准备</a>”的相似题目23545道，涉及到3个知识点：</p>
+                    <ul class="search-tabs ym-clearfix">
+                    	<li class="subject"><strong>初中数学</strong></li>
+                        <li class="current">全部知识点</li>
+                        <li><a href="#">实数>一元二次方程(30)</a></li>
+                        <li><a href="#">实数>一元二次方程(456)</a></li>
+                        <li><a href="#">实数>一元二次方程(345)</a></li>
+                    </ul>
+                </div>          	
+            </div>
+        </div>
+    </div>
+    
+    <div id="main" class="list">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g62 ym-gl">
+                        <div class="ym-gbox"><!--为了不影响CSS框架结构，这里需要在html上直接写一个css style，555-->
+                            <div class="list-info">符合条件的题目总共有374853道</div>
+                            <div class="list-item ym-clearfix">
+                            	<div class="float"><i></i></div>                                
+                                <div class="float-clear"></div><!--尼玛IE6和IE7逼着我多写一个空标签-->
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div> 
+                                <div class="more"></div>
+                            </div>
+                            <div class="list-item ym-clearfix">
+                            	<div class="float"><i></i></div>
+                                <div class="float-clear"></div>                                
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="list-item ym-clearfix">                            
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="list-item ym-clearfix">                            
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="list-item ym-clearfix">                            
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="list-item ym-clearfix">                            
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="list-item ym-clearfix">                            
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="list-item ym-clearfix">                            
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="list-item ym-clearfix">                            
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="list-item ym-clearfix">                            
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="list-item ym-clearfix">                            
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="list-item ym-clearfix">                            
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="list-item ym-clearfix">                            
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="list-item ym-clearfix">                            
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="list-item ym-clearfix">                            
+                                <div class="content">
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="list-item ym-clearfix">                            
+                                <div class="content">
+
+                                	<p><a href="#">为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是：A.查阅外地200名八年级男生身高的统计资料；B.测量该市一所中学200名八年级男生的身高；C.测量该市两所农村中学各...</a></p>
+                                    <span>2011年，河北，中考真题，难，1解答，3评论，345人收藏</span>
+                                    <button>添加收藏</button>
+                                </div>
+                            </div>
+                            <div class="page ym-clearfix">
+                            	<a href="#">1</a>
+                                <b>2</b>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">7</a>
+                                <a href="#">8</a>
+                                <b>...</b>
+                                <a href="#">12</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ym-g38 ym-gr">
+                        <div class="ym-gbox">
+                        	<div id="ListFollow">
+                                <div class="list-action ym-clearfix">
+                                    <a href="#"><span>添加收藏</span></a>
+                                    <a href="#"><span>查看详情</span></a>
+                                    <a class="nobg" href="#"><span>相似题目</span></a>
+                                </div>
+                                <div class="list-tag ym-clearfix">                                    
+                                    <div class="tag"><p><span class="gary">题目标签：</span>2011年，河北，中考真题<br /><span class="gary">涉及知识：</span>一元二次方程，三角形， 一元二次方程，三角形， 一元二次方程</p></div>
+                                    <div class="rate">4.5/5</div>
+                                </div>
+                                <div class="list-question">
+                                	<p>为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生的身高做调查，以下方案中比较合理的是________<br />A.查阅外地200名八年级男生的身高统计资料<br />B.测量该市一所中学200名八年级男生的身高<br />C.测量该市两所农村中学各100名八年级男生的身高<br />D.在该市市区内任选一所中学，农村选三所中学，每所中学用抽签方法分别选出50名八年级男生，然后测量他们的身高</p>
+                                	<strong class="answer">答案：A</strong>
+                                    <strong>题目解析</strong>
+                                    <p>先求从P射入时候的速度V1和角度，V1用能量守恒，初动能+电场力做功=末动能凭此算出速度V0，角度用V0比V1就是Sinθ，就可以算出角度了，然后用学过的知识找出粒子在磁场中运动的轨迹(圆弧形的)和圆心，左手定则判断出安培力是斜向上的，由此得解。先求从P射入时候的速度V1和角度，V1用能量守恒吧 感觉这样要简单些。初动能+电场力做功=末动能 凭此算出速度V0，角度用V0比V1就是Sinθ，就可以算出角度了，然后用学过的知识找出粒子在磁场中运动的轨迹(圆弧形的)和圆心，左手定则判断出安培力是斜向上的，由此得解。</p>
+                                	<strong>题目讨论</strong>
+                                    <p>这道题目很合适上课给学生好好讲解一下，它涉及到几个核心的知识点。</p>
+                                    <p>这题太难了吧，谁出的啊，完全不会做。</p>
+                                    <p>这道题目很合适上课给学生好好讲解一下，它涉及到几个核心的知识点。</p>
+                                    <p>这题太难了吧，谁出的啊，完全不会做。</p>
+                                    <p>这道题目很合适上课给学生好好讲解一下，它涉及到几个核心的知识点。</p>
+                                    <p>这题太难了吧，谁出的啊，完全不会做。</p>
+                                </div>                                
+                                <div class="list-detail"><a href="#"><span>查看题目详情</span></a></div>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <ul class="ym-clearfix">
+                    <li class="nostyle"><a href="#">关于我们</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">使用帮助</a></li>
+                    <li><a href="#">反馈意见</a></li>
+                </ul>
+                <p>找题目网站希望发动所有的老师来共同建设最高质量的中文题库，为我们教育事业的发展做出贡献</p>
+                <p>本站的全部文字在<a href="#">知识共享 署名-相同方式共享3.0协议</a>之条款下提供，附加条款亦可使用（请参阅<a href="#">使用条款</a>）</p>
+                <p>© 2012 找题目网站保留所有权利 <a href="#">京ICP备11008556号</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

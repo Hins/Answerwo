@@ -1,0 +1,151 @@
+/* ========================================================================
+	master.css
+	整体核心样式定义和模板样式定义
+
+	本文件为整体模板的核心文件，定义了内容在显示器下的基本宽度、留白空间等重要信息
+	本文件还定义了所有的master母版通用部分的样式
+	如果未经授权，请勿轻易改动本文件内任何一行代码！
+	如果经过授权改动，请务必极为慎重并经过严格测试！
+=========================================================================== */
+
+@media all {
+
+	/* 使用 YUI Reste 清除浏览器的所有预设样式 =======================================================================================*/
+	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+	table {border-collapse:collapse;border-spacing: 0;}
+	fieldset,img {border:0;}
+	address,caption,cite,code,dfn,em,strong,th,var,optgroup {font-style:inherit;font-weight:inherit;}
+	del,ins { text-decoration: none;}
+	li {list-style:none;}
+	caption,th {text-align:left;}
+	h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight: normal;}
+	q:before,q:after {content:'';}
+	abbr,acronym {border:0;font-variant:normal;}
+	sup{vertical-align:baseline;}
+	sub{vertical-align:baseline;}
+	/*because legend doesn't inherit in IE */
+	legend {color: #000;}
+	input,button,textarea,select,optgroup,option {font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+	/*@purpose To enable resizing for IE */
+	/*@branch For IE6-Win, IE7-Win */
+	input,button,textarea,select{*font-size: 100%;}
+
+	/* 【极为核心部分】定义了页面宽度等基本模式 =======================================================================================*/
+	/* 强制实现纵向滚动条，并设定背景色 */
+	body { overflow-y: scroll; background-color:#e4e4e4; line-height:22px;}
+	/* 设置整个屏幕的最大宽度为1330px */
+	.ym-wrapper { max-width: 95em; margin: 0 auto;}
+	/* 设置在缩放模式下两边留白的宽度为42px */
+	.ym-wbox { padding: 0 3em; }
+	/* 设置整个内容区块最小的宽度为935px */
+	body > header, body > nav, body > #main, body > #crumb, body > footer {	min-width: 67em; }
+	
+	/* 【导航1 - 深黑色窄条】 =======================================================================================*/	
+	nav#dark{ background: #252525; color:#fff;}
+	nav#dark a{ display:block; line-height:30px; padding:0 5px;}
+	nav#dark a:link, nav#dark a:visited, nav#dark a:hover{ font-size:13px; color:#ddd; text-decoration:none;}
+	nav#dark a:hover{ background-color:#444; color:#fff;}
+	nav#dark a.important:link, nav#dark a.important:visited, nav#dark a.important:hover{ color:#a6d8ff;}
+
+	/*导航的多级菜单设置*/	
+	/*基本的样式设置*/
+	nav#dark ul li{ display:block; float:left; margin-right:5px;}
+	nav#dark ul li.current{ background-color:#40608c; line-height:30px; padding:0 10px;}
+	/*带下滑的item的样式设置*/
+	nav#dark ul a.dropdown{border:1px solid #252525; border-bottom:0; border-top:0; padding-left:10px; cursor:text;}
+	nav#dark ul li:hover a.dropdown, nav#dark ul li.iehover a.dropdown{ background-color:#fff; color:#222; }	
+	/*下滑出来的二级菜单样式*/
+	nav#dark ul li ul{ display:none;  background-color:#fff; position:absolute; border:1px solid #252525; border-top:0; -webkit-box-shadow:0 2px 0 #b6b6b6;-moz-box-shadow:0 2px 0 #b6b6b6; z-index:9; _left:0; _width:75px; _margin-top:-2px; }
+	nav#dark ul li:hover ul, nav#dark ul li.iehover ul{ display:block;}
+	nav#dark ul li ul li{ float:none; margin:0;}
+	nav#dark ul li ul li a{ padding:0 10px; height:30px; line-height:30px;}
+	nav#dark ul li ul li a:link, nav#dark ul li ul li a:visited{ color:#4d7dbf;}
+	nav#dark ul li ul li a:hover{ background-color:#4d7dbf; color:#fff; border:0;}
+	
+	/*导航的用户信息设置*/	
+	nav#dark .userinfo{ float:right; line-height:30px;}
+	nav#dark .userinfo a{ float:left; margin-left:10px;}
+	nav#dark .userinfo span{ display:block; float:left; font-size:12px;}
+
+	
+	/*【导航2 -蓝色的粗条】应用于个人中心 =======================================================================================*/
+	nav#blue .ym-grid{ background-color:#40618c; border:1px solid #40618c; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px;}
+	nav#blue .ym-gl{ background-color:#366cb3;border-right:1px solid #888;}
+	nav#blue a.subject-current{ display:block; font-size:16px; color:#fff; padding:1em;}
+	nav#blue ul.subject{ display:none;}
+	nav#blue ul a{ display:block; font-size:16px; color:#fff; line-height:3em;}
+	nav#blue ul ul{ display:none;}
+	nav#blue ul.maviga{ float:left;}
+	nav#blue ul.naviga li{ float:left; margin-right:1em;}
+	nav#blue .action{ float:right; padding-right:1em;}
+	nav#blue .action a{ display:block; line-height:3em; color:#fff; font-size:16px;}
+	
+	/*【头部1 -深蓝色的粗条】 =======================================================================================*/
+	header#blue{ background-color:#40608c;}
+	header#blue .ym-wbox{ padding-top:1.8em; padding-bottom:1.8em;}
+	header#blue .logo{ float:left;}
+	header#blue form{ float:right; background-color:#fff; padding:0; margin:0; height:35px; overflow:hidden;}
+	header#blue form input{ float:left;}
+	header#blue form .inpmain{ background:#fff; border:0; padding:.6em .8em; line-height:1.4em; width:18em;}
+	/*header#blue form .inpsearch{ background-color:#79adf4; border:1px solid #79adf4; border-top:1px solid #a1c6f7; padding:.5em .8em; width:5.7em; line-height:1.5em; text-indent:-10000px; cursor:pointer;}*/
+	header#blue form .inpsearch{ background-color:#79adf4; border:1px solid #79adf4; border-top:1px solid #a1c6f7; padding:.5em .8em; width:5.7em; height:2.5em; line-height:1.5em; cursor:pointer;}
+	header#blue a.add, header#blue a.login{ display:block; color:#fff; float:right; background-color:#95bf69; border:0; border-top:1px solid #aacc87; margin-left:0.7em;  height:34px; line-height:34px; padding:0 1em;}
+	header#blue a.add{text-indent:-10000px; width:3.7em;}
+	header#blue div.intro{ float:right; color:#fff; line-height:34px;}
+	
+	/*【头部2 -灰色的粗条】 =======================================================================================*/
+	header#gary{ background-color:#e4e4e4;}
+	header#gary .ym-wbox{ padding-top:1.5em; padding-bottom:1.5em;}
+	header#gary .logo{ float:left;}
+	header#gary .links{ float:right;}
+	header#gary .links a{ display:block; float:left; padding:0 .8em; border-right:1px solid #ccc;}
+	header#gary .links a.last{ padding-right:0; border-right:0;}
+	
+	/*【面包屑】主引导区域，每个页面的h1标签都在这里 =======================================================================================*/
+	#crumb{ background-color:#fff; line-height:24px;}
+	#crumb .ym-wbox{ padding-top:1.5em; padding-bottom:1.5em;}/*重定义上下的留白空间*/
+	#crumb .ym-wbox-new{ padding-top:1.5em; padding-bottom:2em;}
+	#crumb .ym-gbox{ padding:0;}/*消除base里面的定义*/
+	#crumb .fliter{ line-height:24px;}
+	#crumb .more{ text-align:right; line-height:20px;}
+	
+	#crumb h1{  float:left; margin:0; padding:0; margin-right:1.7em;}
+	#crumb h1.new{  float:left; margin:0; padding:0; margin-right:1.7em; margin-left:1.7em; height:2em;}
+	#crumb h1.double{ }
+	
+	/*【底部信息】整站统一一个底部信息 =======================================================================================*/
+	footer{ background-color:#252525; color:#666;}
+	footer .ym-wbox{ padding-bottom:5em; padding-top:1.5em; background:url(../images/logo_white.gif) right 1.5em no-repeat;}
+	footer ul{ padding-bottom:1em;}
+	footer li{ float:left; margin-right:1.5em; list-style:circle;}
+	footer li.nostyle{ list-style:none;}
+	footer li a, footer li a:link,footer li a:visited, footer li a:hover{ color:#4d7dbf; font-size:16px;}
+	footer p{ line-height:1.4em;}
+	footer p a, footer p a:link, footer p a:visited, footer p a:hover{ color:#ccc;}
+	
+	/*【主内容】中间的主内容区域设置============================================================================================*/
+	#main{ background:url(../images/bg.gif) center top no-repeat;}
+	#main .ym-wbox{ padding-top:2em; padding-bottom:2em;}
+	#main .ym-grid{ background-color:#fff; border:1px solid #c2c2c2; *margin-left:-2px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}/*尼玛IE67在有了border后会多两像素出横向滚动条*/
+	#main .ym-gbox{ padding:30px;} /*主内容区域默认留白为30像素*/
+	#main .ym-gl{ border-right:1px solid #ccc;}
+	/*个人中心的第二种模板设置*/
+	#main .template2{ padding-top:0;}
+	#main .template2 .ym-grid{ border-top:0; -webkit-border-top-left-radius: 0; -webkit-border-top-right-radius: 0; -moz-border-radius-topleft: 0; -moz-border-radius-topright: 0; border-top-left-radius: 0; border-top-right-radius: 0;}
+	
+	
+	/*【框架】用于补充YMAL布局框架或者解除某些框架限制 =======================================================================================*/
+	/*增添两个grid的布局控制*/
+	.ym-g15{ width:15%;}
+	.ym-g35{ width:35%;}
+	.ym-g40{ width:40%;}
+	.ym-g85{ width:85%;}
+	/*变更gbox的padding限制*/
+	.ym-pad-h20{ padding-right:20px !important; padding-left:20px !important;} /*水平方向变为20px的限制*/
+	.ym-pad-v0{ padding-top:0 !important; padding-bottom:0 !important;}
+	/*清除grid的border限制*/
+	.ym-noborder{ border:0 !important;}
+	
+	
+}
+

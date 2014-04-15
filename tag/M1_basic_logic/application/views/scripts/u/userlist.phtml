@@ -1,0 +1,48 @@
+<?php
+$param = array('title'=>'答案窝-用户一览');
+include_once ADMIN_ROOT_PATH . 'application/layout/adminhtmlheader.inc';  
+?>
+
+<body>
+<div id="nav"><?php include_once 'nav.inc'; ?></div>
+<div id="main">
+    <h1><a href="#">用户信息管理</a> > 用户一览</h1>
+    <hr />
+    <div>
+	<form method="get">
+	<div class="table">
+	<table>
+    		<thead>
+    		<th>用户id</th>
+    		<th>用户昵称</th>
+    		<th>用户邮箱</th>
+    		<th>用户类型</th>
+    		</thead>
+    		<?php
+    			if(isset($this->users)) {
+					$arr = Zend_Json::decode($this->users);
+					if(!empty($arr)) {
+						foreach($arr as $val) { 
+    		?>
+    		<tr>
+    		<td><?php echo $val["id"];?></td>
+    		<td><?php echo $val["name"];?></td>
+    		<td><?php echo $val["email"];?></td>
+    		<td><?php echo ($val["role"] == 1 ? "普通用户" : "管理员");?></td>
+    		</tr>
+    		<?php
+    					}
+    				}
+    			} 
+    		?>
+    	</table>
+	</div>
+	<div>
+    	<?php echo $this->pagination;?>
+    	<input type="text" name="page" value="" size=2 /><input type="submit" value="跳转"> 共<?php echo $this->pagenumber;?>页
+    </div>
+    </form>
+    </div>
+</div>
+</body>
+</html>

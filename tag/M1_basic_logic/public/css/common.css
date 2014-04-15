@@ -1,0 +1,28 @@
+.blank1{ height:1em;}
+
+/*翻页的控件样式*/
+.page a, .page b{ display:block; float:left; margin-right:.8em; padding:.8em 1em; line-height:1em;}
+.page a{ border:1px solid #d0d0d0;}
+.page a:hover{ background-color:#f1f1f1; color:#4d7dbf;}
+
+/*评论列表项*/
+ul.comment{ padding-bottom:1em;}
+ul.comment li span{ color:#888; font-size:90%; display:block;}
+ul.comment li{ padding-bottom:.8em;}
+ul.comment li p{ line-height:24px;}
+ul.comment li p a{ display:none; font-size:12px; background-color:#eee; padding:0 10px; color:#888; border:1px solid #fff; line-height:20px;}
+ul.comment li:hover p a{ display:inline-block;}
+ul.comment li p a:hover{ background-color:#effafc; border-color:#94aecf; color:#40608c;}
+/*标签部分*/
+ul.tag-content li{ display:block; float:left; border:1px solid #fff; width:auto;}
+ul.tag-content li:hover, ul.tag-content li.iehover{ border-color:#95adcf;}
+ul.tag-content li:hover a.delete, ul.tag-content li.iehover a.delete{opacity:1;filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);}
+
+ul.tag-content li a{ display:block; float:left; height:20px;  padding:0 5px; white-space:nowrap; word-break:keep-all; *overflow:visible;_overflow:hidden;}
+ul.tag-content li a:hover{ background-color:#f0fafc;}
+ul.tag-content li a.delete{ width:10px; height:20px; background:url(../images/icon.gif) 5px -1114px no-repeat; border-left:1px solid #95adcf; cursor:pointer; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);}
+ul.tag-content li a.delete:hover{ background-color:#4d7dbf; background-position:5px -1154px;}
+
+form.tag-add{ padding-top:5px;}
+form.tag-add input{ border:1px solid #c2c2c2; border-right:0; height:20px; padding:0 5px; display:block; float:left; width:54%;}
+form.tag-add a{ background-color:#97bf69; display:block; float:left; width:70px; padding:0 10px; color:#fff; cursor:pointer;}

@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+<?php
+$include_param = array(
+'title'=>'答案窝-题库',
+'keyword'=>'答案窝 日语 题库',
+'description'=>'答案窝 日语 题库',
+);
+include_once ROOT_PATH . 'application/layout/htmlhead.inc'; 
+?>
+<body>
+	<div id="exposeMask" style="position: absolute; top: 0px; left: 0px; width: 1903px; height: 1611px; display: none; opacity: 0.8; z-index: 9998; background-color: rgb(0, 0, 0);"></div>
+    <nav id="dark">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li><a href="http://www.answerwo.com/q/search">搜索</a></li>
+                  <li class="current">题库</a></li>
+                  <li><a href="http://www.answerwo.com/q/practice">自由做题</a></li>                
+                </ul>
+                <?php include_once ROOT_PATH . 'application/layout/user.inc'; ?> 
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="http://www.answerwo.com"><img src="http://www.answerwo.com/public/images/logo.gif" width="313" height="35" alt="答案窝" /></a></div>
+                <form class="ym-clearfix" method="get" action="http://www.answerwo.com/q/search">
+                    <input name="query" type="search" placeholder="输入关键字搜索" class="inpmain" />
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox list-crumb" style="padding-bottom:6px;">
+                <div class="ym-grid">
+                <form method="get" name="form" id="form">
+				    <input type="hidden" name="questionid" value="" />
+				    <input type="hidden" name="source" value="<?php echo isset($this->source) ? $this->source : '';?>" />
+				    <input type="hidden" name="type" value="<?php echo isset($this->type) ? $this->type : '';?>" />
+				    <input type="hidden" name="difficulty" value="<?php echo isset($this->difficulty) ? $this->difficulty : '';?>" />
+				    <input type="hidden" name="level" value="<?php echo isset($this->level) ? $this->level : '';?>" />
+                    <div class="ym-gbox ym-clearfix">
+                        <div class="fliter">
+                            <div class="fliter-item fliter-input ym-clearfix">
+                                <b class="fliter-title">年份:</b>
+                                <?php if((isset($this->source) && $this->source == "0") || !isset($this->source)) {?>
+                                <span style="line-height: 30px; margin-left:10px;">不限</span>
+                                <?php } else {?>
+                                <span style="line-height: 30px; margin-left:10px;"><a href="javascript:SetSource(0)">不限</a></span>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->source) && $this->source == "2001") {?>
+                                <span>2001</span>
+                                <?php } else {?>
+                                <a href="javascript:SetSource(2001)">2001</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->source) && $this->source == "2002") {?>
+                                <span>2002</span>
+                                <?php } else {?>
+                                <a href="javascript:SetSource(2002)">2002</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->source) && $this->source == "2003") {?>
+                                <span>2003</span>
+                                <?php } else {?>
+                                <a href="javascript:SetSource(2003)">2003</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->source) && $this->source == "2004") {?>
+                                <span>2004</span>
+                                <?php } else {?>
+                                <a href="javascript:SetSource(2004)">2004</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->source) && $this->source == "2005") {?>
+                                <span>2005</span>
+                                <?php } else {?>
+                                <a href="javascript:SetSource(2005)">2005</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->source) && $this->source == "2006") {?>
+                                <span>2006</span>
+                                <?php } else {?>
+                                <a href="javascript:SetSource(2006)">2006</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->source) && $this->source == "2007") {?>
+                                <span>2007</span>
+                                <?php } else {?>
+                                <a href="javascript:SetSource(2007)">2007</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->source) && $this->source == "2008") {?>
+                                <span>2008</span>
+                                <?php } else {?>
+                                <a href="javascript:SetSource(2008)">2008</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->source) && $this->source == "2009") {?>
+                                <span>2009</span>
+                                <?php } else {?>
+                                <a href="javascript:SetSource(2009)">2009</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->source) && $this->source == "2010") {?>
+                                <span>2010</span>
+                                <?php } else {?>
+                                <a href="javascript:SetSource(2010)">2010</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->source) && $this->source == "2011") {?>
+                                <span>2011</span>
+                                <?php } else {?>
+                                <a href="javascript:SetSource(2011)">2011</a>
+                                <?php 	}?>
+                                
+                            </div>
+                            <div class="fliter-item fliter-input ym-clearfix">
+                                <b class="fliter-title">题型:</b>
+                                <?php if((isset($this->type) && $this->type == "0") || !isset($this->type)) {?>
+                                <span style="line-height: 30px; margin-left:10px;">不限</span>
+                                <?php } else {?>
+                                <span style="line-height: 30px; margin-left:10px;"><a href="javascript:SetType(0)">不限</a></span>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->type) && $this->type == "词汇") {?>
+                                <span>词汇</span>
+                                <?php } else {?>
+                                <a href="javascript:SetType('词汇')">词汇</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->type) && $this->type == "文法") {?>
+                                <span>文法</span>
+                                <?php } else {?>
+                                <a href="javascript:SetType('文法')">文法</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->type) && $this->type == "阅读") {?>
+                                <span>阅读</span>
+                                <?php } else {?>
+                                <a href="javascript:SetType('阅读')">阅读</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->type) && $this->type == "原文") {?>
+                                <span>原文</span>
+                                <?php } else {?>
+                                <a href="javascript:SetType('原文')">原文</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->type) && $this->type == "作文") {?>
+                                <span>作文</span>
+                                <?php } else {?>
+                                <a href="javascript:SetType('作文')">作文</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->type) && $this->type == "听力") {?>
+                                <span>听力</span>
+                                <?php } else {?>
+                                <a href="javascript:SetType('听力')">听力</a>
+                                <?php 	}?>
+                            </div>
+                            <div class="fliter-item fliter-input ym-clearfix">
+                                <b class="fliter-title">难度:</b>
+                                <?php if((isset($this->difficulty) && $this->difficulty == "0") || !isset($this->difficulty)) {?>
+                                <span style="line-height: 30px; margin-left:10px;">不限</span>
+                                <?php } else {?>
+                                <span style="line-height: 30px; margin-left:10px;"><a href="javascript:SetDifficulty(0);">不限</a></span>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->difficulty) && $this->difficulty == "很难") {?>
+                                <span>很难</span>
+                                <?php } else {?>
+                                <a href="javascript:SetDifficulty('很难')">很难</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->difficulty) && $this->difficulty == "难") {?>
+                                <span>难</span>
+                                <?php } else {?>
+                                <a href="javascript:SetDifficulty('难')">难</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->difficulty) && $this->difficulty == "普通") {?>
+                                <span>普通</span>
+                                <?php } else {?>
+                                <a href="javascript:SetDifficulty('普通')">普通</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->difficulty) && $this->difficulty == "简单") {?>
+                                <span>简单</span>
+                                <?php } else {?>
+                                <a href="javascript:SetDifficulty('简单')">简单</a>
+                                <?php 	}?>
+                            </div>
+                            <div class="fliter-item fliter-input ym-clearfix">
+                                <b class="fliter-title">级别:</b>
+                                <?php if((isset($this->level) && $this->level == "0") || !isset($this->level)) {?>
+                                <span style="line-height: 30px; margin-left:10px;">不限</span>
+                                <?php } else {?>
+                               <span style="line-height: 30px; margin-left:10px;"><a href="javascript:SetLevel(0)">不限</a></span>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->level) && $this->level == "1") {?>
+                                <span>N1</span>
+                                <?php } else {?>
+                                <a href="javascript:SetLevel(1)">N1</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->level) && $this->level == "2") {?>
+                                <span>N2</span>
+                                <?php } else {?>
+                                <a href="javascript:SetLevel(2)">N2</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->level) && $this->level == "3") {?>
+                                <span>N3</span>
+                                <?php } else {?>
+                                <a href="javascript:SetLevel(3)">N3</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->level) && $this->level == "4") {?>
+                                <span>N4</span>
+                                <?php } else {?>
+                                <a href="javascript:SetLevel(4)">N4</a>
+                                <?php 	}?>
+                                
+                                <?php if(isset($this->level) && $this->level == "5") {?>
+                                <span>N5</span>
+                                <?php } else {?>
+                                <a href="javascript:SetLevel(5)">N5</a>
+                                <?php 	}?>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </div>           	
+            </div>
+        </div>
+    </div>
+    
+    <div id="main" class="list">
+    	<div class="ym-wrapper" id="LIST">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g62 ym-gl">
+                        <div class="ym-gbox">
+                            <div class="list-info">符合条件的题目总共有<?php echo isset($this->total) ? $this->total : "0";?>道</div>
+                          	<div id="ListItems" class="list-items">
+                          		<?php
+                          			if(isset($this->questions)) {
+										$arr = Zend_Json::decode($this->questions);
+										if(!empty($arr)) { 
+											foreach($arr as $val) {
+                          		?>
+                                <div class="list-item ym-clearfix ListItem">
+                                    <div class="float"><i></i></div>                                
+                                    <div class="float-clear"></div>
+                                    <div class="content">
+                                        <p><a href="<?php echo $val["link"];?>" target="_blank">
+                                        <?php 
+                                		if(strlen($val["content"]) > 180) {
+											$i = 180;
+											for(; $i < strlen($val["content"]); $i++) {
+												if(ord($val["content"][$i]) < 100) {
+													break;
+												}
+											}
+											echo substr($val["content"],0,$i)."..."; 
+										}
+										else {
+											echo $val["content"];
+										}
+                                	?>
+                                        </a></p>
+                                        <span><?php if($val["year"] != "0") {echo $val["year"]."考题";} else {echo "练习题";}?>，难度<?php echo $val["difficulty"];?>，<?php echo $val["explaincount"]?>解答，<?php echo $val["discusscount"]?>评论，<?php echo $val["favoritecount"];?>人收藏</span>
+                                        <button onclick="ListAddFavorite(<?php echo $val["id"];?>);">★ 添加收藏</button>
+                                    </div>
+                                </div>
+                                <?php
+                                			}
+                                		}
+                                	} 
+                                ?>
+                                <div class="page ym-clearfix">
+                            	<?php echo $this->pagination;?>
+                            	<?php 
+                            		if($this->curpage+10 < $this->totalpage && $this->curpage != $this->totalpage) {
+                            	?>
+                                <b>...</b>
+                            	<?php
+								} 
+                            	?>
+                            	<?php if(isset($this->lastpaflag)) echo $this->lastpagination;?>
+                            	</div>
+                            </div>
+                            <div class="sh-page ym-clearfix" id="ListPager" page-total="45"></div>
+                        </div>
+                    </div>
+                  	<div class="ym-g63 ym-gl">
+                  	<div class="ym-gbox">
+                  	<div class="list-info" style="float:left;">最近做过题目</div><br><br>
+                  	<div id="ListItems" class="list-items">
+                          		<?php
+                          			if(isset($this->record)) {
+										$arr = Zend_Json::decode($this->record);
+										if(!empty($arr)) { 
+											foreach($arr as $val) {
+                          		?>
+                                <div class="list-item-new ym-clearfix ListItem">
+                                    <div class="content">
+                                        <p><a href="<?php echo $val["link"];?>" target="_blank">
+                                        <?php 
+                                		if(strlen($val["content"]) > 180) {
+											$i = 180;
+											for(; $i < strlen($val["content"]); $i++) {
+												if(ord($val["content"][$i]) < 100) {
+													break;
+												}
+											}
+											echo substr($val["content"],0,$i)."..."; 
+										}
+										else {
+											echo $val["content"];
+										}
+                                	?>
+                                        </a></p>
+                                    </div>
+                                </div>
+                                <?php
+                                			}
+                                		}
+                                	} 
+                                ?>
+                            </div>
+                  	</div>
+                  	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   <?php include_once ROOT_PATH . 'application/layout/footer.inc';?>
+   
+   <div id="PopupLogin" name="PopupLogin" class="overlay p-login clearfix" style="position: fixed; z-index: 9999; top: 79.5px; left: 400px; display: none;">
+    	<div class="ym-g39 ym-gl">
+        	<div class="ym-gbox">
+        		<sapn style="color: #5599DD; float: right;"><a href="javascript:cancel()">关闭</a></sapn>
+            	<h2 class="sub-title-new">用户登录<?php if(isset($this->logininformation)) {echo "  <span id=\"logininformation\" style=\"color: #FF0000;\">".$this->logininformation."</span>";}?></h2>
+					<form class="ztm-form" method="post">
+                    	<div class="item">
+                        	<label class="title">用户名/Email邮箱地址：</label>
+                            <input type="text" class="inp" name="username" minlength="2" maxlength="30" />
+                        </div>
+                        <div class="item">
+                        	<label class="title">登录密码：</label>
+                            <input type="password" class="inp" name="password" minlength="6" />
+                        </div>
+                        <div class="item">
+                        	<span><input type="checkbox" name="autologin" style="display:inline;" onclick="SetAutoLogin();" value="0"/><label style="margin-top:-1px; display:inline;"> 下次自动登录</label></span>
+                        </div>                                                             
+                        <button class="btn">马上登录</button>
+                    </form>
+            </div>
+    	</div>
+	</div>
+	
+	<div id="PopupRegister" name="PopupLogin" class="overlay p-register clearfix" style="position: fixed; z-index: 9999; top: 79.5px; left: 400px; display: none;">
+    	<div class="ym-g39 ym-gl">
+        	<div class="ym-gbox">
+        		<sapn style="color: #5599DD; float: right;"><a href="javascript:cancelRegister()">关闭</a></sapn>
+            	<h2 class="sub-title-new">用户登录 <?php if(isset($this->registerinformation)) {echo "  <span id=\"registerinformation\" style=\"color: #FF0000;\">".$this->registerinformation."</span>";}?></h2>
+					<form class="ztm-form" method="post">
+                    	<div class="item-new">
+                        	<label class="title">用户昵称<sup>*</sup></label>
+                            <input class="inp" type="text" name="nickname" />
+                           	<p class="intro" warn="nickname">允许英文字母、中文或阿拉伯数字，不支持任何符号，最多8中文或16英文</p>
+                        </div>
+                        <div class="item-new">
+                            <label class="title">登录密码<sup>*</sup></label>
+                            <input type="password" class="inp" name="password" />
+                            <p class="intro" warn="password">登录密码不得少于6个字符，为了您的账号安全，请尽可能地复杂</p>
+                        </div>
+                        <div class="item-new">
+                            <label class="title">再次确认密码<sup>*</sup></label>
+                            <input type="password" class="inp" name="repassword" />
+                            <p class="intro" warn="repassword">请重新输入一遍密码以确认</p>
+                        </div>
+                        <div class="item-new">
+                            <label class="title">邮箱地址<sup>*</sup></label>
+                            <input type="text" class="inp" name="email" />
+                        </div>
+                        <p class="textline">点击下方的“马上注册”按钮，即代表你接受了<a href="http://www.answerwo.com/s/announcement" target="_blank">《答案窝网站使用协议》</a></p>                                
+                       	<button type="submit" class="btn">马上注册</button>
+                    </form>
+            </div>
+    	</div>
+	</div>
+
+</body>
+<?php 
+	if(isset($this->logininformation)) {
+?>
+<script type="text/javascript">
+showlogin();
+</script>
+<?php
+	} if(isset($this->registerinformation)) {
+?>
+<script type="text/javascript">
+showregister();
+</script>
+<?php
+	} 
+?>
+</html>

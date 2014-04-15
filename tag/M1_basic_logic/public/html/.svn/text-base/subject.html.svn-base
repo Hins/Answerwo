@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>找题目</title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- mobile viewport optimisation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://test.answerwo.com/public/css/answerwo.css" type="text/css"/>
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="https://test.answerwo.com/public/css/ym-iehacks.min.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://test.answerwo.com/public/js/google.html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://test.answerwo.com/public/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://test.answerwo.com/public/js/zhaotimu.plugins.js"></script>
+	<script type="text/javascript" src="https://test.answerwo.com/public/js/zhaotimu.js"></script>
+</head>
+<body>
+
+    <nav id="dark">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li class="current">初中数学</li>
+                  <li><a href="#">初中语文</a></li>
+                  <li><a href="#">初中英语</a></li>
+                  <li><a href="#">初中物理</a></li>
+                  <li>
+                    <a class="dropdown" href="#">初中/中考▾</a>
+                    <ul>
+                      <li><a href="#">初中数学</a></li>
+                      <li><a href="#">初中语文</a></li>
+                      <li><a href="#">初中英语</a></li>
+                      <li><a href="#">初中物理</a></li>
+                      <li><a href="#">初中化学</a></li>
+                      <li><a href="#">初中历史</a></li>
+                      <li><a href="#">初中地理</a></li>
+                      <li><a href="#">初中政治</a></li>
+                      <li><a href="#">初中生物</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="userinfo">
+                    <a href="#">登录</a>
+                    <a href="#" class="important">新用户注册</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="#"><img src="../images/logo.gif" width="313" height="35" alt="找题目" /></a></div>
+                <a href="#" class="add">新增</a>
+                <form class="ym-clearfix">
+                    <input type="search" placeholder="输入关键字搜索" class="inpmain" />
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g85 ym-gl">
+                        <div class="ym-gbox">
+                            <h1>初中数学</h1>                       
+                        </div>
+                    </div>
+                    <div class="ym-g15 ym-gr">
+                        <div class="ym-gbox">
+                            <div class="more"><span class="gary">共2934954道题目</span></div>
+                        </div>
+                    </div>
+                </div>            	
+            </div>
+        </div>
+    </div>
+    
+    <div id="main">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid sub-line1">
+                    <div class="ym-g75 ym-gl">
+                    	<div class="ym-gbox ym-clearfix">
+                        	<h2 class="sub-title">按照数学知识点进行检索</h2>
+                            <ul class="sh-nlist sh-nlist-float ym-clearfix">
+                            	<!--a标签里面最多10个中文字，如果大于十个中文字，则显示9个中文字+"..."-->
+                                <!--注意a标签里面的title属性里面要完整地显示知识点名称，无论多少个字-->
+                                <li><a href="#" title="一元二次方程">一元二次方程三元二次</a><span>37408</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <!--输出的第三个li要含有class="nomargin"-->
+                                <li class="nomargin"><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li class="nomargin"><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li class="nomargin"><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li class="nomargin"><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li class="nomargin"><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li class="nomargin"><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li class="nomargin"><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li class="nomargin"><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li class="nomargin"><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li class="nomargin"><a href="#">一元二次方程</a><span>3748</span></li>
+                            </ul>
+                            <div class="sub-box">
+                            	<h2 class="sub-title">按照题目难度检索</h2>
+                                <ul class="sh-nlist">
+                                	<li><a href="#">拔高题目</a><span>3748</span></li>
+                                	<li><a href="#">文艺题目</a><span>3748</span></li>
+                                    <li><a href="#">简单题目</a><span>3748</span></li>
+                                    <li><a href="#">傻逼题目</a><span>3748</span></li>
+                                </ul>
+                            </div>
+                            <div class="sub-box">
+                            	<h2 class="sub-title">按照题目来源检索</h2>
+                                <ul class="sh-nlist">
+                                	<li><a href="#">拔高题目</a><span>3748</span></li>
+                                	<li><a href="#">文艺题目</a><span>3748</span></li>
+                                    <li><a href="#">简单题目</a><span>3748</span></li>
+                                    <li><a href="#">傻逼题目</a><span>3748</span></li>
+                                </ul>
+                            </div>
+                            <div class="sub-box sub-box-last">
+                            	<h2 class="sub-title">按照题目类型检索</h2>
+                                <ul class="sh-nlist">
+                                	<li><a href="#">拔高题目</a><span>3748</span></li>
+                                	<li><a href="#">文艺题目</a><span>3748</span></li>
+                                    <li><a href="#">简单题目</a><span>3748</span></li>
+                                    <li><a href="#">傻逼题目</a><span>3748</span></li>
+                                </ul>
+                            </div>             
+                        </div>
+                    </div>
+                    <div class="ym-g25 ym-gr">
+                        <div class="ym-gbox">
+                            <h2 class="sub-title">我的浏览记录</h2>
+                            <ul class="sh-nlist">
+                                <!--最多22个字符（一个中文字算两个字符），超出20个字符则输出20个字符加上...-->
+                                <li><a href="#">拔高题目-一元二次方程</a></li>
+                                <li><a href="#">文艺题目-测试一下的阿斯顿</a></li>
+                                <li><a href="#">简单题目</a></li>
+                                <li><a href="#">傻逼题目</a></li>
+                                <li><a href="#">拔高题目-一元二次方程</a></li>
+                                <li><a href="#">文艺题目-测试一下的阿斯顿</a></li>
+                                <li><a href="#">简单题目</a></li>
+                                <li><a href="#">傻逼题目</a></li>
+                                <li><a href="#">拔高题目-一元二次方程</a></li>
+                                <li><a href="#">文艺题目-测试一下的阿斯顿</a></li>
+                            </ul>
+                            <h2 class="sub-title sub-paddingtop">个性推荐</h2>
+                            <ul class="sh-nlist">
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                                <li><a href="#">一元二次方程</a><span>3748</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ym-grid sub-line2">
+                	<div class="ym-g35 ym-gl">
+                    	<div class="ym-gbox sub-height">
+                            <h2 class="sub-title">最新用户讨论</h2>
+                            <ul class="sh-tlist">
+                                <!--a标签里面最多40个中文字，超过38个中文字显示内容加...-->
+                                <li><span>lanslot在2012-3-4 13:34说道</span><a href="#">这个网站真的很牛逼啊的确是极度牛逼啊牛逼得不行了打算考虑大撒旦撒旦卡领电脑</a></li>
+                                <li><span>lanslot在2012-3-4 13:34说道</span><a href="#">这个网站真的很牛逼啊的确是极度牛逼啊牛逼得不行了打算考虑大撒旦撒旦卡领电脑</a></li>
+                                <li><span>lanslot在2012-3-4 13:34说道</span><a href="#">这个网站真的很牛逼啊的确是极度牛逼啊牛逼得不行了打算考虑大撒旦撒旦卡领电脑</a></li>
+                                <li><span>lanslot在2012-3-4 13:34说道</span><a href="#">这个网站真的很牛逼啊的确是极度牛逼啊牛逼得不行了打算考虑大撒旦撒旦卡领电脑</a></li>
+                                <li><span>lanslot在2012-3-4 13:34说道</span><a href="#">这个网站真的很牛逼啊的确是极度牛逼啊牛逼得不行了打算考虑大撒旦撒旦卡领电脑</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ym-g40 ym-gl">
+                    	<div class="ym-gbox sub-height">
+                            <h2 class="sub-title">最新题目</h2>
+                            <ul class="sh-tlist">
+                            	<!--a标签里面最多69个中文字，超过67个中文字显示内容加...-->
+                                <li><span>2011年，河北，真题，难</span><a href="#">这个网站真的很牛逼啊的确是极度牛逼啊牛逼得不行了打算考虑大撒逼啊牛逼得不行了打算考虑大撒旦撒旦卡领电脑</a></li>
+								<li><span>2011年，河北，真题，难</span><a href="#">这个网站真的很牛逼啊的确是极度牛逼啊牛逼得不行了打算逼啊牛逼得不行了打算考虑大撒考虑大撒旦撒旦卡领电脑</a></li>
+                                <li><span>2011年，河北，真题，难</span><a href="#">这个网站真的很牛逼啊的确是极度牛逼啊牛逼得不行了打算考虑大撒旦撒旦卡领逼啊牛逼得不行了打算考虑大撒电脑</a></li>
+                                <li><span>2011年，河北，真题，难</span><a href="#">这个网站真的很牛逼啊的确是极度牛逼啊牛逼得不行了打算考虑大撒旦撒逼啊牛逼得不行了打算考虑大撒旦卡领电脑</a></li>                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ym-g25 ym-gr">
+                    	<div class="ym-gbox">
+                            <h2 class="sub-title">热门题目清单</h2>
+                            <ul class="sh-tlist">
+                                <!--a标签里面最多13个中文字，超过11个中文字显示内容加...-->
+                                <li><a href="#">这个网站真的很牛逼啊的确是</a><span>lanslot分享于3天前</span></li>
+                                <li><a href="#">这个网站真的很牛逼啊的确是</a><span>lanslot分享于3天前</span></li>
+                                <li><a href="#">这个网站真的很牛逼啊的确是</a><span>lanslot分享于3天前</span></li>
+                                <li><a href="#">这个网站真的很牛逼啊的确是</a><span>lanslot分享于3天前</span></li>
+                                <li><a href="#">这个网站真的很牛逼啊的确是</a><span>lanslot分享于3天前</span></li>
+                                <li><a href="#">这个网站真的很牛逼啊的确是</a><span>lanslot分享于3天前</span></li>
+                                <li><a href="#">这个网站真的很牛逼啊的确是</a><span>lanslot分享于3天前</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    
+    <footer>
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <ul class="ym-clearfix">
+                    <li class="nostyle"><a href="#">关于我们</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">使用帮助</a></li>
+                    <li><a href="#">反馈意见</a></li>
+                </ul>
+                <p>找题目网站希望发动所有的老师来共同建设最高质量的中文题库，为我们教育事业的发展做出贡献</p>
+                <p>本站的全部文字在<a href="#">知识共享 署名-相同方式共享3.0协议</a>之条款下提供，附加条款亦可使用（请参阅<a href="#">使用条款</a>）</p>
+                <p>© 2012 找题目网站保留所有权利 <a href="#">京ICP备11008556号</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+/* =========================================================================== */
+/* 导入基本样式库 -------------------------------------------------------------- */
+/* =========================================================================== */
+
+/* YAML.de的CSS框架核心文件，注意该文件不可被修改 */
+@import url("ym-base.min.css");
+/* 本站的基本布局设置和模板的表现，注意该文件极为重要*/
+@import url("master.css");
+/* 本站的基本文字样式设置 */
+@import url("text.css");
+/* 本站的表单样式设置 */
+@import url("form.css");
+/* 本站所有弹出式浮动层的样式定义 */
+@import url("popup.css");
+/* 本站其它被封装的通用模块的CSS设置 */
+@import url("common.css");
+/* tipTip插件样式 */
+@import url("tiptip.css");
+/* pnotify插件样式 */
+@import url("pnotify.css");
+/* page插件样式 */
+@import url("page.css");
+/* temp插件样式 */
+@import url("temp.css");
+
+/* =========================================================================== */
+/* 从这里开始书写每个页面特殊的样式，第一个父级选择符必须以class的形式作用在div#main上面 */
+/* =========================================================================== */
+
+/* 题目终端页 ================================================================================ */
+
+/* 左栏的标题部分*/
+.det-title{ padding:50px 0 13px 0;}
+.det-title-first{ padding-top:0;}
+.det-title h2{ display:block; float:left;}
+.det-title a{ display:block; float:right; line-height:22px;}
+/*左栏底部评论的表单*/
+.det-form .item{ padding:1em 0;}
+/*左栏浮出的两个操作*/
+.det-action{ width:40px; height:124px; position:absolute; margin-left:-49px;}
+.det-action a{ display:block; color:#fff; line-height:17px; padding:30px 0 10px 0; text-align:center; background:url(../images/icon.gif) no-repeat; }
+
+.det-action a.favorite, .det-action a.favorite-no, .det-action a.favorite-yes:hover{ background-color:#efae00; background-position:10px -1190px; color:#886201;}
+.det-action a.favorite-yes, .det-action a.favorite-no:hover{background-position:10px -1290px; color:#fff;}
+
+.det-action a.share{ background-color:#ae95c5; background-position:12px -1240px; color:#705686;}
+.det-action a.share:hover{ background-position:12px -1340px; color:#fff;}
+.det-action .triangle{ height:10px; display:block; background:url(../images/sprite.gif) no-repeat; overflow:hidden;}
+/*右栏顶部的信息*/
+.det-line{ padding-bottom:1em;}
+.det-line b{ position:absolute; width:60px; text-align:right; margin-left:-5px;}
+.det-line ul, .det-line p, .det-line form{ padding-left:65px;}
+/*右栏中间的贡献信息*/
+.det-info{ background-color:#f1f1f1; border:1px solid #ddd; padding:15px; font-size:12px; line-height:18px; margin-bottom:30px;}
+.det-info hr{ background-color:transparent; border:0; border-top:1px solid #ccc; margin:10px 0;}
+/*右栏下面的more*/
+.det-more{ font-size:12px;}
+
+#ExplainEditor{ display:none;}
+.det-explain-btns{ display:none; padding-top:15px;}
+.det-explain-btns button{ padding:5px 10px; margin-right:10px;}
+.det-explain-loading{ line-height:48px; font-size:24px; color:#ccc; display:none; text-align:center; padding:30px 20px; border:1px solid #ccc;}
+
+/* 用户注册页 ================================================================================ */
+
+/* 注册页的错误信息*/
+.reg-pro-text b{ display:block; font-size:16px; padding-top:20px; padding-bottom:10px;}
+.reg-pro-text p{ display:block; padding-bottom:10px;}
+.reg-error{ color:#f00;}
+/* 用户注册页的连接部分*/
+ul.reg-connect li{ padding-top:30px;}
+ul.reg-connect li a{ display:block; line-height:58px;}
+ul.reg-connect li a:hover{ text-decoration:none;}
+ul.reg-connect li a b, ul.reg-connect li a span{ display:block; float:left; cursor:pointer;}
+ul.reg-connect li a b{ text-indent:-10000px; width:58px; height:58px; background:url(../images/icon_big.gif) no-repeat; border:1px solid #ccc;}
+ul.reg-connect li a span{ font-size:26px; color:#000; border:1px solid #fff; padding-left:15px;}
+ul.reg-connect li a.qq b{ background-position:center 5px;}
+ul.reg-connect li a.weibo b{ background-position:center -45px;}
+ul.reg-connect li a.renren b{ background-position:center -95px;}
+ul.reg-connect li a.douban b{ background-position:center -145px;}
+/* 注册页面右栏的连接按钮样式 */
+ul.reg-connect li a:hover{ border:1px solid #888; background-color:#eee;}
+ul.reg-connect li a:hover b{ border:0; border-right:1px solid #ccc; background-color:#fff;}
+ul.reg-connect li a:hover span{ border:0; border-left:1px solid #eee;}
+
+/* 用户登录页 ================================================================================ */
+.login-left{ padding-top:40px;}
+.login-left i{ display:block; float:left; width:85px; height:85px; background:url(../images/sprite.gif) 0 -30px no-repeat; margin-right:20px;}
+.login-left b{ display:block; font-size:24px; padding-top:10px; font-weight:normal;}
+.login-left p{ display:block; padding-top:10px; line-height:20px;}
+.login-left4 b{ padding-top:32px;}
+.login-left2 i{ background-position:-100px -30px;}
+.login-left3 i{ background-position:-200px -30px;}
+.login-left4 i{ background-position:-300px -30px;}
+.login-left1{ padding-top:30px;}
+.login-left4{ padding-bottom:30px;}
+.login-lost{ display:block; float:right; margin-top:-25px;}
+.login-connect-title{ clear:both; padding-top:70px;}
+.login-connect{ padding-top:30px;}
+.login-connect a{ display:block; float:left; width:58px; height:58px; margin-right:15px; background: url("../images/icon_big.gif") no-repeat; border:1px solid #ddd;}
+.login-connect a:hover{ background-color:#effafc; border-color:#94aecf;}
+.login-connect a.qq{ background-position:4px 3px;}
+.login-connect a.weibo{ background-position:4px -45px;}
+.login-connect a.renren{ background-position:3px -95px;}
+.login-connect a.douban{ background-position:4px -147px;}
+
+/* 列表页部分================================================================================= */
+
+/* 左栏顶部的信息说明部分 */
+.list-info{ padding-bottom:25px; color:#999;}
+/* 左栏列表项的基本设定 */
+.list-item{ display:block; overflow: hidden; padding-right: 30px; width: auto; padding-bottom:30px;}
+.list-item .content{ position: relative; float: left; width: 100%; margin-top:-4px;}/*marginTop为-4是为了补偿lineHeight导致的文本位置下移*/
+.list-item .more{ position: relative; display:none; float: left;  width: 29px; margin: 0 -30px 0 0; height:85px;  background:#fff url(../images/icon.gif) 13px -1511px no-repeat;
+	border:1px solid #ddd; border-right:0; -webkit-border-top-left-radius: 3px; -webkit-border-bottom-left-radius: 3px; -moz-border-radius-topleft: 3px; -moz-border-radius-bottomleft: 3px; border-top-left-radius: 3px; border-bottom-left-radius: 3px;}
+.list-item:hover .more{ background-color:#f6f4f5; border-right:1px solid #ddd; width:28px; display:block;}
+.list-item .more-current{ display:block;}
+.list-item .more:hover{ background-color:#bcbcbc; border-color:#bcbcbc; background-position:13px -1571px;}
+.list-item .content p{ padding-bottom:5px;}
+.list-item .content p a{ color:#222;}
+.list-item .content p a:hover{ color:#4D7DBF; text-decoration:none;}
+.list-item .content span{ color:#999; display:block; float:left;}
+.list-item .content button{ display:block; float:right; background-color:#f1f1f1; color:#999; border:0; padding:0 5px; cursor:pointer; border:1px solid #fff;}
+.list-item .content button:hover{ background-color:#effafc; border-color:#94aecf; color:#40608c;}
+.list-item .content p, .list-item .content button{ margin-right:30px;}
+/* 左栏具体列表项中浮动出去的图标部分 */
+.list-item .float{ position:absolute; margin-left:-39px; width:30px; height:45px; background:url(../images/sprite.gif) 0px 27px no-repeat;}
+.list-item .float i{ display:block; width:30px; height:37px; background:#efae00 url(../images/icon.gif) 5px -1291px no-repeat;}
+.list-item .float-clear{ display:block; line-height:0px; font-size:0px; height:0px; overflow:hidden;}
+/* 左栏具体列表项中*/
+
+/* 列表页整体右栏的一些设置 */
+.list .ym-gl .ym-gbox{ padding-right:0 !important;}
+.list .ym-gl { border-right:0 !important; background:url(../images/bg_gary.gif) right repeat-y;}
+/* 关键的跟随浮动的CSS设置*/
+#ListFollow{ position:absolute; overflow:hidden;}
+/*#ListFollow .list-question, #ListFollow .list-action, #ListFollow .list-cover{ margin-right:40px;}*//*由于整体采用fixed的position，因此宽度失效，所以需要通过js来重定义宽度，这里右侧的留白也正好重定义，因为有一个外部浮动，因此是30+10px的浮动*/
+/* 右栏顶部的操作按钮 */
+.list-action{  position:absolute; width:100%;}
+.list-action-cover{padding:30px 40px 0 0;}
+.list-action a{ display:block; float:left; width:33%; background:url(../images/bg_gary.gif) right repeat-y;}
+.list-action a.nobg{ background-image:none;}
+.list-action a span{ display:block; padding-left:16px; width:60px; text-align:right; margin:0 auto;}
+/* 右栏的信息栏和评分栏 */
+.list-tag{ display:block; overflow: hidden; width: auto; padding:75px 80px 10px 0;}
+.list-tag .rate{ position: relative; float: left;  width:80px; height:45px; margin: 0 -80px 0 0; background:url(../images/sprite.gif) 71px 17px no-repeat;}
+.list-tag .rate span{ display:block; width:55px; height:37px; line-height:37px; background:#ca7a87 url(../images/sprite.gif) -400px -30px no-repeat; color:#742d37; padding-left:25px; font-size:12px;}
+.list-tag .rate span b{ font-size:16px;}
+.list-tag .tag{ position: relative; float: left; width: 100%; margin-top:-4px;}
+.list-tag .tag p{padding-right:15px;}
+/* 右栏的具体的题目内容部分 */
+.list-question{ overflow:hidden; padding:0 40px 70px 0;}
+.list-question strong{ font-size:20px; color:#819cc1; display:block; padding-top:15px;}
+.list-question strong.answer{ color:#000; padding:0; padding-bottom:10px;}
+.list-question p{ display:block; padding:8px 0;}
+/* 右栏底部的查看详情按钮*/
+.list-detail{ position:absolute; bottom:0; width:100%;}
+.list-detail-cover{ background-color:#fff; margin-right:40px; padding:15px 0 30px 0;}
+.list-detail a{ display:block; width:100%; line-height:40px; border:1px solid #ddd; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.list-detail a:hover{ background-color:#effafc; border-color:#94aecf;}
+.list-detail a span{ width:90px; padding-left:25px; display:block; margin:0 auto; background:url(../images/icon.gif) 0 -587px no-repeat;}
+.list-detail a:hover span{ color:#4D7DBF;}
+
+/* 科目首页部分 ================================================================================ */
+.sub-title{ padding-bottom:10px;}
+.nlist-float li{ float:left; width:32%; margin-right:2%;}
+.nlist li.nomargin{ margin-right:0;}
+.nlist li a{ padding-right:5px; line-height:22px;}
+.nlist li span{ color:#999; line-height:22px; font-size:12px;}
+
+.sub-box{ float:left; width:32%; margin-right:2%; padding-top:30px;}
+.sub-box-last{ margin-right:0;}
+
+.sub-line1{ -webkit-border-bottom-right-radius: 0px !important; -webkit-border-bottom-left-radius: 0px !important; -moz-border-radius-bottomright: 0px !important; -moz-border-radius-bottomleft: 0px !important; border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important;}
+.sub-line2{ border-top:0 !important; -webkit-border-top-left-radius: 0px !important; -webkit-border-top-right-radius: 0px !important; -moz-border-radius-topleft: 0px !important; -moz-border-radius-topright: 0px !important; border-top-left-radius: 0px !important; border-top-right-radius: 0px !important;}
+.sub-line2 .ym-g40{ margin-left:-1px; _margin-left:2px;}
+
+/* 搜索结果页crumb部分的筛选 */
+ul.search-tabs li{ float:left; margin-right:15px;}
+ul.search-tabs li.current{ background-color:#eee; padding:0 10px;}
+
+.w-add{ background-color:#444; color:#FFF; padding:1em;}
+.w-add b{ font-size:18px; display:block; padding-bottom:20px;}
+.w-add a{ display:block; text-align:center;}
+
+
+
+
+
+
+

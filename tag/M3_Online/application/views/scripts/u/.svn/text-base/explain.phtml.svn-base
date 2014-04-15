@@ -1,0 +1,47 @@
+<?php
+$param = array('title'=>'答案窝-解析一览');
+include_once ADMIN_ROOT_PATH . 'application/layout/adminhtmlheader.inc';  
+?>
+<body>
+<div id="nav"><?php include_once 'nav.inc'; ?></div>
+<div id="main">
+    <h1><a href="#">UGC信息管理</a> > 解析一览</h1>
+    <hr />
+    <div>
+        <form method="get">
+        <div class="table">
+		<table>
+    		<thead>
+    		<th>id</th>
+    		<th>创建时间</th>
+    		<th>最后修改时间</th>
+    		<th>创建者</th>
+    		<th>解析内容</th>
+    		<th>题目id</th>
+    		</thead>
+    		<?php
+    			if(isset($this->explain)) {
+					$arr = Zend_Json::decode($this->explain);
+					if(!empty($arr)) {
+						foreach($arr as $val) { 
+    		?>
+    		<tr>
+    		<td><?php echo $val["id"];?></td>
+    		<td><?php echo $val["createTime"];?></td>
+    		<td><?php echo $val["lastmodifyTime"];?></td>
+    		<td><?php echo $val["creator"];?></td>
+    		<td><?php echo $val["content"];?></td>
+    		<td><?php echo $val["question_id"];?></td>
+    		</tr>
+    		<?php
+    					}
+    				}
+    			} 
+    		?>
+    	</table>
+    </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

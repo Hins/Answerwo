@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>找题目</title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- mobile viewport optimisation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://test.answerwo.com/public/css/zhaotimu.css" type="text/css"/>
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="https://test.answerwo.com/public/css/ym-iehacks.min.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://test.answerwo.com/public/js/google.html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://test.answerwo.com/public/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://test.answerwo.com/public/js/jquery-ui-1.8.7.min.js"></script>
+	<script type="text/javascript" src="https://test.answerwo.com/public/js/zhaotimu.parameter.js"></script>
+	<script type="text/javascript" src="https://test.answerwo.com/public/js/zhaotimu.plugins.js"></script>
+    <script type="text/javascript" src="https://test.answerwo.com/public/js/zhaotimu.function.js"></script>
+	<script type="text/javascript" src="https://test.answerwo.com/public/js/zhaotimu.popup.js"></script>
+	<script type="text/javascript" src="https://test.answerwo.com/public/js/zhaotimu.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	
+	g_param.qid=12345; //题目的标识id
+	//g_param.favorite=1;  //该题目是否已经被收藏
+	g_param.rate=1; //该题目能不能被rate
+	g_param.comment=12; //该题目总共有多少条讨论
+	//g_param.login=1; //用户有没有登录
+	
+</script>
+    <nav id="dark">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li class="current">初中数学</li>
+                  <li><a href="#">初中语文</a></li>
+                  <li><a href="#">初中英语</a></li>
+                  <li><a href="#">初中物理</a></li>
+                  <li>
+                    <a class="dropdown" href="#">初中/中考▾</a>
+                    <ul>
+                      <li><a href="#">初中数学</a></li>
+                      <li><a href="#">初中语文</a></li>
+                      <li><a href="#">初中英语</a></li>
+                      <li><a href="#">初中物理</a></li>
+                      <li><a href="#">初中化学</a></li>
+                      <li><a href="#">初中历史</a></li>
+                      <li><a href="#">初中地理</a></li>
+                      <li><a href="#">初中政治</a></li>
+                      <li><a href="#">初中生物</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="userinfo">
+					<a href="javascript:void(0)" popup="login">登录</a>
+					<a href="/user/register">新用户注册</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="#"><img src="../images/logo.gif" width="313" height="35" alt="找题目" /></a></div>
+                <a href="#" class="add">新增</a>
+                <form class="ym-clearfix">
+                    <input type="search" placeholder="输入关键字搜索" class="inpmain" />
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g75 ym-gl">
+                        <div class="ym-gbox">
+                            <h1>初中数学题目</h1>
+                            <div class="fliter">知识点：<a href="#">科学计数法</a>＜<a href="#">实数</a>＜<a href="#">不等式</a></div>
+                        </div>
+                    </div>
+                    <div class="ym-g25 ym-gr">
+                        <div class="ym-gbox">
+                            <div class="more"><span class="gary">3452222人浏览，43356人收藏</span></div> 
+                        </div>
+                    </div>
+                </div>            	
+            </div>
+        </div>
+    </div>
+    
+    <div id="main">
+    	<div class="ym-wrapper" id="DETAIL">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g62 ym-gl">
+                        <div class="ym-gbox">
+                            <div class="det-action">
+                            	                               
+                                <!--to tuma：如果用户没有登录，请输出-->
+                                <!--<a href="javascript:void(0)" class="favorite Pop" id="FavoriteDetail" hasfavorite="false" popup="#PopupLogin" title="你需要登录才能够进行收藏">收藏</a> -->
+                                <!--to tuma: 如果用户已经登录且已经收藏该题目，请输出-->
+                            	<!--<a href="javascript:void(0)" class="favorite Pop" id="FavoriteDetail" hasfavorite="true" ajax="FavoriteToggle" title="点击将取消收藏">收藏</a> -->
+                                <!--to tuma: 如果用户已经登录但是没有收藏该题目，请输出-->
+                            	<a href="javascript:void(0)" class="favorite Pop" id="FavoriteDetail" hasfavorite="false" popup="favoritedetail" title="点击将添加收藏">收藏</a> 
+                                
+                                <a href="javascript:void(0)" class="share" popup="share">分享</a>
+                                <span class="triangle"></span>
+                            </div>
+                            <div class="det-title det-title-first ym-clearfix">
+                            	<h2>题目内容</h2>
+                            	<a href="javascript:void(0)" class="tl-content" popup="report">内容纠错</a>
+                            </div>
+                            <div class="rt">
+                            	<p>为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生身高做调查，以下方案中比较合理的是________ </p>
+                                <ul>
+                                	<li>(A) 查阅外地200名八年级男生的身高统计资料</li>
+                                    <li>(B) 测量该市一所中学200名八年级男生的身高</li>
+                                    <li>(C) 测量该市两所农村中学各100名八年级男生的身高</li>
+                                    <li>(D) 在该市市区内任选一所中学，农村选三所中学，每所中学用抽签方法分别选出50名八年级男生，然后测量他们的身高</li>
+                                </ul>
+                                <p class="answer">答案：A</p>
+                            </div>
+                            <div class="det-title ym-clearfix">
+                            	<h2>题目解析</h2>
+                            	<a href="javascript:void(0)" class="tl-explain" id="ExplainStart">编写解析</a>
+                            </div>
+                            
+                            
+                            <div class="rt det-explain" id="ExplainDetail" blank="blank">
+                            	<p class="det-explain-blank">该题目还没有解析<br />请点击右上角的“编写解析”按钮<br />开始给这道题目写下解答过程吧！</p>
+                            </div>
+                            
+                            <div class="det-title ym-clearfix">
+                            	<h2>题目讨论</h2>
+                            	<a href="#addcomment" class="tl-comment">发表新讨论</a>
+                            </div>
+                            
+                            <ul class="comment" id="Comment"></ul>                            
+                            <div class="page ym-clearfix" id="CommentPager"></div>
+                            
+                            <div class="ztm-form det-form" id="CommentAdd">
+                            	<div class="item">
+                                	<a name="addcomment"></a>
+                                    <textarea class="inp"></textarea>
+                                </div>
+                                <button class="btn" reid="0" refloor="0">发表讨论</button><p class="warn"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ym-g38 ym-gr">
+                        <div class="ym-gbox">
+							<div class="det-line nopadding">
+                            	<b>知识点：</b>
+                                <ul class="sh-tag ym-clearfix" tagger-id="222">
+                                	<li class="ym-clearfix IE6Hover"><span>一元二次方程</span><a href="#" class="delete"></a></li>
+                                    <li class="ym-clearfix IE6Hover"><span>三角形</span><a href="#" class="delete"></a></li>
+                                    <li class="ym-clearfix IE6Hover"><span>实数</span><a href="#" class="delete"></a></li>
+                                    <li class="ym-clearfix IE6Hover"><span>科学计数法</span><a href="#" class="delete"></a></li>
+                                    <li class="ym-clearfix IE6Hover"><span>解析几何</span><a href="#" class="delete"></a></li>
+                                </ul>
+                                <div class="det-tag ym-clearfix" id="KnotDetailAdd">
+                                    <input type="text" class="fo-tag-inp" tagger-id="222" />
+                                    <a class="fo-tag-btn" href="javascript:void(0)">添加知识点</a>
+                                </div>
+                            </div>
+
+                            <div class="det-line">
+                            	<b>难度：</b>
+                                <p><span class="red"><strong>4.5</strong>/5</span></p>
+                                <div class="det-rater" id="Rater" val="4.5" hasrate="false"></div>
+                                <div class="det-rater-value" id="RaterTitle">拔高题目</div>                                
+                            </div>
+                            <div class="det-line">
+                            	<b>来源：</b>
+                                <p>2011年全国各地100份中考试卷分类汇编</p>
+                                <p>黄冈真题分类汇编</p>
+                            </div>
+                            <div class="det-line">
+                            	<b>年份：</b>
+                                <p>2010年</p>
+                            </div>
+                            <div class="det-line">
+                            	<b>类型：</b>
+                                <p>中考真题</p>
+                            </div>
+                            <div class="det-info">本题目由lanslot在2012年2月18日创建。<a href="#">感谢lanslot,david,akiraqian等5位用户为此题做出的贡献！</a><hr />找题目所有题目遵循<a href="#">知识共享-署名-相同方式共享3.0协议许可协议</a>，所有的题目和相关的解析过程都是由广大网民编辑整理而成。</div>
+                        	<div class="det-title det-title-first ym-clearfix">
+                            	<h2>相似题目</h2>
+                            	<a href="#">查看更多</a>
+                            </div>
+                            <div class="det-more rt">
+                            	<p>为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生身高做调查，以下方案中比较合理的是________ </p>
+                                <ul>
+                                	<li>(A) 查阅外地200名八年级男生的身高统计资料</li>
+                                    <li>(B) 测量该市一所中学200名八年级男生的身高</li>
+                                    <li>(C) 测量该市两所农村中学各100名八年级男生的身高</li>
+                                    <li>(D) 在该市市区内任选一所中学，农村选三所中学，每所中学用抽签方法分别选出50名八年级男生，然后测量他们的身高</li>
+                                </ul>
+                            </div>
+                            <div class="blank1"></div>
+                            <div class="more rt">
+                            	<p>为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生身高做调查，以下方案中比较合理的是________ </p>
+                                <ul>
+                                	<li>(A) 查阅外地200名八年级男生的身高统计资料</li>
+                                    <li>(B) 测量该市一所中学200名八年级男生的身高</li>
+                                    <li>(C) 测量该市两所农村中学各100名八年级男生的身高</li>
+                                    <li>(D) 在该市市区内任选一所中学，农村选三所中学，每所中学用抽签方法分别选出50名八年级男生，然后测量他们的身高</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <ul class="ym-clearfix">
+                    <li class="nostyle"><a href="#">关于我们</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">使用帮助</a></li>
+                    <li><a href="#">反馈意见</a></li>
+                </ul>
+                <p>找题目网站希望发动所有的老师来共同建设最高质量的中文题库，为我们教育事业的发展做出贡献</p>
+                <p>本站的全部文字在<a href="#">知识共享 署名-相同方式共享3.0协议</a>之条款下提供，附加条款亦可使用（请参阅<a href="#">使用条款</a>）</p>
+                <p>© 2012 找题目网站保留所有权利 <a href="#">京ICP备11008556号</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+	<div class="po-favorite Popup" id="FavoriteTagDetail" title="题目收藏成功！" popup-id="favoritedetail" popup-width="330" popup-effect="slide" popup-stick="righttop" popup-title="other">
+        <p>你还可以通过添加标签来管理收藏的题目</p>
+        <div class="title">标签：<span class="gary">（多个标签用英文逗号隔开）</span></div>
+        <input type="text" tagger-id="111">
+        <div class="title">常用标签：</div>
+        <ul class="link ym-clearfix">
+            <li><a href="#">某个标签</a></li>
+            <li><a href="#">标签</a></li>
+            <li><a href="#">个标签</a></li>
+            <li><a href="#">某标签</a></li>
+            <li><a href="#">某签</a></li>
+            <li><a href="#">某个标签</a></li>
+            <li><a href="#">标签</a></li>
+            <li><a href="#">某个标签</a></li>
+            <li><a href="#">某签</a></li>
+            <li><a href="#">标签</a></li>
+        </ul>
+        <button class="btn">保存标签</button>
+    </div>
+         
+    <div class="po-share Popup" title="马上分享这个题目给朋友：" popup-id="share" popup-width="330" popup-effect="slide" popup-stick="righttop" popup-title="other">
+        <div id="jiathis_style_32x32" class="ym-clearfix">
+            <a class="jiathis_button_qzone"></a>
+            <a class="jiathis_button_tsina"></a>
+            <a class="jiathis_button_tqq"></a>
+            <a class="jiathis_button_renren"></a>
+            <a class="jiathis_button_douban"></a>
+            <a class="jiathis_button_kaixin001"></a>
+            <a class="jiathis_button_copy"></a>
+            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+        </div>
+        <script type="text/javascript" >var jiathis_config={summary:"",hideMore:true}</script>
+        <script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script>
+    </div>
+   
+    <div class="po-report Popup" title="报告题目错误" popup-id="report" popup-width="400" popup-btn="true">
+		<form class="fo-form" id="ReportDetailForm">           
+            <label class="title">请选择错误类型：</label>
+            <select name="mistake">
+            	<option value="1">答案错误</option>
+                <option value="2" selected="selected">格式有错误</option>
+                <option value="3">题目内容有错误</option>
+                <option value="0">其它</option>
+            </select>
+            <label class="title">请描述一下这个错误：</label>
+            <textarea class="fo-inp" name="message"></textarea>
+        </form>
+    </div>
+    
+    <div class="po-login Popup ym-clearfix" title="用户登录" popup-width="764" popup-id="login">
+    	<div class="left">
+        	<div class="fo-form">
+                <div class="item">
+                    <label class="title">用户名/Email邮箱地址：</label>
+                    <input type="text" class="fo-inp" id="LoginPopupName" required="required" />                                    
+                </div>
+                <div class="item">
+                    <label class="title">登录密码：</label>
+                    <input type="password" class="fo-inp" id="LoginPopupPassword" minlength="6" required="required" />
+                </div>
+                <div class="item">
+                    <ul class="check check-aline ym-clearfix">
+                        <li><input type="checkbox" name="remember" id="LoginPopupRemember" /><label>下次自动登录</label></li>                                        
+                    </ul>
+                    <a href="/account/seekpassword/" class="login-lost">忘记登录密码了？</a>
+                </div>                                                             
+                <button class="fo-btn" id="LoginSubmit">马上登录</button>
+				<p class="te-warn"></p>
+            </div>
+        </div>
+        <div class="right">
+        	<p>还没有找题目的账号？</p>
+            <a href="/account/register/" class="fo-btn-blue">快速注册找题目账号</a>
+            <p>使用其它账号直接登录</p>
+            <div class="login-connect ym-clearfix">
+                <a href="#" class="qq"></a>
+                <a href="#" class="weibo"></a>
+                <a href="#" class="renren"></a>
+                <a href="#" class="douban"></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

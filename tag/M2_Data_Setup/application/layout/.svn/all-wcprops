@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout
+END
+crumb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/crumb.inc
+END
+profileheader.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/profileheader.inc
+END
+headergray.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/headergray.inc
+END
+user.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/user.inc
+END
+popupshare.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/popupshare.inc
+END
+navdark.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/navdark.inc
+END
+htmlhead.inc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/htmlhead.inc
+END
+headersetting.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/headersetting.inc
+END
+adminhtmlheader.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/adminhtmlheader.inc
+END
+popuplogin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/popuplogin.inc
+END
+navblue.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/navblue.inc
+END
+footer.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/footer.inc
+END
+popupreport.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/popupreport.inc
+END
+headerblue.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/headerblue.inc
+END
+popupfavorite.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/popupfavorite.inc
+END
+staticlink.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/1500/tag/M2_Data_Setup/application/layout/staticlink.inc
+END

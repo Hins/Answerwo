@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<?php
+$include_param = array(
+'title'=>'答案窝-用户登录',
+'keyword'=>'答案窝 日语 等级考试 用户登录',
+'description'=>'答案窝 用户登录',
+);
+include_once ROOT_PATH . 'application/layout/htmlhead.inc';  
+?>
+<body>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="http://www.answerwo.com"><img src="http://www.answerwo.com/public/images/logo.gif" width="313" height="35" alt="答案窝" /></a></div>
+                <a href="http://www.answerwo.com/u/register" class="login">新用户注册</a>
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g85 ym-gl">
+                        <div class="ym-gbox">
+                            <h1><?php if(isset($this->err_information)) {echo $this->err_information;} else {echo "老用户登录";}?></h1>
+                        </div>
+                    </div>
+                </div>            	
+            </div>
+        </div>
+    </div>
+    
+    <div id="main">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g62 ym-gl">
+                        <div class="ym-gbox">
+                            <h2 class="sub-title">登录后，你将可以免费使用下面的功能：</h2>
+                            <div class="login-left login-left1 ym-clearfix">
+                            	<i></i>
+                                <b>收藏题目</b>
+                                <p>在我的收藏夹中，可以找到收藏过的题目</p>
+                            </div>
+                            <div class="login-left login-left2 ym-clearfix">
+                            	<i></i>
+                                <b>查看题目解析</b>
+                                <p>你可以查找题目答案，浏览题目解析</p>
+                            </div>
+                            <div class="login-left login-left3 ym-clearfix">
+                            	<i></i>
+                                <b>进行模拟考试</b>
+                                <p>你可以有针对性地进行题目练习</p>
+                            </div>
+                            <div class="login-left login-left4 ym-clearfix">
+                            	<i></i>
+                                <b>更多功能，等待你来发现...</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ym-g38 ym-gr">
+                        <div class="ym-gbox">
+                        	<h2 class="sub-title">用户登录</h2>
+							<form class="ztm-form" method="get">
+                            	<div class="item">
+                                	<label class="title">用户名/Email邮箱地址：</label>
+                                    <input type="text" class="inp" name="name" minlength="2" maxlength="30" required="required" />
+                                </div>
+                                <div class="item">
+                                	<label class="title">登录密码：</label>
+                                    <input type="password" class="inp" name="password" minlength="6" required="required" />
+                                </div>
+                                <div class="item">
+                                    <ul class="check check-aline ym-clearfix">
+                                    	<li><input type="checkbox" /><label>下次自动登录</label></li>                                        
+                                    </ul>
+                                    <!-- <a href="#" class="login-lost">忘记登录密码了？</a> -->
+                                </div>                                                             
+                                <button type="submit" class="btn">马上登录</button>
+                            </form>
+                            
+                            <h2 class="sub-title login-connect-title">使用下面的账号直接登录</h2>
+                            <div class="login-connect ym-clearfix">
+                            	<a href="#" class="qq"></a>
+                                <a href="#" class="weibo"></a>
+                                <a href="#" class="renren"></a>
+                                <a href="#" class="douban"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<?php include_once ROOT_PATH . 'application/layout/footer.inc';?>
+
+</body>
+</html>

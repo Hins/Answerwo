@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/!svn/ver/1500/tag/M2_Data_Setup
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/1500/tag/M2_Data_Setup/.htaccess
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/1500/tag/M2_Data_Setup/index.php
+END

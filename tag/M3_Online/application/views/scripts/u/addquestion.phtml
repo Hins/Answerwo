@@ -1,0 +1,78 @@
+<?php
+$param = array('title'=>'答案窝-题目创建');
+include_once ADMIN_ROOT_PATH . 'application/layout/adminhtmlheader.inc';  
+?>
+<body>
+<div id="nav"><?php include_once 'nav.inc'; ?></div>
+<div id="main">
+    <h1><a href="#">题目管理</a> > 题目创建</h1>
+    <hr />
+    <div>
+        <form method="post">
+        <div>
+            <div>
+            	<label>题目内容<sup>*</sup></label><br>
+                <textarea cols=120 rows=6 name="content" value=""></textarea>
+            </div>
+            <div>
+                <label>答案1</label><br>
+                <textarea cols=120 rows=3 name="answer1"></textarea>
+            </div>
+            <div>
+                <label>答案2</label><br>
+                <textarea cols=120 rows=3 name="answer2"></textarea>
+            </div>
+            <div>
+                <label>答案3</label><br>
+                <textarea cols=120 rows=3 name="answer3"></textarea>
+            </div>
+            <div>
+                <label>答案4</label><br>
+                <textarea cols=120 rows=3 name="answer4"></textarea>
+            </div>
+            <div>
+                <label>题目答案</label><br>
+                <input type="text" class="inp" size=120 name="answer" />
+            </div>
+            <div>
+                <label>题目来源(200107,200812,0......)</label><br>
+                <input type="text" class="inp" size=120 name="source" />
+            </div>
+            <div>
+            	<label>题目级别</label><br>
+            	<input type="text" class="inp" size=120 name="level" />
+            </div>
+            <div>
+                <label>题目类型<sup>*</sup></label> <br>
+                <select name="type" id="type">
+                	<option value="1">词汇</option>
+                    <option value="2">文法</option>
+                    <option value="3">阅读</option>
+                    <option value="4">原文</option>
+                    <option value="5">作文</option>
+                    <option value="6">听力</option>
+                </select>
+            </div>
+            <div>
+                <label>题目解答</label><br>
+                <textarea cols=120 rows=6 name="explain"></textarea>
+            </div>
+            <div style="display:block;">
+                <label>题目难度</label><br>
+                <ul>
+                	<li><input type="radio" name="difficulty" value="1"/><label>很难</label></li>
+                    <li><input type="radio" name="difficulty" value="2"/><label>难</label></li>
+                    <li><input type="radio" name="difficulty" value="3"/><label>普通</label></li>
+                    <li><input type="radio" name="difficulty" value="4"/><label>简单</label></li>
+                    <li><input type="radio" name="difficulty" value="5"/><label>很简单</label></li>
+                </ul>
+            </div>  
+            </div> 
+            <div style="margin:5px; padding:5px;">
+        		<input type="submit" value="创建"/>
+        	</div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
