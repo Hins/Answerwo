@@ -1,0 +1,41 @@
+<?php
+$param = array('title'=>'答案窝-收藏一览');
+include_once ADMIN_ROOT_PATH . 'application/layout/adminhtmlheader.inc';  
+?>
+<body>
+<div id="nav"><?php include_once 'nav.inc'; ?></div>
+<div id="main">
+    <h1><a href="#">用户信息管理</a> > 用户一览</h1>
+    <hr />
+    <div>
+	<form method="get">
+	<div class="table">
+	<table>
+    		<thead>
+    		<th>创建时间</th>
+    		<th>题目id</th>
+    		<th>用户名</th>
+    		</thead>
+    		<?php
+    			if(isset($this->favorite)) {
+					$arr = Zend_Json::decode($this->favorite);
+					if(!empty($arr)) {
+						foreach($arr as $val) { 
+    		?>
+    		<tr>
+    		<td><?php echo $val["createTime"];?></td>
+    		<td><?php echo $val["question_id"];?></td>
+    		<td><?php echo $val["user_id"];?></td>
+    		</tr>
+    		<?php
+    					}
+    				}
+    			} 
+    		?>
+    	</table>
+	</div>
+    </form>
+    </div>
+</div>
+</body>
+</html>

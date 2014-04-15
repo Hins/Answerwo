@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<?php
+$include_param = array(
+'title'=>'答案窝-我的讨论',
+'keyword'=>'答案窝 日语 我的讨论',
+'description'=>'答案窝 日语 我的讨论',
+);
+include_once ROOT_PATH . 'application/layout/htmlhead.inc'; 
+?>
+<script type="text/javascript">
+profilevalidate();
+</script>
+<body>
+    <nav id="dark">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li><a href="http://prepublish.answerwo.com/q/search">搜索</a></li>
+                  <li><a href="http://prepublish.answerwo.com/q/list">题库</a></li>
+                  <li><a href="http://prepublish.answerwo.com/q/practice">自由做题</a></li>                
+                </ul>
+                <?php include_once ROOT_PATH . 'application/layout/user.inc'; ?> 
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="http://prepublish.answerwo.com"><img src="http://prepublish.answerwo.com/public/images/logo.gif" width="313" height="35" alt="答案窝" /></a></div>
+                <form class="ym-clearfix" method="get" action="http://prepublish.answerwo.com/q/search">
+                    <input name="query" type="search" placeholder="输入关键字搜索" class="inpmain" />
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+   <?php include_once ROOT_PATH . 'application/layout/profileheader.inc'; ?> 
+    
+    <div id="main" class="list">
+    	<div class="ym-wrapper" id="LIST">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g62-new ym-gl-new">
+                        <div class="ym-gbox">
+                        <form method="get" name="form" id="form">
+                        <input type="hidden" name="removeid" value="" />
+                        <input type="hidden" name="user" value="<?php if(isset($this->curuser)) {echo $this->curuser;}?>" />
+                            <div class="list-info">我的讨论共有<?php echo isset($this->total) ? $this->total : "0";?>个</div>
+                          	<div id="ListItems" class="list-items">
+                          		<?php
+                          			if(isset($this->questions)) {
+										$arr = Zend_Json::decode($this->questions);
+										if(!empty($arr)) { 
+											foreach($arr as $val) {
+                          		?>
+                                <div class="list-item ym-clearfix ListItem">
+                                    <div class="float"><i></i></div>                                
+                                    <div class="float-clear"></div><!--尼玛IE6和IE7逼着我多写一个空标签-->
+                                    <div class="content">
+                                        <p><a href="<?php echo $val["link"];?>" target="_blank">
+                                        <?php 
+                                		if(strlen($val["question"]) > 180) {
+											$i = 180;
+											for(; $i < strlen($val["question"]); $i++) {
+												if(ord($val["question"][$i]) < 100) {
+													break;
+												}
+											}
+											echo substr($val["question"],0,$i)."..."; 
+										}
+										else {
+											echo $val["question"];
+										}
+                                	?>
+                                        </a></p>
+                                        <span><?php echo $val["source"];?>考题，难度<?php echo $val["difficulty"];?></span><br>
+                                        <span style="color: #222222;text-decoration: none;">我的讨论: <?php echo $val["content"];?></span>
+                                    </div>
+                                </div>
+                                <?php
+                                			}
+                                		}
+                                	} 
+                                ?>
+                            </div>
+                            <div class="sh-page ym-clearfix" id="ListPager" page-total="45"></div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  <?php include_once ROOT_PATH . 'application/layout/footer.inc';?>
+
+</body>
+</html>

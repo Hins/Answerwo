@@ -1,0 +1,39 @@
+<?php
+$param = array('title'=>'答案窝-编辑用户');
+include_once ADMIN_ROOT_PATH . 'application/layout/adminhtmlheader.inc';  
+?>
+
+<body>
+<div id="nav"><?php include_once 'nav.inc'; ?></div>
+<div id="main">
+    <h1><a href="#">用户信息管理</a> > 编辑用户</h1>
+    <hr />
+    <div>
+	<form method="post">
+		<div>
+		<div>
+    		<label>用户查询<sup>*</sup></label><br>
+            <input type="text" size=70 name="search" value=""/>
+            <button type="submit">查询</button>
+        </div>
+        <div>
+        	<label>用户昵称</label><br>
+            <input type="text" class="inp" size=100 name="nickname" value="<?php if(isset($this->nickname)){echo $this->nickname;}else{echo '';} ?>" />
+        </div>
+        <div>
+        	<label>用户邮箱</label><br>
+           	<input type="text" class="inp" size=100 name="email" value="<?php if(isset($this->email)){echo $this->email;}else{echo '';} ?>" />
+        </div>
+        <div>
+        	<label>用户角色</label><br>
+            <input type="text" class="inp" size=100 name="role" value="<?php if(isset($this->role)){echo $this->role;}else{echo "普通用户";} ?>" />
+        </div>
+        </div>
+        <div style="margin:5px; padding:5px;">
+        	<input type="submit" value="修改"/>
+        </div>
+    </form>
+    </div>
+</div>
+</body>
+</html>

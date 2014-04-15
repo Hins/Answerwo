@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<?php
+$content = $this->content;
+if(strlen($content) > 100) {
+	$i = 100;
+	for(; $i < strlen($content); $i++) {
+		if(ord($content[$i]) < 100) {
+			break;
+		}
+	}
+	$content = substr($content,0,$i)."..."; 
+}
+$include_param = array(
+'title'=>$content,
+'keyword'=>'答案窝 日语 解析',
+'description'=>$this->content,
+);
+include_once ROOT_PATH . 'application/layout/htmlhead.inc'; 
+?>
+<body>
+	<div id="exposeMask" style="position: absolute; top: 0px; left: 0px; width: 1903px; height: 1611px; display: none; opacity: 0.8; z-index: 9998; background-color: rgb(0, 0, 0);"></div>
+    <nav id="dark">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li><a href="http://www.answerwo.com/q/search">搜索</a></li>
+                  <li><a href="http://www.answerwo.com/q/list">题库</a></li>
+                  <li><a href="http://www.answerwo.com/q/practice">自由做题</a></li>
+                  <li class="current">解析</li>
+                </ul>
+               <?php include_once ROOT_PATH . 'application/layout/user.inc'; ?> 
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="http://www.answerwo.com"><img src="http://www.answerwo.com/public/images/logo.gif" width="313" height="35" alt="答案窝" /></a></div>
+                <form class="ym-clearfix" method="get" action="http://www.answerwo.com/q/search">
+                    <input name="query" type="search" placeholder="输入关键字搜索" class="inpmain" />
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g75 ym-gl">
+                        <div class="ym-gbox">
+                            <h1>题目解析</h1>
+                        </div>
+                    </div>
+                    <div class="ym-g25 ym-gr">
+                        <div class="ym-gbox">
+                            <div class="more"><span class="gary"><?php echo $this->savecount;?>人收藏</span></div> 
+                        </div>
+                    </div>
+                </div>            	
+            </div>
+        </div>
+    </div>
+    
+    <div id="main">
+    	<div class="ym-wrapper" id="DETAIL">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g62 ym-gl">
+                        <div class="ym-gbox">
+                            <div class="det-action">
+                            
+                            	<a href="javascript:DetailAddFavorite()" class="favorite Pop" id="FavoriteDetail" hasfavorite="false" popup="favoritedetail" title="点击将添加收藏">收藏</a> 
+
+                                <span class="triangle"></span>
+                            </div>
+                            <div class="det-title det-title-first ym-clearfix">
+                            	<h2>题目内容</h2>
+                            <!-- JiaThis Button BEGIN -->
+							<div id="ckepop" style="float:right;">
+							<a href="http://www.jiathis.com/share?uid=1644214" class="jiathis jiathis_txt" target="_blank"><img src="http://v2.jiathis.com/code_mini/images/btn/v1/jiathis1.gif" border="0" /></a>
+							<!--<a class="jiathis_counter_style_margin:3px 0 0 2px"></a>  -->
+							</div>
+							<script type="text/javascript" >
+							var jiathis_config={
+								data_track_clickback:true,
+								url:window.location.href,
+								summary:"",
+								title:"精彩缤纷的日语等级考试题库@答案窝，大家一起努力，构建一个完美的日语生态系统！",
+								hideMore:false
+							}
+							</script>
+							<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1644214" charset="utf-8"></script>
+							<!-- JiaThis Button END -->
+                            </div>
+                            <div class="rt">
+                            	<p><?php echo $this->content;?> </p>
+                            	<?php 
+                            		if(isset($this->answerflag)) {
+                            	?>
+                                <ul class="option-ul">
+                                	<li><input type="radio" value="1" name="answeroption"/><?php echo $this->answer1;?></li>
+                                    <li><input type="radio" value="2" name="answeroption"/><?php echo $this->answer2;?></li>
+                                    <li><input type="radio" value="3" name="answeroption"/><?php echo $this->answer3;?></li>
+                                    <li><input type="radio" value="4" name="answeroption"/><?php echo $this->answer4;?></li>
+                                </ul>
+                                <?php
+                                	} 
+                                ?>
+                                
+                                <a id="QuestionShow" name="QuestionShow" href="javascript:DisplayMore()" class="direct btn-new">提交并查看题目解答和评论</a>
+                                <p class="answer" id="hiddenanswer" name="hiddenanswer" style="visibility: hidden;">答案：<?php echo $this->answer;?></p>
+                                <?php 
+                                	if(isset($this->explain)) {
+                                ?>
+                                <div id="hiddenexplain" name="hiddenexplain" style="visibility:hidden;">
+                                	<p class="answer">解析:</p>
+                                	<ul class="comment" id="Comment">
+                            		<?php 
+										$i = 1;
+										$explains = Zend_Json::decode($this->explain);
+										if($explains) {
+											foreach($explains as $explain) {
+                            		?>
+                            					<li style="background-color: #C2C2C2;"><?php echo $explain["creator"];?> <?php echo $explain["createTime"];?></li>
+                            					<li><?php echo $explain["content"];?></li>
+                            		<?php
+                            					$i++;
+                            				}
+                            			}
+                            		?>
+                            		</ul>
+                            	</div>                        
+                                <?php
+                                	} 
+                                ?>
+                            </div>
+                            
+                            <form method="post" name="form" id="form" style="visibility: hidden;">
+                            <input type="hidden" name="encryptid" id="encryptid" value="<?php echo $this->encryptid;?>" />
+                            <input type="hidden" name="favorite" value="" />
+                            <div class="det-title ym-clearfix">
+                            	<h2>题目解析</h2>
+                            	<a href="javascript:void(0)" class="tl-explain" id="ExplainStart">编写解析</a>
+                            </div>
+                            <div class="ztm-form det-form" id="ExplainAdd" name="ExplainAdd">
+                            	<div class="item">
+                                	<a name="addexplain"></a>
+                                    <textarea class="inp" name="explaincontent"></textarea>
+                                </div>
+                                <button class="btn" reid="0" refloor="0" id="explainButton" name="explainButton">发表解析</button><p class="warn"></p>
+                            </div>
+                            
+                            <div class="det-title ym-clearfix">
+                            	<h2>题目讨论</h2>
+                            	<a href="javascript:void(0)" class="tl-comment">发表新讨论</a>
+                            </div>
+                            
+                            <ul class="comment" id="Comment">
+                            <?php 
+                            	if(isset($this->discuss)) {
+									$i = 1;
+									$discusses = Zend_Json::decode($this->discuss);
+									foreach($discusses as $discuss) {
+                            ?>
+                            <li style="background-color: #C2C2C2;"><?php echo $discuss["user_id"];?> <?php echo $discuss["createTime"];?> <span style="float:right;"><a onclick="AddReply(<?php echo $i;?>,'<?php echo $discuss["user_id"];?>');" class="tl-comment">引用回复</a></span></li>
+                            <li><?php echo $discuss["content"];?></li>
+                            <?php
+                            			$i++;
+                            		}
+                            	} 
+                            ?>
+                            </ul>                            
+                            <div class="page ym-clearfix" id="CommentPager"></div>
+                            <div class="ztm-form det-form" id="CommentAdd">
+                            	<div class="item">
+                                	<a name="addcomment"></a>
+                                    <textarea class="inp" name="discusscontent"></textarea>
+                                </div>
+                                <button class="btn" reid="0" refloor="0" id="discussbutton" name="discussButton">发表讨论</button><p class="warn"></p>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ym-g38 ym-gr">
+                        <div class="ym-gbox">
+                            <div class="det-line nopadding">
+                            	<b>难度：</b>
+                                <p><span class="red"><strong><?php echo $this->difficulty;?></strong>/5</span></p>
+                                <div class="det-rater-value" id="RaterTitle"><?php echo $this->diff;?></div>                                
+                            </div>
+                            <div class="det-line">
+                            	<b>级别：</b>
+                                <p><?php echo $this->level;?>级</p>
+                            </div>
+                            <div class="det-line">
+                            	<?php 
+                            		if($this->year != "0") {
+								?>
+                            	<b>年份：</b>
+                                <p><?php echo $this->year;?>年<?php if(isset($this->month)) { echo $this->month."月";} ?></p>
+                                <?php
+                                	} 
+                                ?>
+                            </div>
+                            <div class="det-line">
+                            	<b>类型：</b>
+                                <p><?php echo $this->type;?></p>
+                            </div>
+                            <div class="det-info">本题目由<?php echo $this->creator;?>在<?php echo $this->createYear;?>年<?php echo $this->createMonth;?>月<?php echo $this->createDay;?>日创建。感谢<?php echo $this->creator;?>为此题做出的贡献！<hr />答案窝所有题目遵循<a href="http://www.answerwo.com/s/protocal" target="_blank">知识共享-署名-相同方式共享3.0协议许可协议</a>，所有的题目和相关的解析过程都是由广大网民编辑整理而成。</div>
+                            <!-- 题目统计 -->
+                            <div class="w-stat hidden QuesHidden" style="display: block; visibility: hidden;" name="statistics" id="statistics">        	
+								<div class="title">题目统计数据</div>
+								<div class="info"><span>正确率</span><b><?php echo $this->correctpercentage;?>%</b><span>正确答案</span><p><?php echo $this->answer;?></p></div>
+								<div id="ChartColumn" class="chart">
+    								<div class="item c1"><i style="height: <?php echo isset($this->percentageA) ? $this->percentageA : "0";?>px; margin-top: <?php echo 98 - intval($this->percentageA);?>px;"><span style="height: <?php echo intval($this->percentageA) > 2 ? intval($this->percentageA)-2 : 0;?>px;"></span></i><b>1</b><p><?php echo $this->percentageA;?>%</p></div>
+    								<div class="item c2"><i style="height: <?php echo isset($this->percentageB) ? $this->percentageB : "0";?>px; margin-top: <?php echo 98 - intval($this->percentageB);?>px;"><span style="height: <?php echo intval($this->percentageB) > 2 ? intval($this->percentageB)-2 : 0;?>px;"></span></i><b>2</b><p><?php echo $this->percentageB;?>%</p></div>
+    								<div class="item c3"><i style="height: <?php echo isset($this->percentageC) ? $this->percentageC : "0";?>px; margin-top: <?php echo 98 - intval($this->percentageC);?>px;"><span style="height: <?php echo intval($this->percentageC) > 2 ? intval($this->percentageC)-2 : 0;?>px;"></span></i><b>3</b><p><?php echo $this->percentageC;?>%</p></div>
+    								<div class="item c4"><i style="height: <?php echo isset($this->percentageD) ? $this->percentageD : "0";?>px; margin-top: <?php echo 98 - intval($this->percentageD);?>px;"><span style="height: <?php echo intval($this->percentageD) > 2 ? intval($this->percentageD)-2 : 0;?>px;"></span></i><b>4</b><p><?php echo $this->percentageD;?>%</p></div>
+    								<div class="clear"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <?php include_once ROOT_PATH . 'application/layout/footer.inc';?>
+    
+    <div id="PopupLogin" name="PopupLogin" class="overlay p-login clearfix" style="position: fixed; z-index: 9999; top: 79.5px; left: 400px; display: none;">
+    	<div class="ym-g39 ym-gl">
+        	<div class="ym-gbox">
+        		<sapn style="color: #5599DD; float: right;"><a href="javascript:cancel()">关闭</a></sapn>
+            	<h2 class="sub-title-new">用户登录<?php if(isset($this->logininformation)) {echo "  <span id=\"logininformation\" style=\"color: #FF0000;\">".$this->logininformation."</span>";}?></h2>
+            		<div class="ztm-form">
+						<form class="ztm-form" method="post">
+                    	<div class="item">
+                        	<label class="title">用户名/Email邮箱地址：</label>
+                            <input type="text" class="inp" name="username" id="username" minlength="2" maxlength="30" />
+                        </div>
+                        <div class="item">
+                        	<label class="title">登录密码：</label>
+                            <input type="password" class="inp" name="password" id="password" minlength="6" />
+                        </div>
+                        <div class="item">
+                        	<span><input type="checkbox" name="autologin" style="display:inline;" onclick="SetAutoLogin();" value="0"/><label style="margin-top:-1px; display:inline;"> 下次自动登录</label></span>
+                        </div>                                                             
+                        <button type="submit" class="btn">马上登录</button>
+                    	</form>
+                    </div>
+            </div>
+    	</div>
+	</div>
+	
+	<div id="PopupRegister" name="PopupLogin" class="overlay p-register clearfix" style="position: fixed; z-index: 9999; top: 79.5px; left: 400px; display: none;">
+    	<div class="ym-g39 ym-gl">
+        	<div class="ym-gbox">
+        		<sapn style="color: #5599DD; float: right;"><a href="javascript:cancelRegister()">关闭</a></sapn>
+            	<h2 class="sub-title-new">用户登录 <?php if(isset($this->registerinformation)) {echo "  <span id=\"registerinformation\" style=\"color: #FF0000;\">".$this->registerinformation."</span>";}?></h2>
+					<form class="ztm-form" method="post">
+                    	<div class="item-new">
+                        	<label class="title">用户昵称<sup>*</sup></label>
+                            <input class="inp" type="text" name="nickname" />
+                           	<p class="intro" warn="nickname">允许英文字母、中文或阿拉伯数字，不支持任何符号，最多8中文或16英文</p>
+                        </div>
+                        <div class="item-new">
+                            <label class="title">登录密码<sup>*</sup></label>
+                            <input type="password" class="inp" name="password" />
+                            <p class="intro" warn="password">登录密码不得少于6个字符，为了您的账号安全，请尽可能地复杂</p>
+                        </div>
+                        <div class="item-new">
+                            <label class="title">再次确认密码<sup>*</sup></label>
+                            <input type="password" class="inp" name="repassword" />
+                            <p class="intro" warn="repassword">请重新输入一遍密码以确认</p>
+                        </div>
+                        <div class="item-new">
+                            <label class="title">邮箱地址<sup>*</sup></label>
+                            <input type="text" class="inp" name="email" />
+                        </div>
+                        <p class="textline">点击下方的“马上注册”按钮，即代表你接受了<a href="http://www.answerwo.com/s/announcement" target="_blank">《答案窝网站使用协议》</a></p>                                
+                       	<button type="submit" class="btn">马上注册</button>
+                    </form>
+            </div>
+    	</div>
+	</div>
+</body>
+<?php 
+	if(isset($_POST["explaincontent"]) || isset($_POST["discusscontent"])) {
+?>
+<script type="text/javascript">
+Display();
+</script>
+<?php 
+	}
+	if(isset($this->logininformation)) {
+?>
+<script type="text/javascript">
+showlogin();
+</script>
+<?php
+	}
+	if(isset($this->registerinformation)) {
+?>
+<script type="text/javascript">
+showregister();
+</script>
+<?php
+	} 
+?>
+</html>

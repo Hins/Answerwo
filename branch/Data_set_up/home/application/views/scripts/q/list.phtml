@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<?php
+$include_param = array(
+'title'=>'答案窝-题目检索',
+'keyword'=>'答案窝 日语 等级考试 题目检索',
+'description'=>'答案窝 题目检索',
+);
+include_once ROOT_PATH . 'application/layout/htmlhead.inc'; 
+?>
+<body>
+<script type="text/javascript">
+<?php
+	if(isset($this->favoritesuccess)) { 
+?>	
+		alert("收藏成功！");
+<?php
+	}
+?>
+</script>
+    <nav id="dark">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li><a href="http://www.answerwo.com/q/search">题目搜索</a></li>
+                  <li class="current">题目检索</a></li>                
+                </ul>
+                <?php include_once ROOT_PATH . 'application/layout/user.inc'; ?> 
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="http://www.answerwo.com"><img src="http://www.answerwo.com/public/images/logo.gif" width="313" height="35" alt="答案窝" /></a></div>
+                <form class="ym-clearfix" method="get" action="http://www.answerwo.com/q/search">
+                    <input name="query" type="search" placeholder="输入关键字搜索" class="inpmain" />
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox list-crumb" style="padding-bottom:6px;">
+                <div class="ym-grid">
+                <form method="get" name="form" id="form">
+				    <input type="hidden" name="questionid" value="" />
+                    <div class="ym-gbox ym-clearfix">
+                        <h1 class="list-header">题目筛选</h1><!--注意如果fliter要变为两行的话，需要js来修正高度-->
+                        <div class="fliter">
+                            <div class="fliter-item fliter-input ym-clearfix">
+                                <b class="fliter-title">关键词：</b>
+                            </div>
+                            <div class="fliter-item fliter-input ym-clearfix">
+                                    <input type="text" name="query" value="<?php if(isset($this->query)) {echo $this->query;}?>"/>
+                                    <button class="fo-btn" onclick="this.submit();">查询</button>
+                            </div>
+                            <div class="fliter-item fliter-input ym-clearfix">
+                                <b class="fliter-title">年份(200907,...)：</b>
+                                <input type="text" name="source" value="<?php if(isset($this->source)) {echo $this->source;}?>"/>
+                            </div>
+                            <div class="fliter-item fliter-input ym-clearfix">
+                                <b class="fliter-title">题型(单选题,...)：</b>
+                                <input type="text" name="type" value="<?php if(isset($this->type)) {echo $this->type;}?>"/>
+                            </div>
+                            <div class="fliter-item fliter-input ym-clearfix">
+                                <b class="fliter-title">难度(很难/难/普通/简单/很简单)：</b>
+                                <input type="text" name="difficulty" value="<?php if(isset($this->difficulty)) {echo $this->difficulty;}?>"/>
+                            </div>
+                            <div class="fliter-item fliter-input ym-clearfix">
+                                <b class="fliter-title">级别(1,2,3,4,5)：</b>
+                                <input type="text" name="level" value="<?php if(isset($this->level)) {echo $this->level;}?>"/>
+                            </div>
+                             <div class="fliter-item fliter-input ym-clearfix">
+                                <b class="fliter-title">知识点(文字,...)：</b>
+                                <input type="text" name="category" value="<?php if(isset($this->category)) {echo $this->category;}?>"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </div>           	
+            </div>
+        </div>
+    </div>
+    
+    <div id="main" class="list">
+    	<div class="ym-wrapper" id="LIST">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g62 ym-gl">
+                        <div class="ym-gbox">
+                            <div class="list-info">符合条件的题目总共有<?php echo isset($this->total) ? $this->total : "0";?>道</div>
+                          	<div id="ListItems" class="list-items">
+                          		<?php
+                          			if(isset($this->questions)) {
+										$arr = Zend_Json::decode($this->questions);
+										if(!empty($arr)) { 
+											foreach($arr as $val) {
+                          		?>
+                                <div class="list-item ym-clearfix ListItem">
+                                    <div class="float"><i></i></div>                                
+                                    <div class="float-clear"></div><!--尼玛IE6和IE7逼着我多写一个空标签-->
+                                    <div class="content">
+                                        <p><a href="<?php echo $val["link"];?>" target="_blank">
+                                        <?php 
+                                		if(strlen($val["content"]) > 180) {
+											$i = 180;
+											for(; $i < strlen($val["content"]); $i++) {
+												if(ord($val["content"][$i]) < 100) {
+													break;
+												}
+											}
+											echo substr($val["content"],0,$i)."..."; 
+										}
+										else {
+											echo $val["content"];
+										}
+                                	?>
+                                        </a></p>
+                                        <span><?php echo $val["year"];?>考题，难度<?php echo $val["difficulty"];?>，<?php echo $val["explaincount"]?>解答，<?php echo $val["discusscount"]?>评论，<?php echo $val["favoritecount"];?>人收藏</span>
+                                        <button onclick="ListAddFavorite(<?php echo $val["id"];?>);">★ 添加收藏</button>
+                                    </div>
+                                </div>
+                                <?php
+                                			}
+                                		}
+                                	} 
+                                ?>
+                                <div class="page ym-clearfix">
+                            	<?php echo $this->pagination;?>
+                            	<?php 
+                            		if($this->curpage+10 < $this->totalpage && $this->curpage != $this->totalpage) {
+                            	?>
+                                <b>...</b>
+                            	<?php
+								} 
+                            	?>
+                            	<?php if(isset($this->lastpaflag)) echo $this->lastpagination;?>
+                            	</div>
+                            </div>
+                            <div class="sh-page ym-clearfix" id="ListPager" page-total="45"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   <?php include_once ROOT_PATH . 'application/layout/footer.inc';?>
+
+</body>
+</html>

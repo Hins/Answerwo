@@ -1,0 +1,57 @@
+<?php
+$param = array('title'=>'答案窝-题目一览');
+include_once ADMIN_ROOT_PATH . 'application/layout/adminhtmlheader.inc';  
+?>
+
+<body>
+<div id="nav"><?php include_once 'nav.inc'; ?></div>
+<div id="main">
+    <h1><a href="#">题目管理</a> > 题目一览</h1>
+    <hr />
+    <form method="get">
+	<div class="table">
+		<table>
+    		<thead>
+    		<th>id</th>
+    		<th>创建时间</th>
+    		<th>最后修改时间</th>
+    		<th>题目类型</th>
+    		<th>题目级别</th>
+    		<th>题目内容</th>
+    		<th>题目来源</th>
+    		<th>题目种类</th>
+    		<th>题目答案</th>
+    		<th>题目难度</th>
+    		</thead>
+    		<?php
+    			if(isset($this->questions)) {
+					$arr = Zend_Json::decode($this->questions);
+					foreach($arr as $val) { 
+    		?>
+    		<tr>
+    		<td><?php echo $val["id"];?></td>
+    		<td><?php echo $val["createTime"];?></td>
+    		<td><?php echo $val["lastmodifyTime"];?></td>
+    		<td><?php echo $val["type"];?></td>
+    		<td><?php echo $val["level"];?></td>
+    		<td><?php echo $val["content"];?></td>
+    		<td><?php echo $val["source"];?></td>
+    		<td><?php echo $val["category"];?></td>
+    		<td><?php echo $val["answer"];?></td>
+    		<td><?php echo $val["difficulty"];?></td>
+    		</tr>
+    		<?php
+    				}
+    			} 
+    		?>
+    	</table>
+    </div>
+    <div>
+    	<?php echo $this->pagination;?>
+    	<input type="text" name="page" value="" size=2 /><input type="submit" value="跳转"> 共<?php echo $this->pagenumber;?>页
+    </div>
+    </form>
+    </div>
+</div>
+</body>
+</html>

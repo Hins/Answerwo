@@ -1,0 +1,85 @@
+<?php
+$param = array('title'=>'答案窝-题目删除');
+include_once ADMIN_ROOT_PATH . 'application/layout/adminhtmlheader.inc';  
+?>
+<body>
+<div id="nav"><?php include_once 'nav.inc'; ?></div>
+<div id="main">
+    <h1><a href="#">题目管理</a> > 题目删除</h1>
+    <hr />
+    <div>
+	<form method="get">
+		<div>
+    	<input type="hidden" name="id" value="<?php echo (isset($this->id) ? $this->id : '');?>" />
+        <div>
+        	<label>题目内容检索<sup>*</sup></label><br>
+            <input type="text" size=70 name="search" value=""/>
+            <button type="submit">检索</button>
+        </div>
+        <div>
+        	<label>题目内容</label><br>
+            <textarea cols=100 rows=3 name="content"><?php echo isset($this->content) ? $this->content : "";?></textarea>
+        </div>
+        <div>
+        	<label>答案1</label><br>
+           	<textarea cols=100 rows=3 name="answer1"><?php echo isset($this->answer1) ? $this->answer1 : "";?></textarea>
+        </div>
+        <div>
+        	<label>答案2</label><br>
+            <textarea cols=100 rows=3 name="answer2"><?php echo isset($this->answer2) ? $this->answer2 : "";?></textarea>
+        </div>
+        <div>
+            <label>答案3</label><br>
+            <textarea cols=100 rows=3 name="answer3"><?php echo isset($this->answer3) ? $this->answer3 : "";?></textarea>
+       	</div>
+        <div>
+        	<label>答案4</label><br>
+            <textarea cols=100 rows=3 name="answer4"><?php echo isset($this->answer4) ? $this->answer4 : "";?></textarea>
+        </div>
+       	<div>
+            <label>题目答案</label><br>
+            <input type="text" class="inp" size=100 name="answer"  value="<?php echo isset($this->answer) ? $this->answer : '';?>"/>
+        </div>
+        <div>
+        	<label>题目考点(文法，词汇，听力......)</label><br>
+            <input type="text" class="inp" size=100 name="knowledge" value="<?php echo isset($this->knowledge) ? $this->knowledge : '';?>"/>
+        </div>
+        <div>
+            <label>题目来源(2001-1,2008-3,......)</label><br>
+            <input type="text" class="inp" size=100 name="source"  value="<?php echo isset($this->source) ? $this->source : '';?>"/>
+        </div>
+        <div>
+        	<label>题目类型<sup>*</sup>(单选，双选，作文......)<a href="#" class="btn">题型对应关系</a></label><br>
+            <select name="type" id="type">
+            	<option value="1" <?php echo isset($this->type) ? ($this->type == "1" ? "selected" : "" ) : "";?>>单选题</option>
+                <option value="2" <?php echo isset($this->type) ? ($this->type == "2" ? "selected" : "" ) : "";?>>扩展单词全称</option>
+                <option value="3" <?php echo isset($this->type) ? ($this->type == "3" ? "selected" : "" ) : "";?>>缩短单词简称</option>
+                <option value="4" <?php echo isset($this->type) ? ($this->type == "4" ? "selected" : "" ) : "";?>>缩短意思简称</option>
+                <option value="5" <?php echo isset($this->type) ? ($this->type == "5" ? "selected" : "" ) : "";?>>表述最恰当</option>
+                <option value="6" <?php echo isset($this->type) ? ($this->type == "6" ? "selected" : "" ) : "";?>>意思相似表述</option>
+                <option value="7" <?php echo isset($this->type) ? ($this->type == "7" ? "selected" : "" ) : "";?>>阅读题</option>
+           </select>
+        </div>
+        <div>
+        	<label>题目解答</label><br>
+           	<textarea cols=100 rows=6 name="explain"><?php echo isset($this->explain) ? $this->explain : '';?></textarea>
+        </div>
+        <div>
+        	<label>题目难度</label><br>
+            <ul>
+            	<li><input type="radio" name="difficulty" value="1" <?php echo isset($this->difficulty) ? ($this->difficulty == "1" ? "checked" : "" ) : "";?>/><label>很难</label></li>
+                <li><input type="radio" name="difficulty" value="2" <?php echo isset($this->difficulty) ? ($this->difficulty == "2" ? "checked" : "" ) : "";?>/><label>难</label></li>
+                <li><input type="radio" name="difficulty" value="3" <?php echo isset($this->difficulty) ? ($this->difficulty == "3" ? "checked" : "" ) : "";?>/><label>普通</label></li>
+                <li><input type="radio" name="difficulty" value="4" <?php echo isset($this->difficulty) ? ($this->difficulty == "4" ? "checked" : "" ) : "";?>/><label>简单</label></li>
+                <li><input type="radio" name="difficulty" value="5" <?php echo isset($this->difficulty) ? ($this->difficulty == "5" ? "checked" : "" ) : "";?>/><label>很简单</label></li>
+            </ul>
+        </div>
+        </div>                          
+        <div style="margin:5px; padding:5px;">
+        	<input type="submit" value="删除"/>
+        </div>
+    </form>
+    </div>
+</div>
+</body>
+</html>

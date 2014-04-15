@@ -1,0 +1,79 @@
+/* 定义所有表单和内部元素样式 */
+
+
+/* 表单的通用基本设置 */
+.ztm-form label, .ztm-form input, .ztm-form p{ display:block;}
+.ztm-form .item{ padding-bottom:20px;}
+.ztm-form label.title{ font-size:16px; padding-bottom:10px;}
+.ztm-form label sup{ color:#f00;}
+.ztm-form .inp{ width:95%; padding:10px;}
+
+/* 表单的文字样式*/
+.ztm-form p.intro{ padding-top:5px; color:#888;}
+.ztm-form p.warn{ padding-top:5px; color:#ff7e00;}
+.ztm-form p.textline{ padding-bottom:10px; color:#333;}
+
+/*input和textarea样式*/
+.ztm-form input.inp{ border:1px solid #c2c2c2; background-color:#f7f7f7;}
+.ztm-form textarea.inp{ height:120px; border:1px solid #c2c2c2; background-color:#f7f7f7; display:block;}
+.ztm-form .inp:hover{ border-color:#a8a8a8; -webkit-box-shadow: 0 0 5px #ccc;	-moz-box-shadow: 0 0 5px #ccc; box-shadow: 0 0 5px #ccc;}
+.ztm-form .inp:focus, .ztm-form .inp:active{ border-color:#4c7dbf; -webkit-box-shadow: 0 0 5px #ccc;	-moz-box-shadow: 0 0 5px #ccc; box-shadow: 0 0 5px #ccc;}
+.ztm-form .inp-wran{ border-color:#ff7e00 !important;}
+
+/*radio和checkbox的样式定义开始*/
+.ztm-form ul.radio li, .ztm-form ul.check li{ margin-bottom:5px; padding-left:21px; background:url(../images/icon.gif) 0 3px no-repeat; cursor:pointer;}
+/*radio部分的图标位置*/
+.ztm-form ul.radio li.selected{ background-position:0 -77px;}
+.ztm-form ul.radio li.wran{ background-position:0 -117px;}
+.ztm-form ul.radio li.disable, .ztm-form ul.radio li.disable:hover{ background-position:0 -157px; cursor:text; color:#888;}
+.ztm-form ul.radio li.select-disable, .ztm-form ul.radio li.select-disable:hover{ background-position:0 -197px; cursor:text; color:#888;}
+.ztm-form ul.radio li:hover{ background-position:0 -37px;}
+.ztm-form ul.radio li.selected:hover{ background-position:0 -237px;}
+/*checkbox部分的图标样式*/
+.ztm-form ul.check li{ background-position:0 -277px;}
+.ztm-form ul.check li.selected{ background-position:0 -357px;}
+.ztm-form ul.check li.wran{ background-position:0 -397px;}
+.ztm-form ul.check li.disable, .ztm-form ul.check li.disable:hover{ background-position:0 -437px; cursor:text; color:#888;}
+.ztm-form ul.check li.select-disable, .ztm-form ul.check li.select-disable:hover{ background-position:0 -477px; cursor:text; color:#888;}
+.ztm-form ul.check li:hover{ background-position:0 -317px;}
+.ztm-form ul.check li.selected:hover{ background-position:0 -517px;}
+/*公用的部分样式定义*/
+.ztm-form ul.radio li.disable label, .ztm-form ul.radio li.select-disable label, .ztm-form ul.check li.disable label, .ztm-form ul.check li.select-disable label{ cursor:text;} 
+.ztm-form ul.radio li input, .ztm-form ul.check li input{ display:none;}
+/*radio和check的单行模式*/
+.ztm-form ul.radio li input, .ztm-form ul.check li input{ margin-top:5px;}
+.ztm-form ul.radio li label, .ztm-form ul.check li label{ font-size:14px; cursor:pointer; padding-top:1px\9; _display:inline-block;}
+.ztm-form ul.radio-aline li, .ztm-form ul.check-aline li{ float:left; margin-right:20px;}
+
+.ztm-form .dropdown select{ width:97%; padding:.5em;border:1px solid #c2c2c2; background-color:#f7f7f7;}
+.ztm-form .dropdown-aline select{ width:auto; float:left;}
+.ztm-form .dropdown-aline label{ float:left; display:block; line-height:37px; padding:0 10px; *line-height:24px;}
+
+/*绿色的主按钮*/
+.btn{ background-color:#95bf69; padding:.5em 1em; font-size:16px; border:1px solid #abcc87; border-bottom-color:#7ea258; border-right-color:#7ea258; color:#fff !important; cursor:pointer;}
+.btn:hover{ background-color:#79975b; border:1px solid #94ac7c; border-bottom-color:#6e8652; border-right-color:#6e8652;}
+.btn:focus, .btn:active{ background-color:#637c4b; border:1px solid #677657; border-left-color:#778864; border-bottom-color:#79965c; border-right-color:#79965c;}
+/*蓝色的备用按钮*/
+.btn-blue{ background-color:#79aef4; padding:.5em 1em; font-size:16px; border:1px solid #94bff6; border-bottom-color:#6692cf; border-right-color:#6692cf; color:#fff; cursor:pointer;}
+.btn-blue:hover{ background-color:#628ecb; border:1px solid #81a5d5; border-bottom-color:#5378ac; border-right-color:#5378ac;}
+.btn-blue:focus, .btn-blue:active{ background-color:#5b83bb; border:1px solid #59708f; border-left-color:#6886ac; border-bottom-color:#618fcb; border-right-color:#618fcb;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

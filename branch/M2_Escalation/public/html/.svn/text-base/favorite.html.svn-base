@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>找题目</title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- mobile viewport optimisation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../css/zhaotimu.css" type="text/css"/>
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="../css/ym-iehacks.min.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../js/google.html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui-1.8.7.min.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.parameter.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.plugins.js"></script>
+    <script type="text/javascript" src="../js/zhaotimu.function.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.popup.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.js"></script>
+</head>
+<body>
+
+    <header id="gary" class="ym-wrapper">
+        <div class="ym-wbox ym-clearfix">
+            <div class="logo"><a href="#"><img src="../images/logo_black.gif" width="317" height="35" alt="找题目" /></a></div>
+            <div class="links ym-clearfix">
+            	<a href="#">lanslot的个人中心</a>
+                <a href="#">账号设置</a>
+                <a href="#" class="last">退出登录</a>
+            </div>                
+        </div>
+    </header>
+    
+    <nav id="blue" class="ym-wrapper">
+        <div class="ym-wbox">
+            <div class="ym-grid">
+                <div class="ym-g20 ym-gl ym-noborder">
+                    <div class="ym-gbox">
+                        <a class="subject-current" href="#">初中数学</a>
+                        <ul class="subject">
+                            <li><a href="#">初中语文</a></li>
+                            <li><a href="#">初中英语</a></li>
+                            <li><a href="#">初中物理</a></li>
+                        </ul>                       
+                    </div>
+                </div>
+                <div class="ym-g80 ym-gr ym-leftborder">
+                    <div class="ym-gbox ym-clearfix">
+                        <ul class="naviga">
+                          <li class="current"><a href="#">收藏夹</a></li>
+                          <li><a href="#">题目清单</a></li>
+                          <li><a href="#">我的贡献</a></li>                
+                        </ul>
+                        <div class="action"><a href="javascript:void(0)" popup="export">导出题目</a></div>
+                    </div>
+                </div>
+            </div>              
+        </div>
+    </nav>
+    
+    
+    <div id="main">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox template2">
+                <div class="ym-grid">
+                    <div class="ym-g20 ym-gl ym-noborder">
+                        <div class="ym-gbox uc-left">
+                            <b class="uc-title">题目筛选器</b>
+                            <ul class="uc-items">
+                            	<li><a href="#">简单（234）</a></li>
+                                <li><a href="#">普通（24）</a></li>
+                                <li><a href="#">难（4）</a></li>
+                            </ul>
+                            <b class="uc-title">题目筛选器</b>
+                            <ul class="uc-items">
+                            	<li><a href="#">简单（234）</a></li>
+                                <li><a href="#">普通（24）</a></li>
+                                <li><a href="#">难（4）</a></li>
+                            </ul>
+                            <b class="uc-title">题目筛选器</b>
+                            <ul class="uc-items">
+                            	<li><a href="#">简单（234）</a></li>
+                                <li><a href="#">普通（24）</a></li>
+                                <li><a href="#">难（4）</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ym-g80 ym-gr">
+                        <div class="ym-gbox favo-main">                        
+                            <div class="ym-grid favo-item FavoriteItem" qid="1234">
+                            	<div class="ym-g75 ym-gl">
+                                	<div class="ym-gbox">
+                                    	<div class="favo-info ym-clearfix">
+                                        	<p>2011年，河北，中考真题</p>
+                                            <a href="javascript:void(0)" class="tl-favorite FavoriteRemove"><span>取消收藏</span></a>
+                                        </div>
+                                        <div class="favo-content"><a href="123">新东方进行GMAT线上的发展主要是为了补充新功能，为用户提供一个原本缺失的线上练习系统，并配合线下讲课，这样能让整体教育产品更具完整性。新东方没有用户流失，市场地位没有办法被撼动，目前内部统计也没有明显的用户流失情况。同样，正如上面所讲的新东方是在补充教育产品的完整性，并不是以提价为目的。</a></div>
+                                    	<div class="favo-action ym-clearfix">
+                                        	<ul class="sh-tag favo-action-tag ym-clearfix" tagger-id="1234">
+                                        		<li class="ym-clearfix"><span>一元二次方程</span><a href="javascript:void(0)" class="delete"></a></li>
+                                            	<li class="ym-clearfix"><span>一元二次方程</span><a href="javascript:void(0)" class="delete"></a></li>
+                                            </ul>
+                                            <a href="javascript:void(0)" class="favo-action-add" popup="favoritetag"></a>
+                                            <div class="favo-action-collect"><a href="javascript:void(0)" class="text FavoriteListAdd">加入清单</a><a href="javascript:void(0)" class="down" popup="favoritelist"></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ym-g25 ym-gr">
+                                	<div class="ym-gbox">
+                                    	<div class="favo-note ym-clearfix FavoriteNote">
+                                        	<div class="favo-note-title ym-clearfix">
+                                            	<b>批注</b>
+                                                <a href="javascript:void(0)" note-id="edit">编辑</a>
+                                            </div>
+                                            <div class="favo-note-content pl-scroll-note" note-id="content">
+                                            	这道题目适合上课讲上课讲一下。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ym-grid favo-item FavoriteItem" qid="1235">
+                            	<div class="ym-g75 ym-gl">
+                                	<div class="ym-gbox">
+                                    	<div class="favo-info ym-clearfix">
+                                        	<p>2011年，河北，中考真题</p>
+                                            <a href="javascript:void(0)" class="tl-favorite FavoriteRemove"><span>取消收藏</span></a>
+                                        </div>
+                                        <div class="favo-content"><a href="456">新东方进行GMAT线上的发展主要是为了补充新功能，为用户提供一个原本缺失的线上练习系统，并配合线下讲课，这样能让整体教育产品更具完整性。新东方没有用户流失，市场地位没有办法被撼动，目前内部统计也没有明显的用户流失情况。同样，正如上面所讲的新东方是在补充教育产品的完整性，并不是以提价为目的。</a></div>
+                                    	<div class="favo-action ym-clearfix">
+                                        	<ul class="sh-tag favo-action-tag ym-clearfix" tagger-id="1235">
+                                        		<li class="ym-clearfix"><span>一元二次方程</span><a href="javascript:void(0)" class="delete"></a></li>
+                                            	<li class="ym-clearfix"><span>一元二次方程</span><a href="javascript:void(0)" class="delete"></a></li>
+                                            </ul>
+                                            <a href="javascript:void(0)" class="favo-action-add" popup="favoritetag"></a>
+                                            <div class="favo-action-collect"><a href="javascript:void(0)" class="text FavoriteListAdd">加入清单</a><a href="javascript:void(0)" class="down" popup="favoritelist"></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ym-g25 ym-gr">
+                                	<div class="ym-gbox">
+                                    	<div class="favo-note ym-clearfix FavoriteNote">
+                                        	<div class="favo-note-title ym-clearfix">
+                                            	<b>批注</b>
+                                                <a href="javascript:void(0)" note-id="edit">编辑</a>
+                                            </div>
+                                          
+                                            
+                                            <div class="favo-note-content pl-scroll-note" note-id="content">
+                                                            这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。
+
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="ym-grid favo-item FavoriteItem" qid="1236">
+                            	<div class="ym-g75 ym-gl">
+                                	<div class="ym-gbox">
+                                    	<div class="favo-info ym-clearfix">
+                                        	<p>2011年，河北，中考真题</p>
+                                            <a href="javascript:void(0)" class="tl-favorite FavoriteRemove"><span>取消收藏</span></a>
+                                        </div>
+                                        <div class="favo-content"><a href="789">新东方进行GMAT线上的发展主要是为了补充新功能，为用户提供一个原本缺失的线上练习系统，并配合线下讲课，这样能让整体教育产品更具完整性。新东方没有用户流失，市场地位没有办法被撼动，目前内部统计也没有明显的用户流失情况。同样，正如上面所讲的新东方是在补充教育产品的完整性，并不是以提价为目的。</a></div>
+                                    	<div class="favo-action ym-clearfix">
+                                        	<ul class="sh-tag favo-action-tag ym-clearfix" tagger-id="1236">
+                                        		<li class="ym-clearfix"><span>一元二次方程</span><a href="javascript:void(0)" class="delete"></a></li>
+                                            	<li class="ym-clearfix"><span>一元二次方程</span><a href="javascript:void(0)" class="delete"></a></li>
+                                            </ul>
+                                            <a href="javascript:void(0)" class="favo-action-add" popup="favoritetag"></a>
+                                            <div class="favo-action-collect"><a href="javascript:void(0)" class="text FavoriteListAdd">加入清单</a><a href="javascript:void(0)" class="down" popup="favoritelist"></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ym-g25 ym-gr">
+                                	<div class="ym-gbox">
+                                    	<div class="favo-note ym-clearfix FavoriteNote">
+                                        	<div class="favo-note-title ym-clearfix">
+                                            	<b>批注</b>
+                                                <a href="javascript:void(0)" note-id="edit">编辑</a>
+                                            </div>
+                                            <div class="favo-note-content pl-scroll-note" note-id="content">
+                                            	这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下，这道题目适合上课讲一下。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            
+                            <div class="favo-bottom ym-clearfix">
+                            	<button class="fo-btn" popup="multi">批量操作本页全部题目</button>
+                                <div class="sh-page ym-clearfix"><a page="1" class="PageLink" href="javascript:void(0)">1</a><b>2</b><a page="3" class="PageLink" href="javascript:void(0)">3</a><a page="4" class="PageLink" href="javascript:void(0)">4</a><a page="5" class="PageLink" href="javascript:void(0)">5</a><a page="6" class="PageLink" href="javascript:void(0)">6</a><a page="7" class="PageLink" href="javascript:void(0)">7</a><b>...</b><a page="235" class="PageLink" href="javascript:void(0)">235</a></div>
+                            </div>
+                                                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <footer>
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <ul class="ym-clearfix">
+                    <li class="nostyle"><a href="#">关于我们</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">使用帮助</a></li>
+                    <li><a href="#">反馈意见</a></li>
+                </ul>
+                <p>找题目网站希望发动所有的老师来共同建设最高质量的中文题库，为我们教育事业的发展做出贡献</p>
+                <p>本站的全部文字在<a href="#">知识共享 署名-相同方式共享3.0协议</a>之条款下提供，附加条款亦可使用（请参阅<a href="#">使用条款</a>）</p>
+                <p>© 2012 找题目网站保留所有权利 <a href="#">京ICP备11008556号</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="po-favotag-add Popup" popup-id="favoritetag" popup-title="none" popup-width="207" popup-height="60" popup-stick="centerbottom" popup-multi="true">
+    	<div class="po-favotag-add-triangle"></div>
+        <div class="ym-clearfix" id="TagAddFavorite">
+            <input type="text" class="fo-tag-inp" />
+            <a class="fo-tag-btn" href="javascript:void(0)">添加</a>
+        </div>
+    </div>
+    
+    <div class="po-favolist-add Popup" popup-id="favoritelist" popup-title="none" popup-width="180" popup-stick="rightbottom">
+    	<ul>
+        	<li><a href="javascript:void(0)">未命名清单</a></li>
+            <li class="current"><a href="javascript:void(0)">未命名清单</a></li>
+            <li><a href="javascript:void(0)">未命名清单</a></li>
+            <li><a href="javascript:void(0)">未命名清单</a></li>
+            <li><a href="javascript:void(0)">未命名清单</a></li>
+            <li class="line"><a href="javascript:void(0)" popup="listcreate">创建新的清单</a></li>
+            <li><a href="javascript:void(0)" popup="listmore">更多清单</a></li>
+        </ul>
+    </div>
+    
+    <div class="po-favolist-add Popup" popup-id="multi" popup-title="none" popup-width="200" popup-height="90" popup-stick="centertop">
+    	<ul>
+        	<li><a href="javascript:void(0)">取消收藏</a></li>
+            <li><a href="javascript:void(0)" popup="listcreate">添加到新的题目清单</a></li>
+            <li><a href="javascript:void(0)" popup="listmore">添加到已有题目清单</a></li>
+        </ul>
+    </div>
+    
+    <div class="po-list-create Popup" title="保存到新的清单" popup-id="listcreate" popup-btn="true" popup-width="470">
+		<form class="fo-form">
+        	<div class="item">
+                <label class="title">清单名称<sup>*</sup></label>
+                <input class="fo-inp" type="text" required="required" />
+                <p class="te-gary">请为你的题目清单起一个标题，例如“XXX知识点的经典题目”</p>
+            </div>
+            <div class="item">
+                <label class="title">清单简介</label>
+                <textarea class="fo-inp"></textarea>
+                <p class="te-gary">请使用文字来描述一下你的题目清单，以便于理解</p>
+            </div>
+            <div class="item">
+                <label class="title">分享设置</label>
+                <ul class="radio radio-aline ym-clearfix">
+                    <li><input type="radio" name="test1" value="0" checked="checked" /><label>完全公开</label></li>
+                    <li><input type="radio" name="test1" value="1" /><label>使用密码访问</label></li>
+                    <li><input type="radio" name="test1" value="2" /><label>不公开</label></li>
+                </ul>
+                <p class="te-gary">把你的清单分享给别人的设置，如需要了解更多，请点击<a href="#" target="_blank">这里</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="po-list-more Popup ym-clearfix" title="将题目放入我的清单" popup-id="listmore" popup-btn="true" popup-width="470">
+		<form class="fo-form">
+        	<div class="item">
+                <label class="title">全部清单列表<sup>*</sup></label>
+                <ul class="check">
+                    <li><input type="checkbox" /><label>题目清单的标题题目清单的标题题目清单的标题1</label></li>
+                    <li><input type="checkbox" /><label>题目清单的标题题目清单的标题题目清单的标题2</label></li>                                       
+                    <li><input type="checkbox" /><label>题目清单的标题题目清单的标题3</label></li>
+                    <li><input type="checkbox" /><label>题目清单的标题题目清单的标题4</label></li>
+                    <li><input type="checkbox" /><label>选上不可用状态</label></li>
+                    <li><input type="checkbox" /><label>警告的状态</label></li>
+                    <li><input type="checkbox" /><label>题目清单的标题题目清单的标题题目清单的标题1</label></li>
+                    <li><input type="checkbox" /><label>题目清单的标题题目清单的标题题目清单的标题2</label></li>                                       
+                    <li><input type="checkbox" /><label>题目清单的标题题目清单的标题3</label></li>
+                    <li><input type="checkbox" /><label>题目清单的标题题目清单的标题4</label></li>
+                    <li><input type="checkbox" /><label>选上不可用状态</label></li>
+                    <li><input type="checkbox" /><label>警告的状态</label></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    
+    <div class="po-export Popup ym-clearfix" title="导出题目" popup-id="export" popup-btn="true" popup-width="470">
+		<form class="fo-form">
+        	<div class="item">
+                <label class="title">导出格式<sup>*</sup></label>
+                <div class="fo-dropdown ym-clearfix">
+                    <select>
+                        <option selected="selected">微软Office Word格式（*.docx）</option>
+                        <option>Adobe PDF格式（*.pdf）</option>
+                    </select>
+                </div>
+            </div>
+            <div class="item">
+                <label class="title">请选择要从哪里导出</label>
+                <ul class="radio radio-aline ym-clearfix" id="ExportRadioShow">
+                    <li radio-show="favorite"><input type="radio" name="test1" value="0" /><label>我的收藏夹</label></li>
+                    <li radio-show="list"><input type="radio" name="test1" value="1" /><label>我的题目清单</label></li>
+                </ul>
+            </div>
+            <div class="item" radio-target="favorite" style="display:none">
+                <label class="title">请选择要导出的收藏夹标签</label>
+                <div class="fo-dropdown ym-clearfix">
+                    <select>
+                        <option selected="selected">不导出收藏夹的题目</option>
+                        <option>收藏夹标签1</option>
+                        <option>Adobe PDF格式（*.pdf）</option>
+                    </select>
+                </div>
+            </div>
+            <div class="item" radio-target="list" style="display:none">
+                <label class="title">请选择要导出的题目清单</label>
+                <div class="fo-dropdown ym-clearfix">
+                    <select>
+                        <option selected="selected">不导出题目清单</option>
+                        <option>题目清单名称</option>
+                        <option>题目清单名称</option>
+                    </select>
+                </div>
+            </div>
+            <div class="item">
+                <label class="title">要导出的内容<sup>*</sup></label>
+                <ul class="check check-aline ym-clearfix">
+                    <li><input type="checkbox" checked="checked" /><label>题目内容</label></li>
+                    <li><input type="checkbox" checked="checked" /><label>题目答案</label></li>
+                    <li><input type="checkbox" checked="checked" /><label>题目解析</label></li>
+                    <li><input type="checkbox" checked="checked" /><label>个人批注</label></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+	
+    <div class="favo-list-addfeedback favo-list-addsuccess">成功添加到题目清单“”</div>
+    <div class="favo-list-addfeedback favo-list-addfailed">添加到题目清单失败，请刷新后重试！</div>
+    
+</body>
+</html>

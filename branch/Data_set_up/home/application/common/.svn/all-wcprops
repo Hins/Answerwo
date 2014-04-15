@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/809/branch/Data_set_up/home/application/common
+END
+JP_Lucene_Analyzer.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/203/branch/Data_set_up/home/application/common/JP_Lucene_Analyzer.php
+END
+constant.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/809/branch/Data_set_up/home/application/common/constant.php
+END
+userutil.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/610/branch/Data_set_up/home/application/common/userutil.php
+END
+util.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/575/branch/Data_set_up/home/application/common/util.php
+END
+init.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/624/branch/Data_set_up/home/application/common/init.php
+END
+dbutil.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/15/branch/Data_set_up/home/application/common/dbutil.php
+END

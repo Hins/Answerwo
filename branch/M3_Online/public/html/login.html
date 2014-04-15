@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>找题目</title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- mobile viewport optimisation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../css/zhaotimu.css" type="text/css"/>
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="../css/ym-iehacks.min.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../js/google.html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.tools.min.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.parameter.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.plugins.js"></script>
+    <script type="text/javascript" src="../js/zhaotimu.function.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.popup.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.js"></script>
+</head>
+<body>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="#"><img src="../images/logo.gif" width="313" height="35" alt="找题目" /></a></div>
+                <a href="#" class="login">新用户注册</a>
+                <div class="intro">还没有找题目的账号？</div>
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g85 ym-gl">
+                        <div class="ym-gbox">
+                            <h1>老用户登录</h1>
+                        </div>
+                    </div>
+                    <div class="ym-g15 ym-gr">
+                        <div class="ym-gbox">
+                            <div class="more"><a href="#">为神马要登录？</a></div> 
+                        </div>
+                    </div>
+                </div>            	
+            </div>
+        </div>
+    </div>
+    
+    <div id="main">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g62 ym-gl">
+                        <div class="ym-gbox">
+                            <h2 class="sub-title">登录后，你将可以免费使用下面的功能：</h2>
+                            <div class="login-left login-left1 ym-clearfix">
+                            	<i></i>
+                                <b>收藏题目</b>
+                                <p>在我的收藏夹中，可以对题目进行批注，<br />还可以进行标签化的整理</p>
+                            </div>
+                            <div class="login-left login-left2 ym-clearfix">
+                            	<i></i>
+                                <b>导出题目</b>
+                                <p>你可以批量地将收藏的题目导出成Word文件<br />或者PDF文件</p>
+                            </div>
+                            <div class="login-left login-left3 ym-clearfix">
+                            	<i></i>
+                                <b>制作题目清单</b>
+                                <p>按照不同的用途，将题目组合制作成题目清单，<br />发给你的学生或者朋友</p>
+                            </div>
+                            <div class="login-left login-left4 ym-clearfix">
+                            	<i></i>
+                                <b>更多功能，等待你来发现...</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ym-g38 ym-gr">
+                        <div class="ym-gbox">
+                        	<h2 class="sub-title">用户登录</h2>
+							<form class="ztm-form">
+                            	<div class="item">
+                                	<label class="title">用户名/Email邮箱地址：</label>
+                                    <input type="text" class="inp" name="nickname" pattern="[a-zA-Z0-9\u4E00-\u9FA5]+$" minlength="2" maxlength="16" required="required" ajaxrequest="NickCheck" />                                    
+                                	<p class="warn">用户名/Email地址不存在！</p>
+                                </div>
+                                <div class="item">
+                                	<label class="title">登录密码：</label>
+                                    <input type="password" class="inp" name="password" minlength="6" required="required" />
+                                    <p class="warn">密码错误！</p>
+                                </div>
+                                <div class="item">
+                                    <ul class="check check-aline ym-clearfix">
+                                    	<li><input type="checkbox" /><label>下次自动登录</label></li>                                        
+                                    </ul>
+                                    <a href="#" class="login-lost">忘记登录密码了？</a>
+                                </div>                                                             
+                                <button type="submit" class="btn">马上登录</button>
+                            </form>
+                            
+                            <h2 class="sub-title login-connect-title">使用下面的账号直接登录</h2>
+                            <div class="login-connect ym-clearfix">
+                            	<a href="#" class="qq"></a>
+                                <a href="#" class="weibo"></a>
+                                <a href="#" class="renren"></a>
+                                <a href="#" class="douban"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <ul class="ym-clearfix">
+                    <li class="nostyle"><a href="#">关于我们</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">使用帮助</a></li>
+                    <li><a href="#">反馈意见</a></li>
+                </ul>
+                <p>找题目网站希望发动所有的老师来共同建设最高质量的中文题库，为我们教育事业的发展做出贡献</p>
+                <p>本站的全部文字在<a href="#">知识共享 署名-相同方式共享3.0协议</a>之条款下提供，附加条款亦可使用（请参阅<a href="#">使用条款</a>）</p>
+                <p>© 2012 找题目网站保留所有权利 <a href="#">京ICP备11008556号</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

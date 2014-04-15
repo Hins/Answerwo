@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<?php
+$include_param = array(
+'title'=>'答案窝-自由做题',
+'keyword'=>'答案窝 日语 自由做题',
+'description'=>'答案窝 日语 自由做题',
+);
+include_once ROOT_PATH . 'application/layout/htmlhead.inc'; 
+?>
+<body>
+    <nav id="dark">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li><a href="http://www.answerwo.com/q/search">搜索</a></li>
+                  <li><a href="http://www.answerwo.com/q/list">题库</a></li>
+                  <li class="current">自由做题</li>                
+                </ul>
+                <?php //include_once ROOT_PATH . 'application/layout/user.inc'; ?> 
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="http://www.answerwo.com"><img src="http://www.answerwo.com/public/images/logo.gif" width="313" height="35" alt="答案窝" /></a></div>
+                <form class="ym-clearfix" method="get" action="http://www.answerwo.com/q/search">
+                    <input name="query" type="search" placeholder="输入关键字搜索" class="inpmain" />
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb" style="background-color:#F5F5F5;">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox list-crumb" style="padding-bottom:6px;">
+                <div class="ym-grid">
+                	<form method="post" name="form" id="form">
+                	<input type="hidden" name="curnum" value="<?php echo isset($this->curnum) ? $this->curnum : '0'; ?>" />
+                	<input type="hidden" name="cacheid" value="<?php echo isset($this->cacheid) ? $this->cacheid : '0'; ?>" />
+                	<input type="hidden" name="score" value="<?php echo isset($this->score) ? $this->score : '0'; ?>" />
+                	<?php if(!isset($this->curnum)) {?>
+                	<div class="ym-g30 ym-gl" style="margin-left:250px;">
+                		<div class="ym-gbox">
+		                	<div class="well_practice">
+		                		<div class="well_title">
+		                			<h1>练习题目难度：</h1>
+		                		</div>
+		                		<br>
+		                		<div>
+			            			<ul>
+					                    <div class="well_row">
+					                        <li class="span3"><label class="well_radio"><input type="radio" name="test_level" value="4"><span class="practice_span">容易</span></label></li>
+					                    </div>
+					                    <div class="well_row">
+					                        <li class="span3"><label class="well_radio"><input type="radio" name="test_level" value="2/3"><span class="practice_span">中等</span></label></li>
+					                    </div>
+					                    <div class="well_row">
+					                        <li class="span3"><label class="well_radio"><input type="radio" name="test_level" value="1"><span class="practice_span">困难</span></label></li>
+					                    </div>
+		            				</ul>
+		            			</div>
+		            			<br>
+		            			<div class="well_title">
+		                			<h1>练习题目类型：</h1>
+		                		</div>
+		                		<br>
+		                		<div>
+			            			<ul>
+					                    <div class="well_row">
+					                        <li class="span3"><label class="well_radio"><input type="radio" name="test_type" value="1"><span class="practice_span">词汇</span></label></li>
+					                    </div>
+					                    <div class="well_row">
+					                        <li class="span3"><label class="well_radio"><input type="radio" name="test_type" value="2"><span class="practice_span">文法</span></label></li>
+					                    </div>
+					                    <div class="well_row">
+					                        <li class="span3"><label class="well_radio"><input type="radio" name="test_type" value="3"><span class="practice_span">阅读</span></label></li>
+					                    </div>
+					                    <div class="well_row">
+					                        <li class="span3"><label class="well_radio"><input type="radio" name="test_type" value="4"><span class="practice_span">原文</span></label></li>
+					                    </div>
+					                    <div class="well_row">
+					                        <li class="span3"><label class="well_radio"><input type="radio" name="test_type" value="0"><span class="practice_span">任意</span></label></li>
+					                    </div>
+		            				</ul>
+		            			</div>
+		            			<a class="direct well_btn-new" href="javascript:Start()" name="StartPractice" id="StartPractice">开始练习</a>
+		        			</div>
+		        		</div>
+	        		</div>
+	        		<div class="ym-g30 ym-gl">
+                		<div class="ym-gbox">
+                			<div class="well_practice">
+                			<b>怎样才能看到我的所有练习记录呢？</b>
+                			<b>只有已登录的用户才具有浏览历史练习题目的功能。如果你还不是答案窝的会员，马上免费注册一个。答案窝会永久保存你的练习记录，你可以通过个人中心的练习记录进行查看。</b>
+                			<b>每次练习答案窝默认提供20道题目进行练习，但是我不想做这么多怎么办？</b>
+                			<b>你可以随时结束你的练习，甚至只做一道题也是可以的，答案窝会记录所有你做过的题目，而不是所有默认题目。</b>
+                			<b>我想分类进行练习，可以吗？</b>
+                			<b>当然，答案窝现在提供两种条件进行题目筛选，第一种是根据练习难度来选择，第二种是根据题目类型来选择，你可以根据自己的弱点来自由定制自己的练习，这样可以有针对性地进行有效练习。</b>
+							<b>你还有任何的问题吗？</b>
+                			</div>
+                		</div>
+                	</div>
+        			<?php } else {?>
+        			<div class="ym-g62 ym-gl" style="margin-left:250px;">
+                		<div class="ym-gbox">
+		                	<div class="well_practice">
+			        			<!-- <h2 class="h2_special">自由做题进行中...</h2> -->
+								<div class="practicecount clearfix">
+			            			<span><b id="PractiseCorrect" style="color: rgb(187, 187, 187);font-size: 100%;">20题</b></span>
+			                		<p>已做完<?php echo $this->curnum-1;?>题</p>
+			            		</div>
+			            		<div class="clear blank15"></div>
+			        			<div class="well_title_content"><h1><?php echo $this->title;?></h1></div><br><br>
+			        			<label class="well_radio_new"><input type="radio" name="option" value="1"><span class="practice_span"><?php echo $this->answer1;?></span></label><br>
+			        			<label class="well_radio_new"><input type="radio" name="option" value="2"><span class="practice_span"><?php echo $this->answer2;?></span></label><br>
+			        			<label class="well_radio_new"><input type="radio" name="option" value="3"><span class="practice_span"><?php echo $this->answer3;?></span></label><br>
+			        			<label class="well_radio_new"><input type="radio" name="option" value="4"><span class="practice_span"><?php echo $this->answer4;?></span></label><br>
+        					</div>
+        				</div>
+        			</div>
+        			</form>
+        			<form method="post" name="reportform" id="reportform" action="http://www.answerwo.com/q/report">
+        				<input type="hidden" name="finalscore" value="0" />
+        				<input type="hidden" name="reportcacheid" value="0" />
+        				<?php if(!isset($this->hidden)) {?>
+        				<a class="direct well_btn-new_next1" href="javascript:Start()" name="next" id="next">下一题</a>
+        				<?php }?>
+        				<a class="direct well_btn-new_next2" href="javascript:Report()" name="report" id="report">查看学习报告</a>
+        			</form>
+        			<?php }?>
+                </div>           	
+            </div>
+        </div>
+    </div>
+    
+   <?php include_once ROOT_PATH . 'application/layout/footer.inc';?>
+
+</body>
+</html>

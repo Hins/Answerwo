@@ -1,0 +1,53 @@
+/* 定义所有的文本、段落样式 */
+
+@media all {
+
+	/* reset font size for all elements to standard (16 Pixel) */
+	html * { font-size:100%; }
+
+	/*
+	* reset monospaced elements to font size 16px in all browsers
+	* @see: http://webkit.org/blog/67/strange-medium/
+	*/
+	textarea, pre, code, kbd, samp, var, tt { font-family:"微软雅黑", "黑体", "宋体", Arial; }
+
+	/* 设定基础字体样式，基础字体大小为14px，则1em=14px */
+	body { 
+		font-family:"微软雅黑", "宋体", Arial; font-size:87.50%; color:#333;
+		/* Prevent auto-scaling of text in mobile webkit browsers */
+		-webkit-text-size-adjust:100%;
+	}
+
+	/* 设定基础的链接样式 */
+	a:link, a:visited, a:hover{ color:#4d7dbf; text-decoration:none;}
+	a:hover{ color:#ff7e04;}
+	
+	/* 标题文字的样式 */
+	/*h1只用于面包屑div#crumb*/
+	h1{ font-size:20px;}
+	h2{ font-size:18px; color:#000; line-height:1.2em; font-weight:bold;}
+	
+	/* 设定各种颜色的字 */
+	span.gary{ color:#888;}
+	
+	p.answer{ font-size:18px; padding-top:15px; padding-bottom:5px;}
+	
+	strong{ font-weight:bold;}
+	
+	a.tl-content, a.tl-explain, a.tl-comment{ padding-right:25px; background:url(../images/icon.gif) right -677px no-repeat;}
+	a.tl-explain{ background-position:right -717px;}
+	a.tl-comment{ background-position:right -756px;}
+	a.tl-content:hover{background-position:right -997px;}
+	a.tl-explain:hover{background-position:right -1037px;}
+	a.tl-comment:hover{background-position:right -1076px;}
+	
+	a.tl-favorite span,a.tl-unfavorite span,a.tl-detail span,a.tl-similar span{background:url(../images/icon.gif) 0 -799px no-repeat;}
+	a.tl-detail span{background-position:0 -597px;}
+	a.tl-similar span{background-position:0 -636px;}
+	a.tl-unfavorite span{background-position:0 -557px;}
+	a.tl-unfavorite:hover span{background-position:0 -877px;}
+	a.tl-favorite:hover span{background-position:0 -839px;}
+	a.tl-detail:hover span{background-position:0 -917px;}
+	a.tl-similar:hover span{background-position:0 -956px;}
+}
+

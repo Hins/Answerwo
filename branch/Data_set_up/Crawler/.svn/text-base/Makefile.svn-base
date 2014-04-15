@@ -1,0 +1,33 @@
+COMMAND=g++
+INCLUDE_PATH=-I/usr/local/include/ -I/usr/include
+LIB_PATH=-L/usr/local/lib/
+LIBRARY=-lpcre
+
+all: ProxyIps_Parse cleanup crawler merge_proxy monitor Re-urls cnt_split multi-crawler
+
+ProxyIps_Parse:
+	$(COMMAND) ProxyIps_Parse.cpp -o ProxyIps_Parse $(INCLUDE_PATH) $(LIB_PATH) $(LIBRARY)
+
+cleanup:
+	$(COMMAND) cleanup.cpp -o cleanup $(INCLUDE_PATH) $(LIB_PATH)
+
+crawler:
+	$(COMMAND) crawler.cpp -o crawler $(INCLUDE_PATH) $(LIB_PATH) $(LIBRARY) -lpthread
+
+merge_proxy:
+	$(COMMAND) merge_proxy.cpp -o merge_proxy $(INCLUDE_PATH) $(LIB_PATH)
+
+monitor:
+	$(COMMAND) monitor.cpp -o monitor $(INCLUDE_PATH) $(LIB_PATH)
+
+Re-urls:
+	$(COMMAND) Re-urls.cpp -o Re-urls $(INCLUDE_PATH) $(LIB_PATH)
+
+cnt_split:
+	$(COMMAND) cnt_split.cpp -o cnt_split $(INCLUDE_PATH) $(LIB_PATH)
+
+multi-crawler:
+	$(COMMAND) multi-crawler.cpp -o multi-crawler $(INCLUDE_PATH) $(LIB_PATH)
+
+clean:
+	rm -rf ProxyIps_Parse cleanup crawler merge_proxy monitor Re-urls cnt_split multi-crawler

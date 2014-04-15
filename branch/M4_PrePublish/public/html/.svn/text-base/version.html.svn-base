@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>找题目</title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- mobile viewport optimisation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../css/zhaotimu.css" type="text/css"/>
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="../css/ym-iehacks.min.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../js/google.html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-1.8.7.min.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.parameter.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.plugins.js"></script>
+    <script type="text/javascript" src="../js/zhaotimu.function.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.popup.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	
+	g_param.qid=12345; //题目的标识id
+	//g_param.favorite=1;  //该题目是否已经被收藏
+	g_param.rate=1; //该题目能不能被rate
+	g_param.comment=12; //该题目总共有多少条讨论
+	//g_param.login=1; //用户有没有登录
+	
+</script>
+    <nav id="dark">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li class="current">初中数学</li>
+                  <li><a href="#">初中语文</a></li>
+                  <li><a href="#">初中英语</a></li>
+                  <li><a href="#">初中物理</a></li>
+                  <li>
+                    <a class="dropdown" href="#">初中/中考▾</a>
+                    <ul>
+                      <li><a href="#">初中数学</a></li>
+                      <li><a href="#">初中语文</a></li>
+                      <li><a href="#">初中英语</a></li>
+                      <li><a href="#">初中物理</a></li>
+                      <li><a href="#">初中化学</a></li>
+                      <li><a href="#">初中历史</a></li>
+                      <li><a href="#">初中地理</a></li>
+                      <li><a href="#">初中政治</a></li>
+                      <li><a href="#">初中生物</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="userinfo">
+					<a href="javascript:void(0)" popup="login">登录</a>
+					<a href="/user/register">新用户注册</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="#"><img src="../images/logo.gif" width="313" height="35" alt="找题目" /></a></div>
+                <a href="#" class="add">新增</a>
+                <form class="ym-clearfix">
+                    <input type="search" placeholder="输入关键字搜索" class="inpmain" />
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g75 ym-gl">
+                        <div class="ym-gbox">
+                            <h1>解答版本1</h1>
+                            <div class="fliter">题目"<a href="#">十个字十个字十个字啊</a>"共被6名用户修改了15次</div>
+                        </div>
+                    </div>
+                    <div class="ym-g25 ym-gr">
+                        <div class="ym-gbox">
+                            <div class="more"><a href="#">返回题目版本一览页</a></div> 
+                        </div>
+                    </div>
+                </div>            	
+            </div>
+        </div>
+    </div>
+    
+    <div id="main">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g62 ym-gl">
+                        <div class="ym-gbox">
+							<div class="det-title det-title-first ym-clearfix"><h2>题目内容</h2></div>
+                            <div class="rt">
+                            	<p>为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生身高做调查，以下方案中比较合理的是________ </p>
+                                <ul>
+                                	<li>(A) 查阅外地200名八年级男生的身高统计资料</li>
+                                    <li>(B) 测量该市一所中学200名八年级男生的身高</li>
+                                    <li>(C) 测量该市两所农村中学各100名八年级男生的身高</li>
+                                    <li>(D) 在该市市区内任选一所中学，农村选三所中学，每所中学用抽签方法分别选出50名八年级男生，然后测量他们的身高</li>
+                                </ul>
+                                <p class="answer">答案：A</p>
+                            </div>
+                            <a href="#">查看题目详情</a>
+                            <div class="det-title ym-clearfix"><h2>题目解答版本第11</h2></div>
+                            <div class="rt">
+                            	<p>为了了解石家庄市八年级男生的身高，有关部门准备对200名八年级男生身高做调查，以下方案中比较合理的是________ </p>
+                                <ul>
+                                	<li>(A) 查阅外地200名八年级男生的身高统计资料</li>
+                                    <li>(B) 测量该市一所中学200名八年级男生的身高</li>
+                                    <li>(C) 测量该市两所农村中学各100名八年级男生的身高</li>
+                                    <li>(D) 在该市市区内任选一所中学，农村选三所中学，每所中学用抽签方法分别选出50名八年级男生，然后测量他们的身高</li>
+                                </ul>
+                                <p class="answer">答案：A</p>
+                            </div>
+                            
+                            <div class="ym-clearfix his-version-action">
+                            	<a href="#" class="his-prev fo-btn">查看上一版本</a>
+                                <a href="#" class="his-next fo-btn-blue">查看下一版本</a>
+                            </div>
+                            
+                            <div>
+                            	<a href="#">审核通过，并且设置为最新版本</a><br />
+                                <a href="#">审核通过，但是不设为最新版本</a><br />
+                                <a href="#">删除本版本</a>
+                            </div>
+                            
+                       	</div>
+                        
+                    </div>
+                    <div class="ym-g38 ym-gr">
+                        <div class="ym-gbox">
+							
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <ul class="ym-clearfix">
+                    <li class="nostyle"><a href="#">关于我们</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">使用帮助</a></li>
+                    <li><a href="#">反馈意见</a></li>
+                </ul>
+                <p>找题目网站希望发动所有的老师来共同建设最高质量的中文题库，为我们教育事业的发展做出贡献</p>
+                <p>本站的全部文字在<a href="#">知识共享 署名-相同方式共享3.0协议</a>之条款下提供，附加条款亦可使用（请参阅<a href="#">使用条款</a>）</p>
+                <p>© 2012 找题目网站保留所有权利 <a href="#">京ICP备11008556号</a></p>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

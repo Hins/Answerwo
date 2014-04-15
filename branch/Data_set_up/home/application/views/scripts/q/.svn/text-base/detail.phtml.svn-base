@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<?php
+$include_param = array(
+'title'=>'答案窝-题目解析',
+'keyword'=>'答案窝 日语 等级考试 题目解析',
+'description'=>'答案窝 题目解析',
+);
+include_once ROOT_PATH . 'application/layout/htmlhead.inc'; 
+?>
+<body>
+<script type="text/javascript">
+<?php
+	if(isset($this->favoritesuccess)) { 
+?>	
+	alert("收藏成功！");
+<?php
+	}
+?>
+</script>
+    <nav id="dark">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li><a href="http://www.answerwo.com/q/search">题目搜索</a></li>
+                  <li><a href="http://www.answerwo.com/q/list">题目检索</a></li>
+                  <li class="current">题目解析</li>
+                </ul>
+               <?php include_once ROOT_PATH . 'application/layout/user.inc'; ?> 
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="http://www.answerwo.com"><img src="http://www.answerwo.com/public/images/logo.gif" width="313" height="35" alt="答案窝" /></a></div>
+                <form class="ym-clearfix" method="get" action="http://www.answerwo.com/q/search">
+                    <input name="query" type="search" placeholder="输入关键字搜索" class="inpmain" />
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g75 ym-gl">
+                        <div class="ym-gbox">
+                            <h1>题目解析</h1>
+                        </div>
+                    </div>
+                    <div class="ym-g25 ym-gr">
+                        <div class="ym-gbox">
+                            <div class="more"><span class="gary"><?php echo $this->savecount;?>人收藏</span></div> 
+                        </div>
+                    </div>
+                </div>            	
+            </div>
+        </div>
+    </div>
+    
+    <div id="main">
+    	<div class="ym-wrapper" id="DETAIL">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g62 ym-gl">
+                        <div class="ym-gbox">
+                            <div class="det-action">
+                            	                               
+                                <!--to tuma：如果用户没有登录，请输出-->
+                                <!--<a href="javascript:void(0)" class="favorite Pop" id="FavoriteDetail" hasfavorite="false" popup="#PopupLogin" title="你需要登录才能够进行收藏">收藏</a> -->
+                                <!--to tuma: 如果用户已经登录且已经收藏该题目，请输出-->
+                            	<!--<a href="javascript:void(0)" class="favorite Pop" id="FavoriteDetail" hasfavorite="true" ajax="FavoriteToggle" title="点击将取消收藏">收藏</a> -->
+                                <!--to tuma: 如果用户已经登录但是没有收藏该题目，请输出-->
+                            	<a href="javascript:favorite()" class="favorite Pop" id="FavoriteDetail" hasfavorite="false" popup="favoritedetail" title="点击将添加收藏">收藏</a> 
+
+                                <span class="triangle"></span>
+                            </div>
+                            <div class="det-title det-title-first ym-clearfix">
+                            	<h2>题目内容</h2>
+                            </div>
+                            <div class="rt">
+                            	<p><?php echo $this->content;?> </p>
+                            	<?php 
+                            		if(isset($this->answerflag)) {
+                            	?>
+                                <ul>
+                                	<li><?php echo $this->answer1;?></li>
+                                    <li><?php echo $this->answer2;?></li>
+                                    <li><?php echo $this->answer3;?></li>
+                                    <li><?php echo $this->answer4;?></li>
+                                </ul>
+                                <?php
+                                	} 
+                                ?>
+                                <p class="answer">答案：<?php echo $this->answer;?></p>
+                                <?php 
+                                	if(isset($this->explain)) {
+                                ?>
+                                <p class="answer">解析：<br><?php echo $this->explain;?></p>
+                                <?php
+                                	} 
+                                ?>
+                            </div>
+                            
+                            <form method="get" name="form">
+                            <input type="hidden" name="encryptid" value="<?php echo $this->encryptid;?>" />
+                            <input type="hidden" name="favorite" value="" />
+                            <div class="det-title ym-clearfix">
+                            	<h2>题目解析</h2>
+                            	<a href="javascript:void(0)" class="tl-explain" id="ExplainStart">编写解析</a>
+                            </div>
+                            <div class="ztm-form det-form" id="ExplainAdd" name="ExplainAdd">
+                            	<div class="item">
+                                	<a name="addexplain"></a>
+                                    <textarea class="inp" name="explaincontent"></textarea>
+                                </div>
+                                <button class="btn" reid="0" refloor="0" id="explainButton" name="explainButton">发表解析</button><p class="warn"></p>
+                            </div>
+                            
+                            <div class="det-title ym-clearfix">
+                            	<h2>题目讨论</h2>
+                            	<a href="javascript:void(0)" class="tl-comment">发表新讨论</a>
+                            </div>
+                            
+                            <ul class="comment" id="Comment">
+                            <?php 
+                            	if(isset($this->discuss)) {
+									$i = 1;
+									$discusses = Zend_Json::decode($this->discuss);
+									foreach($discusses as $discuss) {
+                            ?>
+                            <li style="background-color: #F7F7F7;"><?php echo $discuss["user_id"];?> <?php echo $discuss["createTime"];?> <a onclick="AddReply(<?php echo $i;?>,'<?php echo $discuss["user_id"];?>');" class="tl-comment">回复</a></li>
+                            <li><?php echo $discuss["content"];?></li>
+                            <?php
+                            			$i++;
+                            		}
+                            	} 
+                            ?>
+                            </ul>                            
+                            <div class="page ym-clearfix" id="CommentPager"></div>
+                            <div class="ztm-form det-form" id="CommentAdd">
+                            	<div class="item">
+                                	<a name="addcomment"></a>
+                                    <textarea class="inp" name="discusscontent"></textarea>
+                                </div>
+                                <button class="btn" reid="0" refloor="0" id="discussbutton" name="discussButton">发表讨论</button><p class="warn"></p>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ym-g38 ym-gr">
+                        <div class="ym-gbox">
+							<div class="det-line nopadding">
+                            	<b>知识点：</b>
+                            	<?php
+                            		if(isset($this->category)) { 
+                            	?>
+                                <ul class="sh-tag ym-clearfix" tagger-id="222">
+                                	<li class="ym-clearfix IE6Hover"><span><?php echo $this->category;?></span></li>
+                                </ul>
+                                <?php
+                                	} 
+                                ?>
+                            </div>
+
+                            <div class="det-line">
+                            	<b>难度：</b>
+                                <p><span class="red"><strong><?php echo $this->difficulty;?></strong>/5</span></p>
+                                <div class="det-rater-value" id="RaterTitle"><?php echo $this->diff;?></div>                                
+                            </div>
+                            <div class="det-line">
+                            	<b>级别：</b>
+                                <p><?php echo $this->level;?>级</p>
+                            </div>
+                            <div class="det-line">
+                            	<b>年份：</b>
+                                <p>
+                                <?php echo $this->year;?>年
+                                <?php
+                                	if(isset($this->month)) {
+										echo $this->month; 
+                                ?>
+                                                                          月
+                                <?php
+                                	} 
+                                ?>
+                                </p>
+                            </div>
+                            <div class="det-line">
+                            	<b>类型：</b>
+                                <p><?php echo $this->type;?></p>
+                            </div>
+                            <div class="det-info">本题目由<?php echo $this->creator;?>在<?php echo $this->createYear;?>年<?php echo $this->createMonth;?>月<?php echo $this->createDay;?>日创建。感谢<?php echo $this->creator;?>为此题做出的贡献！<hr />答案窝所有题目遵循<a href="http://www.answerwo.com/s/protocal" target="_blank">知识共享-署名-相同方式共享3.0协议许可协议</a>，所有的题目和相关的解析过程都是由广大网民编辑整理而成。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <?php include_once ROOT_PATH . 'application/layout/footer.inc';?>
+    
+</body>
+</html>

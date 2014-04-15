@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>找题目</title>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- mobile viewport optimisation -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../css/zhaotimu.css" type="text/css"/>
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="../css/ym-iehacks.min.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="../js/google.html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-1.8.7.min.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.parameter.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.plugins.js"></script>
+    <script type="text/javascript" src="../js/zhaotimu.function.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.popup.js"></script>
+	<script type="text/javascript" src="../js/zhaotimu.js"></script>
+</head>
+<body>
+    
+    <div id="main" style="background-image:none; background-color:#fff;">
+        <div class="wrapper">
+            <div class="home-title"><img src="../images/home_title.gif" width="980" height="43" alt="找题目"></div>
+            <div class="home-tiles ym-clearfix">
+                <div class="sh-tile sh-tile-t12 sh-tile-blue">
+                	<a class="sh-tile-bigicon" href="#">
+                    	<i class="sh-tile-icon-physics"></i>
+                        <b>高中物理</b>
+                    </a>
+                </div>
+                <div class="sh-tile sh-tile-t11 sh-tile-green">
+                    <a class="sh-tile-normal" href="#"><b>初中数学</b><span>192834题</span></a>
+                </div>
+                <div class="sh-tile sh-tile-t11 sh-tile-blue">
+                	<a class="sh-tile-smallicon" href="#">
+                    	<i class="sh-tile-icon-world"></i>
+                        <span>高中地理</span>
+                    </a>
+                </div>
+                <div class="sh-tile sh-tile-t11 sh-tile-green">
+                    <a class="sh-tile-normal" href="#"><b>初中数学</b><span>192834题</span></a>
+                </div>
+                <div class="sh-tile sh-tile-t11 sh-tile-red sh-tile-right">
+                    <a class="sh-tile-normal" href="#"><b>职称英语及答案...</b><span>192834题</span></a>
+                </div>
+                <div class="sh-tile sh-tile-t11 sh-tile-yellow">
+                    <a class="sh-tile-mid" href="#">
+                    	<span>初二数学：<br />一元二次方程的解法</span>
+                    	<i class="sh-tile-icon-ce"></i>
+                    </a>
+                </div>
+                <div class="sh-tile sh-tile-t13 sh-tile-search"></div>
+                <div class="sh-tile sh-tile-t22 sh-tile-blue sh-tile-right">
+                    <a href="#" class="sh-tile-img">
+                        <img src="../images/home_temp.gif" width="316" height="245">
+                        <b>高中语文作文 ></b>
+                    </a>
+                </div>
+                <div class="sh-tile sh-tile-t21 sh-tile-green sh-tile-up1">
+                	<a class="sh-tile-bigicon" href="#">
+                    	<i class="sh-tile-icon-hat"></i>
+                        <span>初中一元二次方程的详细解答...</span>
+                    </a>
+                </div>
+                <div class="sh-tile sh-tile-t11 sh-tile-yellow sh-tile-up1">
+                    <a class="sh-tile-mid" href="#">
+                    	<span>2012年北京市中考真题</span>
+                    	<i class="sh-tile-icon-zhen"></i>
+                    </a>
+                </div>
+                <div class="sh-tile sh-tile-t12 sh-tile-red sh-tile-up1 sh-tile-left1">
+                    <a class="sh-tile-mid" href="#">
+                    	<span>2012年上海市政治思想品德考试要点的详细解析...</span>
+                    	<i class="sh-tile-icon-bi"></i>
+                    </a>
+                </div>
+                <div class="sh-tile sh-tile-t12 sh-tile-blue">
+                  <a class="sh-tile-headline" href="#">初中英语 ></a>
+                </div>
+                <div class="sh-tile sh-tile-t11 sh-tile-green">
+                  <a class="sh-tile-normal" href="#"><b>GRE精选</b><span>192834题</span></a>
+                </div>
+                <div class="sh-tile sh-tile-t11 sh-tile-blue">
+                    <a class="sh-tile-mid" href="#">
+                    	<span>2012年北京市中考真题</span>
+                    	<i class="sh-tile-icon-jie"></i>
+                    </a>
+                </div>
+                <div class="sh-tile sh-tile-t11 sh-tile-yellow sh-tile-right">
+                	<a class="sh-tile-smallicon" href="#">
+                    	<i class="sh-tile-icon-pen"></i>
+                        <span>全国CET6试题</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <ul class="ym-clearfix">
+                    <li class="nostyle"><a href="#">关于我们</a></li>
+                    <li><a href="#">免责声明</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">使用帮助</a></li>
+                    <li><a href="#">反馈意见</a></li>
+                </ul>
+                <p>找题目网站希望发动所有的老师来共同建设最高质量的中文题库，为我们教育事业的发展做出贡献</p>
+                <p>本站的全部文字在<a href="#">知识共享 署名-相同方式共享3.0协议</a>之条款下提供，附加条款亦可使用（请参阅<a href="#">使用条款</a>）</p>
+                <p>© 2012 找题目网站保留所有权利 <a href="#">京ICP备11008556号</a></p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

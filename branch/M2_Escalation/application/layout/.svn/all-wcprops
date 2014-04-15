@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/1494/branch/M2_Escalation/application/layout
+END
+crumb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/812/branch/M2_Escalation/application/layout/crumb.inc
+END
+profileheader.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/1142/branch/M2_Escalation/application/layout/profileheader.inc
+END
+headergray.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/812/branch/M2_Escalation/application/layout/headergray.inc
+END
+user.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/1239/branch/M2_Escalation/application/layout/user.inc
+END
+popupshare.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/812/branch/M2_Escalation/application/layout/popupshare.inc
+END
+navdark.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/812/branch/M2_Escalation/application/layout/navdark.inc
+END
+htmlhead.inc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/1477/branch/M2_Escalation/application/layout/htmlhead.inc
+END
+headersetting.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/812/branch/M2_Escalation/application/layout/headersetting.inc
+END
+adminhtmlheader.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/1429/branch/M2_Escalation/application/layout/adminhtmlheader.inc
+END
+popuplogin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/812/branch/M2_Escalation/application/layout/popuplogin.inc
+END
+navblue.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/812/branch/M2_Escalation/application/layout/navblue.inc
+END
+footer.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/1494/branch/M2_Escalation/application/layout/footer.inc
+END
+popupreport.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/812/branch/M2_Escalation/application/layout/popupreport.inc
+END
+headerblue.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/812/branch/M2_Escalation/application/layout/headerblue.inc
+END
+popupfavorite.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/812/branch/M2_Escalation/application/layout/popupfavorite.inc
+END
+staticlink.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/1486/branch/M2_Escalation/application/layout/staticlink.inc
+END

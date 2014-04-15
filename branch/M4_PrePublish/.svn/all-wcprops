@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/!svn/ver/1932/branch/M4_PrePublish
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/1883/branch/M4_PrePublish/.htaccess
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/1892/branch/M4_PrePublish/index.php
+END

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1845/branch/M3_Online/application/layout
+END
+crumb.inc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/1501/branch/M3_Online/application/layout/crumb.inc
+END
+profileheader.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/1845/branch/M3_Online/application/layout/profileheader.inc
+END
+headergray.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/1501/branch/M3_Online/application/layout/headergray.inc
+END
+user.inc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/1501/branch/M3_Online/application/layout/user.inc
+END
+popupshare.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/1501/branch/M3_Online/application/layout/popupshare.inc
+END
+navdark.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/1501/branch/M3_Online/application/layout/navdark.inc
+END
+htmlhead.inc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/1501/branch/M3_Online/application/layout/htmlhead.inc
+END
+headersetting.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/1501/branch/M3_Online/application/layout/headersetting.inc
+END
+adminhtmlheader.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/1501/branch/M3_Online/application/layout/adminhtmlheader.inc
+END
+popuplogin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/1501/branch/M3_Online/application/layout/popuplogin.inc
+END
+navblue.inc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/1501/branch/M3_Online/application/layout/navblue.inc
+END
+footer.inc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/1501/branch/M3_Online/application/layout/footer.inc
+END
+popupreport.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/1501/branch/M3_Online/application/layout/popupreport.inc
+END
+headerblue.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/1501/branch/M3_Online/application/layout/headerblue.inc
+END
+popupfavorite.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/1501/branch/M3_Online/application/layout/popupfavorite.inc
+END
+staticlink.inc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/1501/branch/M3_Online/application/layout/staticlink.inc
+END

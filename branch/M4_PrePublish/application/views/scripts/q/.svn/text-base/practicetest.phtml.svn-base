@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<?php
+$include_param = array(
+'title'=>'答案窝-自由做题',
+'keyword'=>'答案窝 日语 自由做题',
+'description'=>'答案窝 日语 自由做题',
+);
+include_once ROOT_PATH . 'application/layout/htmlhead.inc'; 
+?>
+<body>
+    <nav id="dark">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li><a href="http://prepublish.answerwo.com/q/search">搜索</a></li>
+                  <li><a href="http://prepublish.answerwo.com/q/list">题库</a></li>
+                  <li class="current">自由做题</li>                
+                </ul>
+                <?php include_once ROOT_PATH . 'application/layout/user.inc'; ?> 
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="http://prepublish.answerwo.com"><img src="http://prepublish.answerwo.com/public/images/logo.gif" width="313" height="35" alt="答案窝" /></a></div>
+                <form class="ym-clearfix" method="get" action="http://prepublish.answerwo.com/q/search">
+                    <input name="query" type="search" placeholder="输入关键字搜索" class="inpmain" />
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox list-crumb" style="padding-bottom:6px;">
+                <div class="ym-grid">
+                	<span>自由做题功能即将上线！</span>
+                </div>           	
+            </div>
+        </div>
+    </div>
+    
+   <?php include_once ROOT_PATH . 'application/layout/footer.inc';?>
+
+</body>
+</html>

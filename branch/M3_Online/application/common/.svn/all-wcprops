@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/1938/branch/M3_Online/application/common
+END
+JP_Lucene_Analyzer.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/1501/branch/M3_Online/application/common/JP_Lucene_Analyzer.php
+END
+constant.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/1501/branch/M3_Online/application/common/constant.php
+END
+userutil.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/1501/branch/M3_Online/application/common/userutil.php
+END
+FrontDoor.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/1557/branch/M3_Online/application/common/FrontDoor.php
+END
+util.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/1673/branch/M3_Online/application/common/util.php
+END
+logutil.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/1519/branch/M3_Online/application/common/logutil.php
+END
+dbutil.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/1501/branch/M3_Online/application/common/dbutil.php
+END
+init.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/1938/branch/M3_Online/application/common/init.php
+END

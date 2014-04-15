@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<?php
+$include_param = array(
+'title'=>'答案窝-新用户注册',
+'keyword'=>'答案窝 日语 等级考试 新用户注册',
+'description'=>'答案窝 新用户注册',
+);
+include_once ROOT_PATH . 'application/layout/htmlhead.inc';  
+?>
+<body>
+<script type="text/javascript">
+function Submit() {
+	var nickname = document.getElementsByName("nickname")[0];
+	var password = document.getElementsByName("password")[0];
+	var repassword = document.getElementsByName("repassword")[0];
+	var email = document.getElementsByName("email")[0];
+	var form = document.getElementsByName("form")[0];
+	if(nickname.value.length < 6 || nickname.value.length > 16) {
+		alert("对不起，您的昵称长度不正确！");
+		return;
+	}
+	else if(password.value.length < 6 || password.value.length > 16) {
+		alert("对不起，您的密码长度不正确！");
+		return;
+	}
+	else if(password.value != repassword.value) {
+		alert("对不起，您的密码与确认密码不相符！");
+		return;
+	}
+	else if(email.value.indexOf("@") < 1) {
+		alert("对不起，您的邮箱格式不正确！");
+		return;
+	}
+	else {
+		form.submit();
+	}
+}
+</script>
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="http://www.answerwo.com"><img src="http://www.answerwo.com/public/images/logo.gif" width="313" height="35" alt="答案窝" /></a></div>
+                <a href="http://www.answerwo.com/u/login" class="login">老用户登录</a>             
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g85 ym-gl">
+                        <div class="ym-gbox">
+                            <h1><?php if(isset($this->err_information)) {echo $this->err_information;} else {echo "新用户1分钟免费注册";}?></h1>
+                            <div class="fliter"></div>
+                        </div>
+                    </div>
+                </div>            	
+            </div>
+        </div>
+    </div>
+    
+    <div id="main">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g62 ym-gl">
+                        <div class="ym-gbox">
+                            <form class="ztm-form" id="form" name="form" method="post">
+                            	<div class="item">
+                                	<label class="title">用户昵称<sup>*</sup></label>
+                                    <input class="inp" type="text" name="nickname" pattern="[a-zA-Z0-9\u4E00-\u9FA5]+$" minlength="2" maxlength="16" required="required" ajax="" ajaxcheck="username" />
+                                    <p class="intro" warn="nickname">允许英文字母、中文或阿拉伯数字，不支持任何符号，最多8中文或16英文</p>
+                                </div>
+                                <div class="item">
+                                	<label class="title">登录密码<sup>*</sup></label>
+                                    <input type="password" class="inp" name="password" minlength="6" required="required" />
+                                    <p class="intro" warn="password">登录密码不得少于6个字符，为了您的账号安全，请尽可能地复杂</p>
+                                </div>
+                                <div class="item">
+                                	<label class="title">再次确认密码<sup>*</sup></label>
+                                    <input type="password" class="inp" name="repassword" equal="password" strict="true" required="required"  />
+                                    <p class="intro" warn="repassword">请重新输入一遍密码以确认</p>
+                                </div>
+                                <div class="item">
+                                	<label class="title">邮箱地址<sup>*</sup></label>
+                                    <input type="email" class="inp" name="email" required="required" ajaxcheck="username" dbc2sbc="true" />
+                                    <p class="intro" warn="email">邮箱地址是你找回密码的唯一途径，请填写你常用的邮箱</p>
+                                </div>
+                               
+                                <p class="textline">点击下方的“马上注册”按钮，即代表你接受了<a href="http://www.answerwo.com/s/announcement" target="_blank">《答案窝网站使用协议》</a></p>                                
+                                <button type="submit" class="btn" id="FormSubmitButton" onclick="Submit();">马上注册</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ym-g38 ym-gr">
+                        <div class="ym-gbox">
+                            <h2>使用其它账号直接登录</h2>
+                            <ul class="reg-connect">
+                            	<li><a href="#" class="qq ym-clearfix"><b>登录</b><span>腾讯QQ</span></a></li>
+                                <li><a href="#" class="weibo ym-clearfix"><b>登录</b><span>新浪微博</span></a></li>
+                                <li><a href="#" class="renren ym-clearfix"><b>登录</b><span>人人网</span></a></li>
+                                <li><a href="#" class="douban ym-clearfix"><b>登录</b><span>豆瓣</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<?php include_once ROOT_PATH . 'application/layout/footer.inc';?>
+
+</body>
+</html>

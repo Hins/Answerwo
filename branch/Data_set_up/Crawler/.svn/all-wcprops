@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/!svn/ver/6/branch/Data_set_up/Crawler
+END
+cnt_split.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/5/branch/Data_set_up/Crawler/cnt_split.cpp
+END
+crawler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/6/branch/Data_set_up/Crawler/crawler.cpp
+END
+merge_proxy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/6/branch/Data_set_up/Crawler/merge_proxy.cpp
+END
+auto_proxy.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/!svn/ver/4/branch/Data_set_up/Crawler/auto_proxy.sh
+END
+cleanup_again.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/5/branch/Data_set_up/Crawler/cleanup_again.cpp
+END
+ProxyIps_Parse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/6/branch/Data_set_up/Crawler/ProxyIps_Parse.cpp
+END
+cleanup.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/6/branch/Data_set_up/Crawler/cleanup.cpp
+END
+monitor.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/6/branch/Data_set_up/Crawler/monitor.cpp
+END
+multi-crawler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/5/branch/Data_set_up/Crawler/multi-crawler.cpp
+END
+proxy_ip
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/4/branch/Data_set_up/Crawler/proxy_ip
+END
+Re-urls.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/6/branch/Data_set_up/Crawler/Re-urls.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/6/branch/Data_set_up/Crawler/Makefile
+END
+CntElimination.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/5/branch/Data_set_up/Crawler/CntElimination.cpp
+END

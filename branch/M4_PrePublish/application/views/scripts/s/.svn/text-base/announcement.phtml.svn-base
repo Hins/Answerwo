@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<?php
+$include_param = array(
+'title'=>'答案窝-免责声明',
+'keyword'=>'答案窝 日语 等级考试 免责声明',
+'description'=>'答案窝 免责声明',
+);
+include_once ROOT_PATH . 'application/layout/htmlhead.inc'; 
+?>
+<body>
+
+<nav id="dark">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <ul>
+                  <li><a href="http://prepublish.answerwo.com/q/search">搜索</a></li>
+                  <li><a href="http://prepublish.answerwo.com/q/list">题库</a></li>
+                  <li><a href="http://prepublish.answerwo.com/q/practice">自由做题</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="blue">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox ym-clearfix">
+                <div class="logo"><a href="http://prepublish.answerwo.com/"><img src="http://prepublish.answerwo.com/public/images/logo.gif" width="313" height="35" alt="答案窝" /></a></div>
+                <form class="ym-clearfix" method="get" action="http://prepublish.answerwo.com/q/search">
+                    <input type="search" placeholder="输入关键字搜索" class="inpmain" name="query"/>
+                    <input type="submit" value="搜索" class="inpsearch" />                
+                </form>                
+            </div>
+        </div>
+    </header>
+    
+    <div id="crumb">
+    	<div class="ym-wrapper">
+            <!--<div class="ym-wbox">-->
+            <div class="ym-wbox-new">
+                <h1 class="new">免责声明</h1><!--注意如果fliter要变为两行的话，需要js来修正高度-->        	
+            </div>
+        </div>
+    </div>
+    
+    <div id="main" class="list">
+    	<div class="ym-wrapper">
+            <div class="ym-wbox">
+                <div class="ym-grid">
+                    <div class="ym-g75 ym-gl">
+                        <?php echo $this->announcement;?>
+                    </div>
+                    <?php include_once ROOT_PATH . 'application/layout/staticlink.inc';?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<?php include_once ROOT_PATH . 'application/layout/footer.inc';?>
+</body>
+</html>
+ 
